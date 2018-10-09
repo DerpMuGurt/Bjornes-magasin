@@ -52,8 +52,7 @@ public class DayNightScript : MonoBehaviour
 
         int minutes = (int)timer / 60;
         int seconds = (int)timer % 60;
-
-        text.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        
         dayText.text = ("Day ") + days.ToString();
         timeText.text = timeOfDay.ToString();
 
@@ -84,7 +83,7 @@ public class DayNightScript : MonoBehaviour
         }
         if (days == maxDays)
         {
-            days = 0;
+            days = 1;
         }
     }
 }
