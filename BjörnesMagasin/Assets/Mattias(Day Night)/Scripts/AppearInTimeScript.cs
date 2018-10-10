@@ -28,11 +28,11 @@ public class AppearInTimeScript : MonoBehaviour {
         {
             ball.SetActive(false);
         }
-        if(dayNightScript.days == 2)
+        if(dayNightScript.days == 2 || dayNightScript.days == 9 || dayNightScript.days == 16 || dayNightScript.days == 23)
         {
             redBall.SetActive(true);
         }
-        if(dayNightScript.days == 3)
+        if(dayNightScript.days == 3 || dayNightScript.days == 10 || dayNightScript.days == 17 || dayNightScript.days == 24)
         {
             redBall.SetActive(false);
         }
