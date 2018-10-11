@@ -9,6 +9,8 @@ public class CameraRotate : MonoBehaviour {
     public float xSpeed = 120.0f;
     public float ySpeed = 120.0f;
 
+    public GameObject CameraTarget;
+
     public float yMinLimit = -20f;
     public float yMaxLimit = 80f;
 
@@ -17,6 +19,9 @@ public class CameraRotate : MonoBehaviour {
 
     private Rigidbody rigidbody;
 
+    public bool r_rotation;
+    public bool s_rotation;
+
     
 
     float x = 0.0f;
@@ -24,6 +29,13 @@ public class CameraRotate : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+
+        r_rotation = true;
+        s_rotation = false;
+
+        CameraTarget = GameObject.FindGameObjectWithTag("CameraTarget");
+
+
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
@@ -37,12 +49,19 @@ public class CameraRotate : MonoBehaviour {
     }
 
 
-  
+     void Update() {
+
+      
+
+    }
 
     void LateUpdate() {
-        if (target) {
-            x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
-            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+        if (target && Input.GetKey(KeyCode.W)) {
+
+            r_rotation = true;
+            s_rotation = false;
+           // x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
+          //  y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 
             y = ClampAngle(y, yMinLimit, yMaxLimit);
 
@@ -51,15 +70,25 @@ public class CameraRotate : MonoBehaviour {
             //distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
 
             RaycastHit hit;
-            if (Physics.Linecast(target.position, transform.position, out hit)) {
-                distance -= hit.distance;
-            }
+          //  if (Physics.Linecast(target.position, transform.position, out hit)) {
+             //   distance -= hit.distance;
+           // }
            
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
             Vector3 position = rotation * negDistance + target.position;
 
             transform.rotation = rotation;
             transform.position = position;
+
+            if (Input.GetMouseButton(2)) {
+                r_rotation = false;
+                s_rotation = true;
+                if (r_rotation == false && s_rotation == true) {
+                    transform.position = CameraTarget.transform.position;
+                    transform.LookAt(target);
+                }
+            }
+            
         }
     }
 
