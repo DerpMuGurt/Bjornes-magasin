@@ -56,7 +56,7 @@ public class CameraRotate : MonoBehaviour {
     }
 
     void LateUpdate() {
-        if (target && Input.GetKey(KeyCode.W)) {
+        if (target) {
 
             r_rotation = true;
             s_rotation = false;
@@ -80,14 +80,7 @@ public class CameraRotate : MonoBehaviour {
             transform.rotation = rotation;
             transform.position = position;
 
-            if (Input.GetMouseButton(2)) {
-                r_rotation = false;
-                s_rotation = true;
-                if (r_rotation == false && s_rotation == true) {
-                    transform.position = CameraTarget.transform.position;
-                    transform.LookAt(target);
-                }
-            }
+        
             
         }
     }
