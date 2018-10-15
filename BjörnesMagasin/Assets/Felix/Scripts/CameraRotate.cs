@@ -60,8 +60,11 @@ public class CameraRotate : MonoBehaviour {
 
             r_rotation = true;
             s_rotation = false;
-           // x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
-          //  y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+            // x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
+            //  y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+
+            x += xSpeed * distance * 0.02f;
+            y -= ySpeed * 0.02f;
 
             y = ClampAngle(y, yMinLimit, yMaxLimit);
 
@@ -80,8 +83,12 @@ public class CameraRotate : MonoBehaviour {
             transform.rotation = rotation;
             transform.position = position;
 
-        
+
             
+
+
+
+
         }
     }
 
