@@ -8,8 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     
     public float walkSpeed;
 
-    public float rotationSpeedx;
-    public float rotationSpeedy;
+    public float rotSpeed;
 
     public float rotateMe;
 
@@ -115,7 +114,7 @@ public class PlayerMovement : MonoBehaviour {
             transform.Translate(0, 0, 0.15f);
 
             // rb.MovePosition(transform.position + transform.right * Time.deltaTime * walkSpeed);
-            Quaternion deltaRotation = Quaternion.Euler(EAV1 * 0.05f);
+            Quaternion deltaRotation = Quaternion.Euler(EAV1 * rotSpeed);
             rb.MoveRotation(rb.rotation * deltaRotation);
 
             // Camera.main.transform.position = player.transform.position + offset;
@@ -131,7 +130,7 @@ public class PlayerMovement : MonoBehaviour {
 
             transform.Translate(0,0,0.15f);
 
-             Quaternion deltaRotation = Quaternion.Euler(EAV2 * 0.05f);
+             Quaternion deltaRotation = Quaternion.Euler(EAV2 * rotSpeed);
               rb.MoveRotation(rb.rotation * deltaRotation);
 
             // Camera.main.transform.position = player.transform.position + offset;

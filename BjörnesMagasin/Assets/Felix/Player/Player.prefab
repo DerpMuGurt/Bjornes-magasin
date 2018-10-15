@@ -343,8 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 10
-  rotationSpeedx: 0
-  rotationSpeedy: 0
+  rotSpeed: 2
   rotateMe: 10
   offsetCam: {x: 0, y: 0, z: 0}
   horizontalRotation: 0

@@ -22,10 +22,14 @@ public class CameraFollow : MonoBehaviour {
     public float smoothY;
     private float rotY = 0.0f;
     private float rotX = 0.0f;
-    
+
+  
+
 
 
     void Start() {
+
+       
 
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
@@ -33,7 +37,9 @@ public class CameraFollow : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        
+     
+
+
     }
 
 
@@ -53,7 +59,11 @@ public class CameraFollow : MonoBehaviour {
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
         Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = localRotation;
-        
+
+     
+
+     
+
     }
 
      void LateUpdate() {
