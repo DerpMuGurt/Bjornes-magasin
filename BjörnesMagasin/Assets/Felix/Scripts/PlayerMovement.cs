@@ -9,13 +9,13 @@ public class PlayerMovement : MonoBehaviour {
     public float walkSpeed;
 
     public float rotSpeed;
-<<<<<<< HEAD
-=======
+
+
 
     float angle0 = 0f;
     float angle269 = 269f;
     
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
     public float rotateMe;
 
@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour {
 
     public int horizontalRotation;
 
-<<<<<<< HEAD
+
     public GameObject level;
-=======
+
     public Transform cam;
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
     public Transform player;
 
@@ -59,25 +59,19 @@ public class PlayerMovement : MonoBehaviour {
 
 
      void LateUpdate() {
-<<<<<<< HEAD
+
 
         //Camera.main.transform.LookAt(player);
        
 
     }
 
-    void Update() {
-=======
+  
 
-        //Camera.main.transform.LookAt(player);
-       
-
-    }
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 
     void Update() {
 
-<<<<<<< HEAD
+
        //print(transform.eulerAngles.x);
         print(transform.eulerAngles.y);
        // print(transform.eulerAngles.z);
@@ -89,7 +83,7 @@ public class PlayerMovement : MonoBehaviour {
             rb.MovePosition(transform.position + transform.right * Time.deltaTime * walkSpeed);
             Quaternion deltaRotation = Quaternion.Euler(EAV1 * Time.deltaTime);
             rb.MoveRotation(rb.rotation * deltaRotation);
-=======
+
 
        
 
@@ -97,11 +91,11 @@ public class PlayerMovement : MonoBehaviour {
        //print(transform.eulerAngles.x);
        // print(transform.eulerAngles.y);
        // print(transform.eulerAngles.z);
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
             Camera.main.transform.position = player.transform.position + offset;
 
-<<<<<<< HEAD
+
             // transform.Rotate(0, 2, 0);
 
         }
@@ -128,7 +122,7 @@ public class PlayerMovement : MonoBehaviour {
             rb.MovePosition(transform.position + transform.forward * Time.deltaTime * walkSpeed);
            // Camera.main.transform.position = CameraTarget.transform.position;
             
-=======
+
         //Move and rotate with controller in XAxis using Rigidbody transform.right and Quaternion.Euler to rotate. Horizontal makes it move and rotate to the right.
         if (Input.GetAxis("Horizontal") >= 1f) {
 
@@ -259,7 +253,7 @@ public class PlayerMovement : MonoBehaviour {
         //  transform.Translate(0, 0, z);
 
 
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
         }
 
@@ -303,7 +297,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-<<<<<<< HEAD
+
        
 
         //Move in in ZAxis with controller.
@@ -317,8 +311,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-=======
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
     }
 
 

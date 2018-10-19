@@ -17,8 +17,7 @@ public class NotUsingThis : MonoBehaviour {
     void Update() {
 
     }
-<<<<<<< HEAD
-=======
+
 
      void OnTriggerStay(Collider other) {
         if(other.gameObject.tag == "CircleColliderThing") {
@@ -32,5 +31,5 @@ public class NotUsingThis : MonoBehaviour {
     }
 
 
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 }
