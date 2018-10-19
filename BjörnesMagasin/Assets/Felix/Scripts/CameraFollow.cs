@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,8 +47,8 @@ public class CameraFollow : MonoBehaviour {
 
         float inputX = Input.GetAxis("Horizontal2");
         float inputZ = Input.GetAxis("Vertical2");
-       // mouseX = Input.GetAxis("Mouse X");
-        //mouseY = Input.GetAxis("Mouse Y");
+        mouseX = Input.GetAxis("Mouse X");
+        mouseY = Input.GetAxis("Mouse Y");
         finalInputX = inputX + mouseX;
         finalInputZ = inputZ - mouseY;
 
