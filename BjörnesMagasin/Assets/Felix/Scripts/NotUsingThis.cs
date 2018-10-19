@@ -18,8 +18,12 @@ public class NotUsingThis : MonoBehaviour {
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 
 =======
 >>>>>>> parent of 3d11d37... Fixed
@@ -35,6 +39,7 @@ public class NotUsingThis : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -45,4 +50,6 @@ public class NotUsingThis : MonoBehaviour {
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 }
