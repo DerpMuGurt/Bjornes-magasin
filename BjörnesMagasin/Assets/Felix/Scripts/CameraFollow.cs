@@ -45,36 +45,14 @@ public class CameraFollow : MonoBehaviour {
 
      void Update() {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        float inputX = Input.GetAxis("Horizontal2");
-        float inputZ = Input.GetAxis("Vertical2");
-       // mouseX = Input.GetAxis("Mouse X");
-        //mouseY = Input.GetAxis("Mouse Y");
-=======
-=======
 
-       
-
->>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
         print(transform.eulerAngles.y);
 
         float inputX = Input.GetAxis("Horizontal2");
         float inputZ = Input.GetAxis("Vertical2");
         mouseX = Input.GetAxis("Mouse X");
         mouseY = Input.GetAxis("Mouse Y");
-<<<<<<< HEAD
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
-=======
 
->>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
-=======
-        float inputX = Input.GetAxis("Horizontal2");
-        float inputZ = Input.GetAxis("Vertical2");
-       // mouseX = Input.GetAxis("Mouse X");
-        //mouseY = Input.GetAxis("Mouse Y");
->>>>>>> parent of e2f4533... Movement"FIXED"
         finalInputX = inputX + mouseX;
         finalInputZ = inputZ - mouseY;
 

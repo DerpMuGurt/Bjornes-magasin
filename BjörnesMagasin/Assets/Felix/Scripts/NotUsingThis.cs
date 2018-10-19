@@ -17,9 +17,7 @@ public class NotUsingThis : MonoBehaviour {
     void Update() {
 
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 
 
      void OnTriggerStay(Collider other) {
@@ -33,12 +31,4 @@ public class NotUsingThis : MonoBehaviour {
         }
     }
 
-
-<<<<<<< HEAD
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
-=======
-
->>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
-=======
->>>>>>> parent of e2f4533... Movement"FIXED"
 }
