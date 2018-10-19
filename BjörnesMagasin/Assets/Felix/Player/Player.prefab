@@ -145,8 +145,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045968353573300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29, y: 1.2323155, z: 1.4231071}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 33.68813, y: -0.052158833, z: 15.04612}
+  m_LocalScale: {x: 0.2685459, y: 0.2685459, z: 0.2685459}
   m_Children:
   - {fileID: 4555116402958908}
   - {fileID: 4392136922981138}
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
-  walkSpeed: 0.2
+  walkSpeed: 0.05
   lookSpeed: 10
   isTurned90: 0
 --- !u!136 &136755304972178206
