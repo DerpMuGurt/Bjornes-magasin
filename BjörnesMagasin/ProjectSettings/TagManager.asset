@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CamPivot
   - CameraTarget
+  - NpcTrigger
+  - Building
   layers:
   - Default
   - TransparentFX

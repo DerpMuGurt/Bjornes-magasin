@@ -39,6 +39,8 @@ GameObject:
   - component: {fileID: 136755304972178206}
   - component: {fileID: 114388573809333390}
   - component: {fileID: 54287658262772524}
+  - component: {fileID: 114985061398963890}
+  - component: {fileID: 114256645649803622}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -181,7 +183,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bafcc55fb172ff645ab1dfbf4131bfed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -331,7 +333,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114388573809333390
+--- !u!114 &114256645649803622
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,18 +341,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 1045968353573300}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968c0b13fd2bc1243a14f23f3896b2d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114388573809333390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045968353573300}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7053a0f8d6600454b9523db705133869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 10
-  rotSpeed: 2
+  rotSpeed: 0.1
   rotateMe: 10
   offsetCam: {x: 0, y: 0, z: 0}
   horizontalRotation: 0
-  level: {fileID: 0}
+  cam: {fileID: 0}
   player: {fileID: 4655510256642480}
   offset: {x: 0, y: 0, z: 0}
   CameraTarget: {fileID: 0}
+--- !u!114 &114985061398963890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045968353573300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a7e674ee21be24ea747e4f125cb069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  walkSpeed: 0.2
+  lookSpeed: 10
+  isTurned90: 0
 --- !u!136 &136755304972178206
 CapsuleCollider:
   m_ObjectHideFlags: 1

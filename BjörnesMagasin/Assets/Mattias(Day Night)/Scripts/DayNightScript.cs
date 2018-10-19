@@ -43,7 +43,7 @@ public class DayNightScript : MonoBehaviour
         Debug.Log(timeOfDay);
         timer = 180;
         days = 1;
-        
+        months = 2;
     }
 
     void Update()
