@@ -17,4 +17,17 @@ public class NotUsingThis : MonoBehaviour {
     void Update() {
 
     }
+
+     void OnTriggerStay(Collider other) {
+        if(other.gameObject.tag == "CircleColliderThing") {
+            if (Input.GetKey(KeyCode.E)) {
+
+                Destroy(this);
+            }
+
+
+        }
+    }
+
+
 }
