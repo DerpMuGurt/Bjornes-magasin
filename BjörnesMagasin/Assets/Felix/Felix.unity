@@ -171,12 +171,15 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 334282640}
+<<<<<<< HEAD
     - target: {fileID: 54287658262772524, guid: 14d83f6e952801740a64c8ec62192caa,
         type: 2}
       propertyPath: m_Constraints
       value: 120
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 995f8a4... FinalThing
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
   m_IsPrefabAsset: 0
