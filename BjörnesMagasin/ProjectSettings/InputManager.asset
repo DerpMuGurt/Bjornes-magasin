@@ -266,6 +266,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
+<<<<<<< HEAD
     positiveButton: r
     altNegativeButton: 
     altPositiveButton: 
@@ -282,6 +283,8 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
+=======
+>>>>>>> parent of 6db1598... Dialogue
     positiveButton: enter
     altNegativeButton: 
     altPositiveButton: space
