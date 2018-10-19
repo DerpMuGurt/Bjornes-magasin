@@ -43,10 +43,9 @@ GameObject:
   - component: {fileID: 136755304972178206}
   - component: {fileID: 114388573809333390}
   - component: {fileID: 54287658262772524}
-<<<<<<< HEAD
-=======
   - component: {fileID: 114985061398963890}
   - component: {fileID: 114256645649803622}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
@@ -54,6 +53,8 @@ GameObject:
   - component: {fileID: 4916762717639488}
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_Layer: 0
   m_Name: CameraTarget
   m_TagString: CameraTarget
@@ -68,12 +69,15 @@ GameObject:
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 --- !u!1 &1541488605284456
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD
 =======
 =======
 --- !u!1 &1703754936167776
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,6 +100,7 @@ GameObject:
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 --- !u!1 &1738853179794868
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +132,8 @@ GameObject:
 =======
 --- !u!1 &1767140937712748
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,9 +155,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 --- !u!1 &1795253982127296
 =======
 --- !u!1 &1851273919680558
@@ -197,10 +207,13 @@ Transform:
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 --- !u!4 &4392136922981138
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD
 =======
 --- !u!4 &4569135237526362
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -215,27 +228,34 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 --- !u!4 &4555116402958908
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 =======
 --- !u!4 &4739836291679488
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_GameObject: {fileID: 1795253982127296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.8948321, y: 0.3076516, z: 0.3076516}
   m_Children: []
   m_Father: {fileID: 4655510256642480}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 =======
   m_GameObject: {fileID: 1738853179794868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -263,6 +283,8 @@ Transform:
   m_Father: {fileID: 4148175794550704}
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4839914372431476
@@ -272,12 +294,17 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006199985452596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
   m_LocalPosition: {x: 33.68813, y: -0.052158833, z: 15.04612}
   m_LocalScale: {x: 0.2685459, y: 0.2685459, z: 0.2685459}
+=======
+  m_LocalPosition: {x: -0.29, y: 1.2323155, z: 1.4231071}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_Children:
   - {fileID: 4555116402958908}
   - {fileID: 4392136922981138}
@@ -324,6 +351,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
@@ -339,6 +367,9 @@ MeshRenderer:
   - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+  - {fileID: 2100000, guid: bafcc55fb172ff645ab1dfbf4131bfed, type: 2}
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -440,6 +471,7 @@ MeshFilter:
   m_GameObject: {fileID: 1045968353573300}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33690750544872556
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -458,10 +490,13 @@ MeshFilter:
 --- !u!33 &33437655605855486
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 <<<<<<< HEAD
 =======
@@ -470,6 +505,8 @@ MeshFilter:
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_GameObject: {fileID: 1795253982127296}
 =======
   m_GameObject: {fileID: 1851273919680558}
@@ -481,11 +518,14 @@ MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   m_GameObject: {fileID: 1738853179794868}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &54287658262772524
@@ -498,27 +538,6 @@ MeshFilter:
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 Rigidbody:
-<<<<<<< HEAD
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045968353573300}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
---- !u!65 &65186076985801444
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1738853179794868}
-=======
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -554,27 +573,12 @@ BoxCollider:
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
   m_GameObject: {fileID: 1795253982127296}
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!65 &65892325157614704
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1795253982127296}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-=======
 --- !u!114 &114256645649803622
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======
@@ -607,12 +611,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968c0b13fd2bc1243a14f23f3896b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 --- !u!114 &114388573809333390
 =======
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 --- !u!114 &114388573809333390
 =======
 --- !u!114 &114818377314897656
@@ -629,6 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 10
+<<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
 <<<<<<< HEAD
   rotSpeed: 2
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
@@ -641,6 +649,8 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   CameraTarget: {fileID: 0}
 =======
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin:BjörnesMagasin/Assets/Felix/Player/Player.prefab
   rotSpeed: 0.1
 >>>>>>> parent of 66262e9... Revert "Fixed":BjörnesMagasin/Assets/Felix/Player/Player 1.prefab
   rotateMe: 10
@@ -667,10 +677,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
-  walkSpeed: 0.05
+  walkSpeed: 0.2
   lookSpeed: 10
   isTurned90: 0
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 --- !u!136 &136755304972178206
 <<<<<<< HEAD:BjörnesMagasin/Assets/Felix/Player/Player.prefab
 =======

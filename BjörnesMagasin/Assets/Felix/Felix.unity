@@ -156,6 +156,7 @@ Prefab:
         type: 2}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       propertyPath: level
       value: 
       objectReference: {fileID: 1345925378}
@@ -164,6 +165,8 @@ Prefab:
       propertyPath: rotSpeed
       value: 0.1
 =======
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
       propertyPath: cam
 =======
       propertyPath: level
@@ -180,6 +183,7 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 334282640}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 54287658262772524, guid: 14d83f6e952801740a64c8ec62192caa,
         type: 2}
@@ -198,6 +202,8 @@ Prefab:
       value: 0
 >>>>>>> parent of 30682f7... PrefabUpdate
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
   m_IsPrefabAsset: 0
@@ -593,6 +599,7 @@ Prefab:
       objectReference: {fileID: 1512485404}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 30682f7... PrefabUpdate
     - target: {fileID: 114219344547228320, guid: ea7eeca9130b26d41abb91d324322678,
@@ -610,6 +617,8 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
 >>>>>>> parent of 30682f7... PrefabUpdate
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7eeca9130b26d41abb91d324322678, type: 2}
   m_IsPrefabAsset: 0
@@ -664,6 +673,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 471828, guid: 19682540d8a014522a319b1cf788aee2,
     type: 2}
   m_PrefabInternal: {fileID: 742704505}
+<<<<<<< HEAD
 --- !u!1 &775989140
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +763,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 --- !u!1001 &791762800
 Prefab:
   m_ObjectHideFlags: 0
@@ -1001,9 +1013,12 @@ Prefab:
   m_SourcePrefab: {fileID: 100100000, guid: e3924cf28300c044c8258a96838e2d3f, type: 2}
   m_IsPrefabAsset: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 30682f7... PrefabUpdate
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 --- !u!1001 &1092282766
 Prefab:
   m_ObjectHideFlags: 0
@@ -1050,12 +1065,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19682540d8a014522a319b1cf788aee2, type: 2}
   m_IsPrefabAsset: 0
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 --- !u!4 &1092282767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 471828, guid: 19682540d8a014522a319b1cf788aee2,
     type: 2}
   m_PrefabInternal: {fileID: 1092282766}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1170,6 +1185,8 @@ GameObject:
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 =======
 >>>>>>> parent of 30682f7... PrefabUpdate
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 --- !u!1001 &1354728096
 Prefab:
   m_ObjectHideFlags: 0

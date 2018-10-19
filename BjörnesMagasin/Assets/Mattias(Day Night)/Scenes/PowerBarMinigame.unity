@@ -115,6 +115,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -855,12 +856,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1368688181
+=======
+--- !u!1001 &1397252324
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 =======
 >>>>>>> bb2022a70676fb938007f533e4627989ed1891cf
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
@@ -941,6 +946,8 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fa9e56542c031647bdd093c2be3bd52, type: 2}
 =======
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
     - target: {fileID: 4605495138808034, guid: d162292507d984e4a9ceb1d9d90d55fa, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.81
@@ -975,9 +982,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d162292507d984e4a9ceb1d9d90d55fa, type: 2}
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
   m_IsPrefabAsset: 0
->>>>>>> de9885af462478f43fa5923f362c0baf6796ee7a
 --- !u!1 &1557965196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,11 +1043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 3
-=======
   m_RootOrder: 2
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1572702127
 GameObject:
@@ -1054,6 +1055,7 @@ GameObject:
   - component: {fileID: 1572702130}
   - component: {fileID: 1572702129}
   - component: {fileID: 1572702128}
+  - component: {fileID: 1572702131}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1090,7 +1092,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 79.7
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1121,6 +1123,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572702131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572702127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b7dded9d585334fb6e064c05acdec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector: {fileID: 0}
+  rightCube: {fileID: 0}
+  wrongCubes: {fileID: 0}
 --- !u!1 &1745088213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1203,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1431,6 +1448,8 @@ Prefab:
 >>>>>>> de9885af462478f43fa5923f362c0baf6796ee7a
 >>>>>>> bb2022a70676fb938007f533e4627989ed1891cf
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 --- !u!1 &2042405085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,10 +1478,8 @@ Transform:
   m_LocalScale: {x: 0.86522, y: 0.48793572, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 9
-=======
   m_RootOrder: 3
+<<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 <<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1595,3 +1612,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139480503}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin

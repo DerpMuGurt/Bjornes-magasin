@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class TempobarScript : MonoBehaviour {
 
-    public int pointsToReach = 10;
+    public int pointsToReach;
     SelectorScript selector;
 
     void Start()
     {
         selector = GetComponent<SelectorScript>();
-        this.gameObject.SetActive(false);
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (Input.GetKey(KeyCode.R))
-        { 
-            this.gameObject.SetActive(true);
-        }
         if(selector.points == pointsToReach)
         {
-            this.gameObject.SetActive(false);
+            Destroy(this);
         }
     }
+
 }

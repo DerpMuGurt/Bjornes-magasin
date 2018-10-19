@@ -55,7 +55,7 @@ public class SelectorScript : MonoBehaviour {
         if (other.gameObject.name == "CubeRight")
         {
             print("hello");
-            if (Input.GetKeyDown("space") && speed == 80f)
+            if (Input.GetKeyDown("space"))
             {
                 points += 1;
             }

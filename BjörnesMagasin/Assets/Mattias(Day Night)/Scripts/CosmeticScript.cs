@@ -4,6 +4,7 @@ using UnityEngine;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 public class CosmeticScript : MonoBehaviour {
 
@@ -19,6 +20,8 @@ public class CosmeticScript : MonoBehaviour {
 =======
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 using UnityEngine.UI;
 
 
@@ -53,6 +56,7 @@ using UnityEngine.UI;
 <<<<<<< HEAD
     public GameObject sadMask;
     public GameObject hat;
+<<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -66,6 +70,8 @@ using UnityEngine.UI;
 =======
 >>>>>>> parent of 3d11d37... Fixed
 
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 
 =======
 >>>>>>> parent of 3d11d37... Fixed
@@ -83,6 +89,7 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
 =======
@@ -105,12 +112,16 @@ using UnityEngine.UI;
         cosmeticMask1.gameObject.SetActive(false);
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+=======
+        cosmeticMask1.gameObject.SetActive(false);
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 
     }
 <<<<<<< HEAD
 	
 	// Update is called once per frame
 	void Update () {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -145,11 +156,14 @@ using UnityEngine.UI;
             sadMask.GetComponentInChildren<Renderer>().enabled = true;
             hat.GetComponentInChildren<Renderer>().enabled = false;
 =======
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
 
 <<<<<<< HEAD
         if (Input.GetKeyDown("w"))
         {
             cosmeticMask1.gameObject.SetActive(true);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
@@ -172,10 +186,13 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
         }
 
             if (Input.GetKeyDown("s"))
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -223,6 +240,8 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
             cosmeticMask1.gameObject.SetActive(false);
         }
         cosmeticMask1.onClick.AddListener(PutOnMask);
@@ -271,6 +290,7 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
@@ -291,6 +311,8 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 66262e9... Revert "Fixed"
+=======
+>>>>>>> parent of 6abac5e... Merge branch 'master' of https://github.com/DerpMuGurt/Bjornes-magasin
     }
         void PutOnMask() {
             print("click on");
