@@ -28,7 +28,7 @@ public class TestMovement : MonoBehaviour {
 	void Update () {
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        input = Vector2.ClampMagnitude(input, 1);
+        input = Vector2.ClampMagnitude(input, 2);
 
 
         Vector3 camF = cam.forward;
@@ -43,9 +43,8 @@ public class TestMovement : MonoBehaviour {
         transform.position += (camF * input.y + camR * input.x) * walkSpeed;
 
         InputListen();
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.position - prevLoc), Time.fixedDeltaTime * lookSpeed);
 
-    
+        transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation(transform.localPosition - prevLoc), Time.fixedDeltaTime * lookSpeed);
 
 
 
@@ -59,6 +58,8 @@ public class TestMovement : MonoBehaviour {
     private void InputListen() {
         prevLoc = curLoc;
         curLoc = transform.position;
+
+      
 
         if (Input.GetKey(KeyCode.A))
             curLoc.x -= 1 * Time.fixedDeltaTime;
