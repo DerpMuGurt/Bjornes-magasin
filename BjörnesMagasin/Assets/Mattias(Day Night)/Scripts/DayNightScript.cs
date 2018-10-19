@@ -11,7 +11,8 @@ public class DayNightScript : MonoBehaviour
     public Text timeText;
     public float timer = 0;
     public int days;
-    int maxDays = 29;
+    int weekdays;
+    int maxDays = 32;
     int months;
     public enum Weekdays
     {
@@ -44,6 +45,7 @@ public class DayNightScript : MonoBehaviour
         timer = 180;
         days = 1;
         months = 2;
+        weekdays = 1;
     }
 
     void Update()
@@ -109,6 +111,7 @@ public class DayNightScript : MonoBehaviour
         if (timer >= 720)
         {
             timer = 0;
+            weekdays += 1;
             days += 1;
         }
         if (days == maxDays)
@@ -116,33 +119,37 @@ public class DayNightScript : MonoBehaviour
             days = 1;
         }
 
-        if (days == 1 || days == 8 || days == 15 || days == 22)
+        if (weekdays == 1)
         {
             weekDays = Weekdays.Monday;
         }
-        if (days == 2 || days == 9 || days == 16 || days == 23)
+        if (weekdays == 2)
         {
             weekDays = Weekdays.Tuesday;
         }
-        if (days == 3 || days == 10 || days == 17 || days == 24)
+        if (weekdays == 3)
         {
             weekDays = Weekdays.Wednesday;
         }
-        if (days == 4 || days == 11 || days == 18 || days == 25)
+        if (weekdays == 4)
         {
             weekDays = Weekdays.Thursday;
         }
-        if (days == 5 || days == 12 || days == 19 || days == 26)
+        if (weekdays == 5)
         {
             weekDays = Weekdays.Friday;
         }
-        if (days == 6 || days == 13 || days == 20 || days == 27)
+        if (weekdays == 6)
         {
             weekDays = Weekdays.Saturday;
         }
-        if (days == 7 || days == 14 || days == 21 || days == 28)
+        if (weekdays == 7)
         {
             weekDays = Weekdays.Sunday;
+        }
+        if(weekdays == 8)
+        {
+            weekdays = 1;
         }
     }
 }
