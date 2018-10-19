@@ -170,6 +170,9 @@ MonoBehaviour:
     choice1: Of course you do.
     choice2: No! Fight me!
     choice3: Who are you?
+    choseChoice1: 1
+    choseChoice2: 0
+    choseChoice3: 0
     choice1Text:
     - Good.
     - Glad we got that covered
@@ -178,11 +181,6 @@ MonoBehaviour:
     - You are already dead.
     choice3Text:
     - I am your death
-    choseChoice1: 1
-    choseChoice2: 0
-    choseChoice3: 0
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 1
     isAnswering: 0
     choice1Triggers: {fileID: 0}
@@ -1587,6 +1585,9 @@ MonoBehaviour:
     choice1: Yes, you do.
     choice2: Yes! Fight me!
     choice3: Then who are you?
+    choseChoice1: 0
+    choseChoice2: 0
+    choseChoice3: 1
     choice1Text:
     - No
     - You never listen to me!
@@ -1594,11 +1595,6 @@ MonoBehaviour:
     - Don't hurt me!
     choice3Text:
     - "I am not Bj\xF6rne"
-    choseChoice1: 0
-    choseChoice2: 0
-    choseChoice3: 1
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 1
     choice1Triggers: {fileID: 0}
@@ -1957,17 +1953,15 @@ MonoBehaviour:
     choice1: make choice 1
     choice2: make choice 2
     choice3: make choice 3
+    choseChoice1: 1
+    choseChoice2: 0
+    choseChoice3: 1
     choice1Text:
     - making choice 1
     choice2Text:
     - You are already here
     choice3Text:
     - making choice 3
-    choseChoice1: 1
-    choseChoice2: 0
-    choseChoice3: 1
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 0
     choice1Triggers: {fileID: 1847165186}
@@ -2261,17 +2255,15 @@ MonoBehaviour:
     choice1: make choice 1
     choice2: make choice 2
     choice3: make choice 3
+    choseChoice1: 1
+    choseChoice2: 1
+    choseChoice3: 0
     choice1Text:
     - making choice 1
     choice2Text:
     - making choice 2
     choice3Text:
     - you are already here
-    choseChoice1: 1
-    choseChoice2: 1
-    choseChoice3: 0
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 0
     choice1Triggers: {fileID: 1847165186}
@@ -2703,17 +2695,15 @@ MonoBehaviour:
     choice1: make choice 1
     choice2: make choice 2
     choice3: make choice 3
+    choseChoice1: 0
+    choseChoice2: 1
+    choseChoice3: 1
     choice1Text:
     - You are already here
     choice2Text:
     - making choice 2
     choice3Text:
     - making choice 3
-    choseChoice1: 0
-    choseChoice2: 1
-    choseChoice3: 1
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 0
     choice1Triggers: {fileID: 0}
@@ -2818,6 +2808,9 @@ MonoBehaviour:
     choice1: Of course you do.
     choice2: No! Fight me!
     choice3: Who are you?
+    choseChoice1: 1
+    choseChoice2: 1
+    choseChoice3: 1
     choice1Text:
     - Good.
     - Glad we got that covered
@@ -2826,11 +2819,6 @@ MonoBehaviour:
     - You are already dead.
     choice3Text:
     - I am your death
-    choseChoice1: 1
-    choseChoice2: 1
-    choseChoice3: 1
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 0
     choice1Triggers: {fileID: 1847165186}
@@ -2935,6 +2923,9 @@ MonoBehaviour:
     choice1: Yes, you do.
     choice2: Yes! Fight me!
     choice3: Then who are you?
+    choseChoice1: 0
+    choseChoice2: 0
+    choseChoice3: 1
     choice1Text:
     - No
     - You never listen to me!
@@ -2942,11 +2933,6 @@ MonoBehaviour:
     - Don't hurt me!
     choice3Text:
     - "I am not Bj\xF6rne"
-    choseChoice1: 0
-    choseChoice2: 0
-    choseChoice3: 1
-    choseChoice1Text:
-    - YaY
     isTalkingTo: 0
     isAnswering: 1
     choice1Triggers: {fileID: 0}

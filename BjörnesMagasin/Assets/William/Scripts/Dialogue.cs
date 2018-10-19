@@ -18,19 +18,16 @@ public class Dialogue{
     public string choice2;
     public string choice3;
 
+    public bool choseChoice1;
+    public bool choseChoice2;
+    public bool choseChoice3;
+
     [TextArea(1, 20)]
     public string[] choice1Text;
     [TextArea(1, 20)]
     public string[] choice2Text;
     [TextArea(1, 20)]
     public string[] choice3Text;
-
-    public bool choseChoice1;
-    public bool choseChoice2;
-    public bool choseChoice3;
-
-    [TextArea(1, 20)]
-    public string[] choseChoice1Text;
 
     //TALKING TO OTHERS
     public bool isTalkingTo;

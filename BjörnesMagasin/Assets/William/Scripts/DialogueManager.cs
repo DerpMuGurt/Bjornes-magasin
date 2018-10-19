@@ -18,7 +18,6 @@ public class DialogueManager : MonoBehaviour {
     private Queue<string> choice1Sentences;
     private Queue<string> choice2Sentences;
     private Queue<string> choice3Sentences;
-    private Queue<string> choseChoice1Text;
     public Animator animator;
     public Animator animatorChoice;
     static public bool doneTalking;
@@ -69,7 +68,6 @@ public class DialogueManager : MonoBehaviour {
         choice1Sentences = new Queue<string>();
         choice2Sentences = new Queue<string>();
         choice3Sentences = new Queue<string>();
-        choseChoice1Text = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue)
