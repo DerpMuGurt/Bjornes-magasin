@@ -8,6 +8,9 @@ TagManager:
   - CameraTarget
   - NpcTrigger
   - Building
+  - Right
+  - Wrong
+  - TestPush
   layers:
   - Default
   - TransparentFX

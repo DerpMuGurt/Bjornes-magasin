@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PickUpItems : MonoBehaviour
 {
     public Transform player;
     public Transform Helditem;
