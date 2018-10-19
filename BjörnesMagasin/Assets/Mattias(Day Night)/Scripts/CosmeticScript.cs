@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 public class CosmeticScript : MonoBehaviour {
 
@@ -16,7 +17,10 @@ public class CosmeticScript : MonoBehaviour {
     //equip mask?
     //equipp equipped mask?
 =======
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 using UnityEngine.UI;
+
 
 public class CosmeticScript : MonoBehaviour {
 <<<<<<< HEAD
@@ -53,11 +57,12 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 =======
 >>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 
-=======
->>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 3d11d37... Fixed
 
@@ -77,6 +82,9 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 =======
 =======
 =======
@@ -84,11 +92,8 @@ using UnityEngine.UI;
 
 
 
-=======
-=======
->>>>>>> parent of 3d11d37... Fixed
         cosmeticMask1.gameObject.SetActive(false);
->>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
 =======
 =======
@@ -110,10 +115,13 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
         if (Input.GetKeyDown("w"))//&& sad mask equipped
         {
             sadMask.GetComponentInChildren<Renderer>().enabled = true;
@@ -121,13 +129,14 @@ using UnityEngine.UI;
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 =======
 
     // Update is called once per frame
     void Update() {
 >>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
-=======
->>>>>>> parent of 3d11d37... Fixed
 
 =======
 >>>>>>> parent of 3d11d37... Fixed
@@ -141,7 +150,6 @@ using UnityEngine.UI;
         if (Input.GetKeyDown("w"))
         {
             cosmeticMask1.gameObject.SetActive(true);
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
@@ -151,6 +159,7 @@ using UnityEngine.UI;
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+<<<<<<< HEAD
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
@@ -161,6 +170,8 @@ using UnityEngine.UI;
             cosmeticMask1.gameObject.SetActive(true);
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
         }
 
             if (Input.GetKeyDown("s"))
@@ -170,15 +181,21 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 =======
 
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
 =======
 >>>>>>> parent of 3d11d37... Fixed
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
             sadMask.GetComponentInChildren<Renderer>().enabled = false;
             hat.GetComponentInChildren<Renderer>().enabled = true;
         }
@@ -187,6 +204,9 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 =======
 =======
 
@@ -194,12 +214,15 @@ using UnityEngine.UI;
 =======
 =======
 >>>>>>> parent of 3d11d37... Fixed
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 3d11d37... Fixed
 =======
 =======
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
             cosmeticMask1.gameObject.SetActive(false);
         }
         cosmeticMask1.onClick.AddListener(PutOnMask);
@@ -247,6 +270,9 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 =======
 
@@ -256,12 +282,15 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
+<<<<<<< HEAD
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> parent of 66262e9... Revert "Fixed"
     }
         void PutOnMask() {
             print("click on");
