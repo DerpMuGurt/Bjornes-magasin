@@ -179,13 +179,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &698241421
+=======
+--- !u!1001 &483223349
+>>>>>>> parent of 539ed68... Revert "FinalThing"
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 4282471982074860, guid: ea99ae30cf9d7b5498a830cb8cbbae28, type: 2}
       propertyPath: m_LocalPosition.x
       value: 33.12696
@@ -215,11 +220,46 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4282471982074860, guid: ea99ae30cf9d7b5498a830cb8cbbae28, type: 2}
+=======
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -16.034016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.2523744
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.819605
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4947369963093814, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+>>>>>>> parent of 539ed68... Revert "FinalThing"
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: ea99ae30cf9d7b5498a830cb8cbbae28, type: 2}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: edd312b80449bfc489724be10f9153a3, type: 2}
+>>>>>>> parent of 539ed68... Revert "FinalThing"
   m_IsPrefabAsset: 0
 --- !u!1001 &1390446332
 Prefab:
