@@ -162,6 +162,7 @@ Prefab:
         type: 2}
       propertyPath: rotSpeed
       value: 0.1
+<<<<<<< HEAD
 =======
       propertyPath: cam
       value: 
@@ -180,6 +181,9 @@ Prefab:
       objectReference: {fileID: 0}
 =======
 >>>>>>> parent of 995f8a4... FinalThing
+=======
+      objectReference: {fileID: 0}
+>>>>>>> parent of e2f4533... Movement"FIXED"
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
   m_IsPrefabAsset: 0
@@ -402,11 +406,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 471828, guid: 19682540d8a014522a319b1cf788aee2,
     type: 2}
   m_PrefabInternal: {fileID: 327489517}
---- !u!4 &334282640 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4840376294911850, guid: ea7eeca9130b26d41abb91d324322678,
-    type: 2}
-  m_PrefabInternal: {fileID: 525945361}
 --- !u!1001 &407012757
 Prefab:
   m_ObjectHideFlags: 0
@@ -554,8 +553,11 @@ Prefab:
       propertyPath: rotSpeed
       value: 0.3
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+>>>>>>> parent of e2f4533... Movement"FIXED"
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7eeca9130b26d41abb91d324322678, type: 2}
   m_IsPrefabAsset: 0
@@ -996,6 +998,9 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1092282766}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e2f4533... Movement"FIXED"
 --- !u!1 &1345925378 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1302041843554696, guid: 31465700fb0fa9641a0a7c75001c5f25,

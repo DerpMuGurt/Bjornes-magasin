@@ -14,18 +14,22 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
+<<<<<<< HEAD
     float angle0 = 0f;
     float angle269 = 269f;
     
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 
 
+=======
+>>>>>>> parent of e2f4533... Movement"FIXED"
     public float rotateMe;
 
     public Vector3 offsetCam;
 
     public int horizontalRotation;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public GameObject level;
@@ -38,6 +42,9 @@ public class PlayerMovement : MonoBehaviour {
     public Transform cam;
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 
+=======
+    public GameObject level;
+>>>>>>> parent of e2f4533... Movement"FIXED"
 
     public Transform player;
 
@@ -118,11 +125,8 @@ public class PlayerMovement : MonoBehaviour {
             rb.MoveRotation(rb.rotation * deltaRotation);
 
 
-       
-
-
        //print(transform.eulerAngles.x);
-       // print(transform.eulerAngles.y);
+        print(transform.eulerAngles.y);
        // print(transform.eulerAngles.z);
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 
@@ -204,29 +208,16 @@ public class PlayerMovement : MonoBehaviour {
         //Move in ZAxis with keyboard using Rigidbody and transform forward.
         if (Input.GetKey(KeyCode.W)) {
 
-
-            Vector3 movement = new Vector3(0.0f, 0.0f, 1.0f);
-            transform.rotation = Quaternion.LookRotation(movement);
-
-
-            transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
-
-            // rb.MovePosition(transform.position + transform.forward * Time.deltaTime * walkSpeed);
-            // Camera.main.transform.position = CameraTarget.transform.position;
-
+            rb.MovePosition(transform.position + transform.forward * Time.deltaTime * walkSpeed);
+           // Camera.main.transform.position = CameraTarget.transform.position;
+            
 
         }
 
         //Move in ZAxis with keyboard using Rigidbody and transform.forward.
         if (Input.GetKey(KeyCode.S)) {
 
-
-            Vector3 movement = new Vector3(0.0f, 0.0f, -1.0f);
-            transform.rotation = Quaternion.LookRotation(movement);
-
-
-            transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
-            //rb.MovePosition(transform.position - transform.forward * Time.deltaTime * walkSpeed);
+            rb.MovePosition(transform.position - transform.forward * Time.deltaTime * walkSpeed);
 
         }
 
@@ -234,55 +225,27 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.D)) {
 
-            // transform.Translate(0.15f, 0, 0);
-
-            // transform.Rotate(0, 0.5f, 0);
-
-         //   if (cam.transform.eulerAngles.y >= 90 && cam.transform.eulerAngles.y <= 359.999f) {
-            //    Vector3 movement = new Vector3(1.0f, 0.0f, 0.0f);
-           //     transform.rotation = Quaternion.LookRotation(movement);
-           //     transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
-
-          //  }
-
-          //  if (cam.transform.eulerAngles.y >= 359.999f && cam.transform.eulerAngles.y <= 270) {
-         //       Vector3 movement = new Vector3(1.0f, 0.0f, 0.0f);
-          //      transform.rotation = Quaternion.LookRotation(movement);
-        //        transform.Translate(movement * walkSpeed * Time.deltaTime, Space.World);
-
-          //  }
-
+            transform.Translate(0, 0, 0.15f);
 
             // rb.MovePosition(transform.position + transform.right * Time.deltaTime * walkSpeed);
-            //  Quaternion deltaRotation = Quaternion.Euler(EAV1 * rotSpeed);
-            // rb.MoveRotation(rb.rotation * deltaRotation);
-
+            Quaternion deltaRotation = Quaternion.Euler(EAV1 * rotSpeed);
+            rb.MoveRotation(rb.rotation * deltaRotation);
 
             // Camera.main.transform.position = player.transform.position + offset;
 
-
+         
 
         }
-
-     
 
         //Move and rotate in XAxis with keyboard using Rigidbody and transform.right.
         if (Input.GetKey(KeyCode.A)) {
 
             //rb.MovePosition(transform.position - transform.right * Time.deltaTime * walkSpeed);
 
-            //transform.Translate(-0.15f, 0,0);
-      
+            transform.Translate(0,0,0.15f);
 
-
-
-
-            //transform.Rotate(0, -0.5f, 0);
-
-
-
-            // Quaternion deltaRotation = Quaternion.Euler(EAV2 * rotSpeed);
-            //   rb.MoveRotation(rb.rotation * deltaRotation);
+             Quaternion deltaRotation = Quaternion.Euler(EAV2 * rotSpeed);
+              rb.MoveRotation(rb.rotation * deltaRotation);
 
             // Camera.main.transform.position = player.transform.position + offset;
 
@@ -291,15 +254,13 @@ public class PlayerMovement : MonoBehaviour {
 
 
 
-
-
-
+       
 
         //Move in in ZAxis with controller.
 
-        // var z = Input.GetAxis("Vertical") * Time.deltaTime * walkSpeed;
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * walkSpeed;
 
-        //  transform.Translate(0, 0, z);
+        transform.Translate(0, 0, z);
 
 
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411

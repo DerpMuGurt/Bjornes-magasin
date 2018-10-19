@@ -18,6 +18,7 @@ public class NotUsingThis : MonoBehaviour {
 
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
@@ -38,4 +39,6 @@ public class NotUsingThis : MonoBehaviour {
 =======
 
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+>>>>>>> parent of e2f4533... Movement"FIXED"
 }
