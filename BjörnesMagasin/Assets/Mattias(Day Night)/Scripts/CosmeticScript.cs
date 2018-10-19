@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 public class CosmeticScript : MonoBehaviour {
 
+=======
+
+public class CosmeticScript : MonoBehaviour {
+
+>>>>>>> parent of 3d11d37... Fixed
     public GameObject sadMask;
     public GameObject hat;
     //equip mask?
@@ -46,6 +52,7 @@ using UnityEngine.UI;
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 
@@ -55,6 +62,8 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 
 
+=======
+>>>>>>> parent of 3d11d37... Fixed
 
 
     // Use this for initialization
@@ -62,6 +71,7 @@ using UnityEngine.UI;
 
         sadMask.GetComponentInChildren<Renderer>().enabled = false;
         hat.GetComponentInChildren<Renderer>().enabled = true;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,6 +90,11 @@ using UnityEngine.UI;
         cosmeticMask1.gameObject.SetActive(false);
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 
+=======
+=======
+        cosmeticMask1.gameObject.SetActive(false);
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+>>>>>>> parent of 3d11d37... Fixed
 =======
 =======
         cosmeticMask1.gameObject.SetActive(false);
@@ -94,6 +109,9 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 3d11d37... Fixed
         if (Input.GetKeyDown("w"))//&& sad mask equipped
@@ -101,6 +119,7 @@ using UnityEngine.UI;
             sadMask.GetComponentInChildren<Renderer>().enabled = true;
             hat.GetComponentInChildren<Renderer>().enabled = false;
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -135,6 +154,13 @@ using UnityEngine.UI;
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
+=======
+
+        if (Input.GetKeyDown("w"))
+        {
+            cosmeticMask1.gameObject.SetActive(true);
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+>>>>>>> parent of 3d11d37... Fixed
         }
 
             if (Input.GetKeyDown("s"))
@@ -143,9 +169,12 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+>>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> parent of 3d11d37... Fixed
 =======
@@ -157,10 +186,14 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+=======
+>>>>>>> parent of 3d11d37... Fixed
 =======
 =======
 >>>>>>> parent of 3d11d37... Fixed
@@ -213,6 +246,7 @@ using UnityEngine.UI;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 =======
 
@@ -222,6 +256,9 @@ using UnityEngine.UI;
 >>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
+=======
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+>>>>>>> parent of 3d11d37... Fixed
 =======
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 >>>>>>> parent of 3d11d37... Fixed
