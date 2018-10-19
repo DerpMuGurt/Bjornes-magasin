@@ -127,6 +127,9 @@ Prefab:
     m_Modifications:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3d11d37... Fixed
     - target: {fileID: 4655510256642480, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
       propertyPath: m_LocalPosition.x
       value: 33.68813
@@ -156,6 +159,7 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4655510256642480, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
+<<<<<<< HEAD
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
@@ -206,6 +210,12 @@ Prefab:
 =======
     - target: {fileID: 114985061398963890, guid: 14d83f6e952801740a64c8ec62192caa,
 >>>>>>> parent of 3d11d37... Fixed
+=======
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114985061398963890, guid: 14d83f6e952801740a64c8ec62192caa,
+>>>>>>> parent of 3d11d37... Fixed
         type: 2}
       propertyPath: cam
       value: 
@@ -213,10 +223,14 @@ Prefab:
     m_RemovedComponents: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 3776168aa21c2fb429ca099d7170f520, type: 2}
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
+>>>>>>> parent of 3d11d37... Fixed
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 14d83f6e952801740a64c8ec62192caa, type: 2}
 >>>>>>> parent of 3d11d37... Fixed
@@ -319,10 +333,14 @@ Prefab:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 1
 =======
       value: 2
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+      value: 1
+>>>>>>> parent of 3d11d37... Fixed
 =======
       value: 1
 >>>>>>> parent of 3d11d37... Fixed
@@ -410,6 +428,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 539ed68... Revert "FinalThing"
   m_RootOrder: 3
@@ -424,6 +443,13 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1006199985452596, guid: 3776168aa21c2fb429ca099d7170f520,
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1160966499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1541488605284456, guid: 14d83f6e952801740a64c8ec62192caa,
+>>>>>>> parent of 3d11d37... Fixed
 =======
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
