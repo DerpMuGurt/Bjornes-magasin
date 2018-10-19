@@ -17,8 +17,16 @@ public class NotUsingThis : MonoBehaviour {
     void Update() {
 
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 
+>>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 
+=======
+>>>>>>> parent of 3d11d37... Fixed
 
      void OnTriggerStay(Collider other) {
         if(other.gameObject.tag == "CircleColliderThing") {
@@ -31,4 +39,17 @@ public class NotUsingThis : MonoBehaviour {
         }
     }
 
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+
+>>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+>>>>>>> parent of 3d11d37... Fixed
+=======
+>>>>>>> fe31564501bbec4cc9fdad72faf5bcf2f6ce7b72
 }
