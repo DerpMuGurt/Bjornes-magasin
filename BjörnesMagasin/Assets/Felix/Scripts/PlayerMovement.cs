@@ -12,10 +12,13 @@ public class PlayerMovement : MonoBehaviour {
 <<<<<<< HEAD
 =======
 
+
+
     float angle0 = 0f;
     float angle269 = 269f;
     
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
     public float rotateMe;
 
@@ -24,10 +27,17 @@ public class PlayerMovement : MonoBehaviour {
     public int horizontalRotation;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public GameObject level;
 =======
+=======
+
+    public GameObject level;
+
+>>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
     public Transform cam;
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+
 
     public Transform player;
 
@@ -61,10 +71,14 @@ public class PlayerMovement : MonoBehaviour {
      void LateUpdate() {
 <<<<<<< HEAD
 
+
         //Camera.main.transform.LookAt(player);
        
 
     }
+
+  
+
 
     void Update() {
 =======
@@ -91,6 +105,19 @@ public class PlayerMovement : MonoBehaviour {
             rb.MoveRotation(rb.rotation * deltaRotation);
 =======
 
+       //print(transform.eulerAngles.x);
+        print(transform.eulerAngles.y);
+       // print(transform.eulerAngles.z);
+
+
+        //Move and rotate with controller in XAxis using Rigidbody transform.right and Quaternion.Euler to rotate. Horizontal makes it move and rotate to the right.
+        if (Input.GetAxis("Horizontal") >= 1f) {
+
+            rb.MovePosition(transform.position + transform.right * Time.deltaTime * walkSpeed);
+            Quaternion deltaRotation = Quaternion.Euler(EAV1 * Time.deltaTime);
+            rb.MoveRotation(rb.rotation * deltaRotation);
+
+
        
 
 
@@ -108,6 +135,18 @@ public class PlayerMovement : MonoBehaviour {
 
         //Move and rotate with controller in XAxis using Rigidbody transform.right and Quaternion.Euler to rotate. Horizontal2 makes it move and rotate to the left. Made it inverted.
 
+<<<<<<< HEAD
+=======
+            Camera.main.transform.position = player.transform.position + offset;
+
+
+            // transform.Rotate(0, 2, 0);
+
+        }
+
+        //Move and rotate with controller in XAxis using Rigidbody transform.right and Quaternion.Euler to rotate. Horizontal2 makes it move and rotate to the left. Made it inverted.
+
+>>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
         if (Input.GetAxis("Horizontal2") >= 1f) {
 
             rb.MovePosition(transform.position - transform.right * Time.deltaTime * walkSpeed);
@@ -128,7 +167,11 @@ public class PlayerMovement : MonoBehaviour {
             rb.MovePosition(transform.position + transform.forward * Time.deltaTime * walkSpeed);
            // Camera.main.transform.position = CameraTarget.transform.position;
             
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
         //Move and rotate with controller in XAxis using Rigidbody transform.right and Quaternion.Euler to rotate. Horizontal makes it move and rotate to the right.
         if (Input.GetAxis("Horizontal") >= 1f) {
 
@@ -311,6 +354,61 @@ public class PlayerMovement : MonoBehaviour {
         var z = Input.GetAxis("Vertical") * Time.deltaTime * walkSpeed;
 
         transform.Translate(0, 0, z);
+
+
+
+
+        }
+
+        //Move in ZAxis with keyboard using Rigidbody and transform.forward.
+        if (Input.GetKey(KeyCode.S)) {
+
+            rb.MovePosition(transform.position - transform.forward * Time.deltaTime * walkSpeed);
+
+        }
+
+        //Move and rotate in XAxis with keyboard using Rigidbody and transform.right.
+
+        if (Input.GetKey(KeyCode.D)) {
+
+            transform.Translate(0, 0, 0.15f);
+
+            // rb.MovePosition(transform.position + transform.right * Time.deltaTime * walkSpeed);
+            Quaternion deltaRotation = Quaternion.Euler(EAV1 * rotSpeed);
+            rb.MoveRotation(rb.rotation * deltaRotation);
+
+            // Camera.main.transform.position = player.transform.position + offset;
+
+         
+
+        }
+
+        //Move and rotate in XAxis with keyboard using Rigidbody and transform.right.
+        if (Input.GetKey(KeyCode.A)) {
+
+            //rb.MovePosition(transform.position - transform.right * Time.deltaTime * walkSpeed);
+
+            transform.Translate(0,0,0.15f);
+
+             Quaternion deltaRotation = Quaternion.Euler(EAV2 * rotSpeed);
+              rb.MoveRotation(rb.rotation * deltaRotation);
+
+            // Camera.main.transform.position = player.transform.position + offset;
+
+            //transform.eulerAngles = new Vector3(0, -90, 0);
+        }
+
+
+
+
+       
+
+        //Move in in ZAxis with controller.
+
+        var z = Input.GetAxis("Vertical") * Time.deltaTime * walkSpeed;
+
+        transform.Translate(0, 0, z);
+
 
 
 

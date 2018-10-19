@@ -20,6 +20,7 @@ public class NotUsingThis : MonoBehaviour {
 <<<<<<< HEAD
 =======
 
+
      void OnTriggerStay(Collider other) {
         if(other.gameObject.tag == "CircleColliderThing") {
             if (Input.GetKey(KeyCode.E)) {
@@ -32,5 +33,9 @@ public class NotUsingThis : MonoBehaviour {
     }
 
 
+<<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+=======
+
+>>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
 }
