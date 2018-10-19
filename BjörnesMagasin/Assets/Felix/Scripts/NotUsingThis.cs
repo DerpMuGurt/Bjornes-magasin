@@ -19,7 +19,10 @@ public class NotUsingThis : MonoBehaviour {
     }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 3d11d37... Fixed
 
      void OnTriggerStay(Collider other) {
         if(other.gameObject.tag == "CircleColliderThing") {
@@ -34,8 +37,12 @@ public class NotUsingThis : MonoBehaviour {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
 =======
 
 >>>>>>> 3d11d37d2fc9ef8e59d5021ea3601958bf74e030
+=======
+>>>>>>> 995f8a4dd2abd9aa06e93688319313ea1c389411
+>>>>>>> parent of 3d11d37... Fixed
 }
