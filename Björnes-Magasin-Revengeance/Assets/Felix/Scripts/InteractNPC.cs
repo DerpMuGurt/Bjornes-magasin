@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class InteractNPC : MonoBehaviour {
 
+    GameObject player;
+
 	// Use this for initialization
 	void Start () {
+
+        player = GameObject.FindGameObjectWithTag("Player");
 		
 	}
 	
@@ -19,10 +23,11 @@ public class InteractNPC : MonoBehaviour {
 
      void OnTriggerStay(Collider other) {
 
-        if(other.gameObject.tag == "NPC" && Input.GetKey("joystick button 0")) {
+        if(other.gameObject.tag == "NPC" && Input.GetKey("joystick button 0") ||  other.gameObject.tag == "NPC" && Input.GetKey(KeyCode.E)) {
 
+            player.GetComponent<Movement>().enabled = false;
 
-            SceneManager.LoadScene("TestScene101");
+            //SceneManager.LoadScene("TestScene101");
 
 
 
