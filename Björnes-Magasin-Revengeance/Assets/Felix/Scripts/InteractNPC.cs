@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractNPC : MonoBehaviour {
 
@@ -19,11 +20,11 @@ public class InteractNPC : MonoBehaviour {
      void OnTriggerStay(Collider other) {
 
         if(other.gameObject.tag == "NPC" && Input.GetKey("joystick button 0")) {
-           
 
-                Debug.Log("StartConversation");
 
-            
+            SceneManager.LoadScene("TestScene101");
+
+
 
 
 
