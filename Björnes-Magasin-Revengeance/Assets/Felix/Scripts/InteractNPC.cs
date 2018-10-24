@@ -25,7 +25,7 @@ public class InteractNPC : MonoBehaviour {
 
         if(other.gameObject.tag == "NPC" && Input.GetKey("joystick button 0") ||  other.gameObject.tag == "NPC" && Input.GetKey(KeyCode.E)) {
 
-            player.GetComponent<Movement>().enabled = false;
+         
 
             //SceneManager.LoadScene("TestScene101");
 
