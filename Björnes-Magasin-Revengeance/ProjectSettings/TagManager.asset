@@ -5,6 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - CamTriggerOne
+  - CamTriggerTwo
+  - CamTriggerThree
+  - Cam1
+  - Cam2
+  - Cam3
+  - vcam1
+  - vcam
+  - MainCamera2
+  - MainCamera3
+  - CamPos1
+  - CamPos2
+  - CamPos3
   layers:
   - Default
   - TransparentFX
