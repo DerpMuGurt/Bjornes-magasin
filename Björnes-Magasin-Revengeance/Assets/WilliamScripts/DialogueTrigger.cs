@@ -6,25 +6,33 @@ public class DialogueTrigger : MonoBehaviour {
 
     public Dialogue dialogue;
     public static bool talking;
-  //  public GameObject thisTriggerTriggers;
-    void Update()
+    public static bool isAsking;
+
+    void OnTriggerStay(Collider other)
     {
-    //    thisTriggerTriggers = dialogue.myVoice;
-        //IF IN COLLISION
-        if (Input.GetKeyDown(KeyCode.E) && talking == false)
+            if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
+            {
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                talking = true;
+        }
+        if (talking == true && isAsking == true)
         {
+            isAsking = false;
+            DialogueManager.hasMoreToAsk = false;
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
             talking = true;
         }
-        if(DialogueManager.doneTalking == true)
+
+        if (DialogueManager.doneTalking == true)
         {
             talking = false;
         }
-    }
 
-   // public void TriggerDialogue ()
-   // {
-     //   FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-    //}
+        if (DialogueManager.hasMoreToAsk == true)
+        {
+            isAsking = true;
+        }
+
+    }
 }

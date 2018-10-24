@@ -7,34 +7,42 @@ public class Dialogue{
 
     //NAME
     public string name;
+    public GameObject myVoice;
     //DIALOGUE
     [TextArea(1, 20)]
     public string[] sentences;
 
     //CHOICES
-    public bool hasFollowUp;
+    public bool hasDialogueChoices;
 
-    public string choice1;
-    public string choice2;
-    public string choice3;
+    public bool button1IsActive;
+    public bool button2IsActive;
+    public bool button3IsActive;
 
-    public bool choseChoice1;
-    public bool choseChoice2;
-    public bool choseChoice3;
+    public string Button1Text;
+    public string Button2Text;
+    public string Button3Text;
+
+    public bool choice1IsRight;
+    public bool choice2IsRight;
+    public bool choice3IsRight;
 
     [TextArea(1, 20)]
-    public string[] choice1Text;
+    public string[] choice1Sentences;
     [TextArea(1, 20)]
-    public string[] choice2Text;
+    public string[] choice2Sentences;
     [TextArea(1, 20)]
-    public string[] choice3Text;
+    public string[] choice3Sentences;
 
-    //TALKING TO OTHERS
-    public bool isTalkingTo;
-    public bool isAnswering;
+    public bool stopTalkigAfterChoice1;
+    public bool stopTalkigAfterChoice2;
+    public bool stopTalkigAfterChoice3;
     public GameObject choice1Triggers;
     public GameObject choice2Triggers;
     public GameObject choice3Triggers;
-    public GameObject myVoice;
-    public GameObject conversationWith;
+
+
+
+    public bool isHavingAConversation;
+    public GameObject isHavingAConversationWith;
 }
