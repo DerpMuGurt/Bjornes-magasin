@@ -134,6 +134,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
+        FindObjectOfType<Movement>().enabled = false;
         dialogueMenu.SetActive(true);
         if (sentences.Count == 0 && playerHasFollowUp == false && isTalkingWith == false)
         {
@@ -158,6 +159,7 @@ public class DialogueManager : MonoBehaviour {
 
     void EndDialogue()
     {
+        FindObjectOfType<Movement>().enabled = true;
         doneTalking = true;
         dialogueMenu.SetActive(false);
         choice1 = false;

@@ -8,10 +8,10 @@ public class DialogueTrigger : MonoBehaviour {
     public static bool talking;
     public static bool isAsking;
 
-    void OnTriggerStay(Collider other)
+void OnTriggerStay(Collider other)
     {
-            if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
-            {
+        if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
+        {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 talking = true;
         }
@@ -33,6 +33,5 @@ public class DialogueTrigger : MonoBehaviour {
         {
             isAsking = true;
         }
-
     }
 }
