@@ -52,21 +52,21 @@ public class DialogueManager : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && DialogueTrigger.talking == true)
+        if (Input.GetKeyDown(KeyCode.E) && DialogueTrigger.talking == true || Input.GetKeyDown("joystick button 0") && DialogueTrigger.talking == true)
         {
             DisplayNextSentence();
         }
-        if (Input.GetKeyDown(KeyCode.E) && choice1 == true)
+        if (Input.GetKeyDown(KeyCode.E) && choice1 == true || Input.GetKeyDown("joystick button 0") && choice1 == true)
         {
             DisplayNextChoice1Sentence();
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && choice2 == true)
+        if (Input.GetKeyDown(KeyCode.E) && choice2 == true || Input.GetKeyDown("joystick button 0") && choice2 == true)
         {
             DisplayNextChoice2Sentence();
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && choice3 == true)
+        if (Input.GetKeyDown(KeyCode.E) && choice3 == true || Input.GetKeyDown("joystick button 0") && choice3 == true)
         {
             DisplayNextChoice3Sentence();
         }
