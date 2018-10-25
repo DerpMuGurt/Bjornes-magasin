@@ -672,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Derp
-    myVoice: {fileID: 0}
+    myVoice: {fileID: 619524949}
     sentences:
     - supp
     hasDialogueChoices: 1
@@ -684,7 +684,7 @@ MonoBehaviour:
     Button3Text: fight me
     choice1IsRight: 0
     choice2IsRight: 0
-    choice3IsRight: 0
+    choice3IsRight: 1
     choice1Sentences:
     - hi
     choice2Sentences:
@@ -696,7 +696,7 @@ MonoBehaviour:
     stopTalkigAfterChoice3: 0
     choice1Triggers: {fileID: 0}
     choice2Triggers: {fileID: 0}
-    choice3Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 966824873}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
 --- !u!4 &619524951
@@ -791,6 +791,87 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1642150811048910, guid: 3f029bee094926b45bbf8108e1292c46,
     type: 2}
   m_PrefabInternal: {fileID: 1720536408}
+--- !u!1 &966824873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966824874}
+  - component: {fileID: 966824876}
+  - component: {fileID: 966824875}
+  m_Layer: 0
+  m_Name: NPCTextFight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &966824874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966824873}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.09000063, y: 0.110000074, z: 0.039999485}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 1379184899}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &966824875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966824873}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39, y: 0.44, z: 0.29}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &966824876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 966824873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Derp
+    myVoice: {fileID: 0}
+    sentences: []
+    hasDialogueChoices: 1
+    button1IsActive: 1
+    button2IsActive: 1
+    button3IsActive: 1
+    Button1Text: Nani?!
+    Button2Text: No u
+    Button3Text: fight me
+    choice1IsRight: 0
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences:
+    - hi
+    choice2Sentences:
+    - bye
+    choice3Sentences:
+    - Your already dead
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
 --- !u!1001 &968510566
 Prefab:
   m_ObjectHideFlags: 0
