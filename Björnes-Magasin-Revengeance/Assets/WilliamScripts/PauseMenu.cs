@@ -35,6 +35,7 @@ public class PauseMenu : MonoBehaviour {
 
 	public void Resume ()
 	{
+        FindObjectOfType<Movement>().enabled = true;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = (false);
 		pauseMenuUI.SetActive(false);
@@ -43,6 +44,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 	void Pause ()
 	{
+        FindObjectOfType<Movement>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = (true);
 		pauseMenuUI.SetActive(true);
