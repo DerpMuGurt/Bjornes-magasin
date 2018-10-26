@@ -34,4 +34,9 @@ void OnTriggerStay(Collider other)
             isAsking = true;
         }
     }
-}
+    void OnTriggerExit(Collider other)
+    {
+     //   if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
+            talking = false;
+    }
+    }
