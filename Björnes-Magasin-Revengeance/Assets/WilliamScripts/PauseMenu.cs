@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape)) 
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7")) 
 		{
 			
  			if (GameIsPaused) 
@@ -35,16 +35,18 @@ public class PauseMenu : MonoBehaviour {
 
 	public void Resume ()
 	{
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = (false);
+        FindObjectOfType<Movement>().enabled = true;
+   //     Cursor.lockState = CursorLockMode.Locked;
+    //    Cursor.visible = (false);
 		pauseMenuUI.SetActive(false);
 		Time.timeScale= 1f;
 		GameIsPaused = false;
 	}
 	void Pause ()
 	{
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = (true);
+        FindObjectOfType<Movement>().enabled = false;
+     //   Cursor.lockState = CursorLockMode.None;
+    //    Cursor.visible = (true);
 		pauseMenuUI.SetActive(true);
 		Time.timeScale= 0f;
 		GameIsPaused = true;
