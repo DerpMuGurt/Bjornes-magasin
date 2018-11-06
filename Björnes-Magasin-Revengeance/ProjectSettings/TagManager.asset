@@ -18,6 +18,8 @@ TagManager:
   - CamPos1
   - CamPos2
   - CamPos3
+  - BakerySpawnPoint
+  - EnterBakery
   layers:
   - Default
   - TransparentFX

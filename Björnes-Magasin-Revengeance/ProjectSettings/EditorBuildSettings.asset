@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/New Scene.unity
+    path: Assets/Scenes/Scene1.unity
     guid: 7d1299b138f9c4148a65d0775a43da44
   - enabled: 1
     path: Assets/TestDemo.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TestScene101.unity
     guid: 39c9e547514bff440b43097afc200635
+  - enabled: 1
+    path: Assets/Tom/Bageri.unity
+    guid: 01dd12786880ccc4eb4e5fc4a6d88707
   m_configObjects: {}
