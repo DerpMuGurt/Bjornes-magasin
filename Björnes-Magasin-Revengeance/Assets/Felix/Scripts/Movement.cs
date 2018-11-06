@@ -9,17 +9,11 @@ public class Movement : MonoBehaviour {
     public float walkSpeed;
     Vector2 input;
 
-    Rigidbody rb;
-
-    GameObject player;
-    
-
     public float lookSpeed = 10;
     private Vector3 curLoc;
     private Vector3 prevLoc;
 
-    float lockPos = 0;
-
+    
 
     public bool isTurned90;
 
@@ -28,8 +22,6 @@ public class Movement : MonoBehaviour {
 
 
         isTurned90 = false;
-        rb = GetComponent<Rigidbody>();
-        player = GameObject.FindGameObjectWithTag("Player");
 
 
     }
@@ -37,9 +29,11 @@ public class Movement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        
+
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         input = Vector2.ClampMagnitude(input, 2);
-
+        
 
 
 
@@ -52,24 +46,15 @@ public class Movement : MonoBehaviour {
         camF = camF.normalized;
         camR = camR.normalized;
 
+        
+       transform.position += (camF * input.y + camR * input.x) * walkSpeed;
 
-        rb.MovePosition(player.transform.position += (camF * input.y + camR * input.x) * walkSpeed);
+       
 
-
-
-
-
-        //Freeze rotation when going up on sidewalk or stairs.
-
-
-        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
-
-
-
-
+    
 
         InputListen();
-
+        
 
         if (input != Vector2.zero) {
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.localPosition - prevLoc), Time.fixedDeltaTime * lookSpeed);
@@ -77,15 +62,7 @@ public class Movement : MonoBehaviour {
         }
 
 
-
-
-
     }
-
-
-   
-
-
 
     private void InputListen() {
 
@@ -95,20 +72,20 @@ public class Movement : MonoBehaviour {
 
             prevLoc = curLoc;
             curLoc = transform.position;
+        
 
+        
+            if (Input.GetKey(KeyCode.A))
+                curLoc.x -= 1 * Time.fixedDeltaTime;
+            if (Input.GetKey(KeyCode.D))
+                curLoc.x += 1 * Time.fixedDeltaTime;
+            if (Input.GetKey(KeyCode.W))
+                curLoc.z += 1 * Time.fixedDeltaTime;
+            if (Input.GetKey(KeyCode.S))
+                curLoc.z -= 1 * Time.fixedDeltaTime;
 
-
-        //if (Input.GetKey(KeyCode.A))
-        //  curLoc.x -= 1 * Time.fixedDeltaTime;
-        // if (Input.GetKey(KeyCode.D))
-        // curLoc.x += 1 * Time.fixedDeltaTime;
-        //if (Input.GetKey(KeyCode.W))
-        //curLoc.z += 1 * Time.fixedDeltaTime;
-        // if (Input.GetKey(KeyCode.S))
-        //curLoc.z -= 1 * Time.fixedDeltaTime;
-
-
-        transform.position = curLoc;
+       
+            transform.position = curLoc;
         
     }
 
