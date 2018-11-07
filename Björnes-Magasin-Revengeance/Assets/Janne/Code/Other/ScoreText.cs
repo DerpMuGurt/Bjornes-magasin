@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScoreText : MonoBehaviour
 {
     public static int scoreValue;
+    public GameObject Minigame;
 
     void Update()
     {
@@ -14,6 +15,7 @@ public class ScoreText : MonoBehaviour
         if (scoreValue > 30)
         {
             Debug.Log("ItsOVer30!");
+            Minigame.SetActive(false);
         }
     }
 }
