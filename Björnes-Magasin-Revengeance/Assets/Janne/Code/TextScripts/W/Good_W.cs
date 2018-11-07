@@ -20,7 +20,7 @@ public class Good_W : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Good")
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) || Input.GetButtonDown("joystick button 3"))
             {
                 Good_Text.enabled = true;
                 Destroy(gameObject);

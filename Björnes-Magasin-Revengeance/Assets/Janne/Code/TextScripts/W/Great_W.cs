@@ -21,7 +21,7 @@ public class Great_W : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) || Input.GetButtonDown("joystick button 3"))
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);

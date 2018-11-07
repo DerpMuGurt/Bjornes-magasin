@@ -21,7 +21,7 @@ public class Amazing_R : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Amazing")
         {
-            if (Input.GetKey(KeyCode.R))
+            if (Input.GetKey(KeyCode.R) || Input.GetButtonDown("joystick button 2"))
             {
                 Amazing_Text.enabled = true;
                 Destroy(gameObject);

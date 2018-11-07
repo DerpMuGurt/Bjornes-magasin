@@ -22,7 +22,7 @@ public class Amazing_Q: MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Amazing")
         {
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.Q) || Input.GetButtonDown("joystick button 1"))
             {
                 Amazing_Text.enabled = true;
                 Destroy(gameObject);

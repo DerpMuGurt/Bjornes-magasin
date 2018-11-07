@@ -1644,7 +1644,8 @@ Prefab:
       propertyPath: Good_Text
       value: 
       objectReference: {fileID: 1350359353}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114697802449428048, guid: 0f57b00270a7ecf4c97ccb5363ff2f80, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0f57b00270a7ecf4c97ccb5363ff2f80, type: 2}
   m_IsPrefabAsset: 0
 --- !u!224 &1706868202
