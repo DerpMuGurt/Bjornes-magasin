@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class GAMESTART : MonoBehaviour
 {
-    public GameObject Canvas;
+    public GameObject Minigame;
 
     void Start()
     {
-        Canvas.SetActive(false); 
+        Minigame.SetActive(false); 
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (Input.GetButton("E"))
         {
-            Canvas.SetActive(true);
+            Minigame.SetActive(true);
         }
 
         else
         {
-            Canvas.SetActive(false);
+            Minigame.SetActive(false);
         }
 
     }

@@ -14,6 +14,6 @@ public class SetSpeed : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = new Vector2(-60, 0);
+        rb.velocity = new Vector2(-100, 0);
     }
 }
