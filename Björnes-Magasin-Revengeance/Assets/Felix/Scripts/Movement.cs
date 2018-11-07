@@ -72,20 +72,20 @@ public class Movement : MonoBehaviour {
 
             prevLoc = curLoc;
             curLoc = transform.position;
-        
 
-        
-            if (Input.GetKey(KeyCode.A))
-                curLoc.x -= 1 * Time.fixedDeltaTime;
-            if (Input.GetKey(KeyCode.D))
-                curLoc.x += 1 * Time.fixedDeltaTime;
-            if (Input.GetKey(KeyCode.W))
-                curLoc.z += 1 * Time.fixedDeltaTime;
-            if (Input.GetKey(KeyCode.S))
-                curLoc.z -= 1 * Time.fixedDeltaTime;
 
-       
-            transform.position = curLoc;
+
+        //  if (Input.GetKey(KeyCode.A))
+        //     curLoc.x -= 1 * Time.fixedDeltaTime;
+        //   if (Input.GetKey(KeyCode.D))
+        //  curLoc.x += 1 * Time.fixedDeltaTime;
+        // if (Input.GetKey(KeyCode.W))
+        //  curLoc.z += 1 * Time.fixedDeltaTime;
+        // if (Input.GetKey(KeyCode.S))
+        // curLoc.z -= 1 * Time.fixedDeltaTime;
+
+
+        transform.position = curLoc;
         
     }
 
