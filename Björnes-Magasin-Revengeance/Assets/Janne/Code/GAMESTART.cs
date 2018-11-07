@@ -11,10 +11,11 @@ public class GAMESTART : MonoBehaviour
         Minigame.SetActive(false); 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("joystick button 0"))
         {
+            FindObjectOfType<Movement>().enabled = false;
             Minigame.SetActive(true);
         }
 

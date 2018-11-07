@@ -16,6 +16,7 @@ public class ScoreText : MonoBehaviour
         {
             Debug.Log("ItsOVer30!");
             Minigame.SetActive(false);
+            FindObjectOfType<Movement>().enabled = false;
         }
     }
 }
