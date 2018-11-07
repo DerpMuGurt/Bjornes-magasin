@@ -7,10 +7,19 @@ public class StartMinigameScript : MonoBehaviour {
     public GameObject cubeCollections;
 	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKey(KeyCode.E))
+	//void Update () {
+ //       if (Input.GetKey(KeyCode.E))
+ //       {
+
+ //       }
+	//}
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             cubeCollections.SetActive(true);
         }
-	}
-}
+    }
+
+    }
