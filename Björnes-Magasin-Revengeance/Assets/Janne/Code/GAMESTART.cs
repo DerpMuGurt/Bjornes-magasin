@@ -13,7 +13,7 @@ public class GAMESTART : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (Input.GetButton("E"))
+        if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("joystick button 0"))
         {
             Minigame.SetActive(true);
         }
