@@ -24,6 +24,7 @@ public class Good_W : MonoBehaviour
             {
                 Good_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 1;
             }
             StartCoroutine(MyTime());
             active = false;

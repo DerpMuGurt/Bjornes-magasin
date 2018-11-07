@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Amazing_E : MonoBehaviour
 {
+
     public Text Amazing_Text;
 
     bool active = false;
@@ -13,7 +14,6 @@ public class Amazing_E : MonoBehaviour
     {
         Amazing_Text.text = "Amazing!";
         Amazing_Text.enabled = false;
-
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -25,6 +25,7 @@ public class Amazing_E : MonoBehaviour
             {
                 Amazing_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 10;
             }
             StartCoroutine(MyTime());
             active = false;

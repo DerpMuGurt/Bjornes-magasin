@@ -5,16 +5,15 @@ using UnityEngine.UI;
 
 public class Great_E : MonoBehaviour
 {
+
     public Text Great_Text;
 
     bool active = false;
-    GameObject E;
 
     void Start()
     {
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
-
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -22,10 +21,11 @@ public class Great_E : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("Abutton"))
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 5;
             }
             StartCoroutine(MyTime());
             active = false;

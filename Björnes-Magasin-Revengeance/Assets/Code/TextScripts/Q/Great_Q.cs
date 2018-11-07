@@ -24,6 +24,7 @@ public class Great_Q : MonoBehaviour
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 5;
             }
             StartCoroutine(MyTime());
             active = false;

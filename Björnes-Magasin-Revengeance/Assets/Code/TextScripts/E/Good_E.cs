@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Good_E : MonoBehaviour
 {
+    
     public Text Good_Text;
 
     bool active = false;
@@ -21,9 +22,10 @@ public class Good_E : MonoBehaviour
         if (collision.gameObject.tag == "Good")
         {
             if (Input.GetKey(KeyCode.E))
-            {
+            { 
                 Good_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 1;
             }
             StartCoroutine(MyTime());
             active = false;

@@ -19,7 +19,6 @@ public class RandomizerSpawn : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             whatToSpawn = Random.Range(1, 6);
-            Debug.Log(whatToSpawn);
 
             switch (whatToSpawn)
             {

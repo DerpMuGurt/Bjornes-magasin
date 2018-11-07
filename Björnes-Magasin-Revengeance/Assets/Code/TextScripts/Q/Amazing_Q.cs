@@ -26,6 +26,7 @@ public class Amazing_Q: MonoBehaviour
             {
                 Amazing_Text.enabled = true;
                 Destroy(gameObject);
+                ScoreText.scoreValue += 10;
             }
             StartCoroutine(MyTime());
             active = false;
