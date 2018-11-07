@@ -18,11 +18,5 @@ public class GAMESTART : MonoBehaviour
             FindObjectOfType<Movement>().enabled = false;
             Minigame.SetActive(true);
         }
-
-        else
-        {
-            Minigame.SetActive(false);
-        }
-
     }
 }
