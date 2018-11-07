@@ -13,7 +13,7 @@ public class GAMESTART : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.E) || Input.GetButton("joystick button 0"))
+        if (Input.GetKey(KeyCode.E) && other.tag == "Player" || Input.GetButton("joystick button 0") && other.tag == "Player")
         {
             FindObjectOfType<Movement>().enabled = false;
             Minigame.SetActive(true);

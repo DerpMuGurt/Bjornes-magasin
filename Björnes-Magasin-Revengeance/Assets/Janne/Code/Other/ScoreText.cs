@@ -8,6 +8,11 @@ public class ScoreText : MonoBehaviour
     public static int scoreValue;
     public GameObject Minigame;
 
+    void Start()
+    {
+        scoreValue = 0;
+    }
+
     void Update()
     {
         scoreValue.ToString();
