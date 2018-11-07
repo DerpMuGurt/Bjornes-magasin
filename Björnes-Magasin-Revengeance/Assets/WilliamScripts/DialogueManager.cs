@@ -47,9 +47,6 @@ public class DialogueManager : MonoBehaviour {
     public GameObject Button2Object;
     public GameObject Button3Object;
 
-
-
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && DialogueTrigger.talking == true || Input.GetKeyDown("joystick button 0") && DialogueTrigger.talking == true)
