@@ -6,10 +6,7 @@ public class DontDestroy : MonoBehaviour {
 
     static DontDestroy instans;
 
-    // Use this for initialization
     void Start () {
-        //   DontDestroyOnLoad(gameObject);
-  //      DontDestroyOnLoad(this.gameObject);
         if (instans)
             Destroy(gameObject);
         //annars behåll karaktären 
@@ -19,9 +16,4 @@ public class DontDestroy : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

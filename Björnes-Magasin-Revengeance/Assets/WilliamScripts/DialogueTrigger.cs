@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour {
 
 void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
+        if (other.tag == "Player" && talking == false && isAsking == false)
         {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 talking = true;
@@ -36,7 +36,9 @@ void OnTriggerStay(Collider other)
     }
     void OnTriggerExit(Collider other)
     {
-     //   if (other.gameObject.tag == "Player" && talking == false && isAsking == false)
+        if (other.tag == "Player")
+        {
             talking = false;
+        }
     }
     }

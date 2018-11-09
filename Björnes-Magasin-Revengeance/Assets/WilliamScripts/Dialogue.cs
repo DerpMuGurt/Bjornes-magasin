@@ -42,7 +42,6 @@ public class Dialogue{
     public GameObject choice3Triggers;
 
 
-
     public bool isHavingAConversation;
     public GameObject isHavingAConversationWith;
 }
