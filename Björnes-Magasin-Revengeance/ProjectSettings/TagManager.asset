@@ -20,6 +20,15 @@ TagManager:
   - CamPos3
   - BakerySpawnPoint
   - EnterBakery
+  - E
+  - R
+  - Wrong
+  - Right
+  - W
+  - Q
+  - Amazing
+  - Good
+  - Great
   layers:
   - Default
   - TransparentFX
