@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour {
     private Vector3 curLoc;
     private Vector3 prevLoc;
 
+    float lockPos = 0f;
+
     
 
     public bool isTurned90;
@@ -71,9 +73,9 @@ public class Movement : MonoBehaviour {
         
        transform.position += (camF * input.y + camR * input.x) * walkSpeed;
 
-       
+        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
 
-    
+
 
         InputListen();
         

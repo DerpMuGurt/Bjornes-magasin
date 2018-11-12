@@ -34,6 +34,10 @@ TagManager:
   - OutsideBakerySpawn
   - ExitBakery
   - CameraStand
+  - CanvasDialogue
+  - Canvas
+  - EventSystem
+  - RythmGame
   layers:
   - Default
   - TransparentFX
