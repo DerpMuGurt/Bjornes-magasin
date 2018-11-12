@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class Movement : MonoBehaviour {
     public Transform cam;
     public float walkSpeed;
     Vector2 input;
+
+    public GameObject CameraStand;
 
     public float lookSpeed = 10;
     private Vector3 curLoc;
@@ -23,13 +26,32 @@ public class Movement : MonoBehaviour {
 
         isTurned90 = false;
 
+        CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
+        
+
+        
+        
+
+     
 
     }
 
     // Update is called once per frame
     void Update() {
 
-        
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Bageri") {
+            cam = GameObject.FindWithTag("MainCamera").transform;
+            CameraStand.SetActive(false);
+        }
+
+        if (sceneName == "TestDemo") {
+            cam = GameObject.FindWithTag("MainCamera").transform;
+            CameraStand.SetActive(true);
+        }
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         input = Vector2.ClampMagnitude(input, 2);

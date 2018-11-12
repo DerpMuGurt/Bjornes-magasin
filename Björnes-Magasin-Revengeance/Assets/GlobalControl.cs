@@ -7,10 +7,18 @@ public class GlobalControl : MonoBehaviour {
     public static GlobalControl Instance;
 
     public GameObject player;
+    public GameObject PickUpTable;
+    public GameObject OutsideBakerySpawn;
+    public GameObject CameraStand;
+    
 
     void Awake() {
 
         player = GameObject.FindGameObjectWithTag("Player");
+        PickUpTable = GameObject.FindGameObjectWithTag("PickUpTable");
+        OutsideBakerySpawn = GameObject.FindGameObjectWithTag("OutsideBakerySpawn");
+        CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
+       
       
 
       
@@ -22,6 +30,10 @@ public class GlobalControl : MonoBehaviour {
 
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(player);
+            DontDestroyOnLoad(PickUpTable);
+            DontDestroyOnLoad(OutsideBakerySpawn);
+            DontDestroyOnLoad(CameraStand);
+           
          
             Instance = this;
 
@@ -34,7 +46,7 @@ public class GlobalControl : MonoBehaviour {
 
 
             Destroy(gameObject);
-            Destroy(player);
+           
             
            
 

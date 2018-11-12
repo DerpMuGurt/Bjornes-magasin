@@ -29,6 +29,11 @@ TagManager:
   - Amazing
   - Good
   - Great
+  - PickUpTable
+  - Light
+  - OutsideBakerySpawn
+  - ExitBakery
+  - CameraStand
   layers:
   - Default
   - TransparentFX
