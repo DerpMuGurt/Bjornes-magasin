@@ -38,6 +38,7 @@ void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
+            FindObjectOfType<DialogueManager>().EndDialogue();
             talking = false;
         }
     }

@@ -5,8 +5,9 @@ using UnityEngine;
 public class CameraChange : MonoBehaviour {
 
     public GameObject guiObject;
+    public GameObject cameraToHide;
+    public GameObject cameraToShow;
     public GameObject objectToHide;
-    public GameObject objectToShow;
     bool isLooking;
     bool dontShowObject;
 
@@ -41,9 +42,10 @@ public class CameraChange : MonoBehaviour {
         {
             if (guiObject.activeInHierarchy == true)
             {
+                objectToHide.GetComponentInChildren<Renderer>().enabled = false;
                 isLooking = true;
-                objectToHide.SetActive(false);
-                objectToShow.SetActive(true);
+                cameraToHide.SetActive(false);
+                cameraToShow.SetActive(true);
                 guiObject.SetActive(false);
                 FindObjectOfType<Movement>().enabled = false;
             }
@@ -57,9 +59,10 @@ public class CameraChange : MonoBehaviour {
         {
             if (guiObject.activeInHierarchy == true)
             {
+                objectToHide.GetComponentInChildren<Renderer>().enabled = true;
                 isLooking = false;
-                objectToHide.SetActive(true);
-                objectToShow.SetActive(false);
+                cameraToHide.SetActive(true);
+                cameraToShow.SetActive(false);
                 guiObject.SetActive(false);
                 FindObjectOfType<Movement>().enabled = true;
             }
@@ -68,6 +71,7 @@ public class CameraChange : MonoBehaviour {
 
     void OnTriggerExit()
     {
+        FindObjectOfType<Movement>().enabled = true;
         guiObject.SetActive(false);
     }
 }

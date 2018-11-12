@@ -2,13 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartConversation : MonoBehaviour {
+public class StartConversation : MonoBehaviour
+{
 
     public GameObject conversationWith;
+    public Transform target;
+    bool isLooking;
+
+
 
     void Start()
     {
         conversationWith.SetActive(false);
+        isLooking = false;
+    }
+
+    private void Update()
+    {
+        if (isLooking == true)
+        {
+            //  transform.LookAt(target, transform.up);
+            Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
+            transform.LookAt(targetPosition);
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -16,6 +32,7 @@ public class StartConversation : MonoBehaviour {
         if (other.tag == "Player")
         {
             conversationWith.SetActive(true);
+            isLooking = true;
         }
     }
 
@@ -24,6 +41,8 @@ public class StartConversation : MonoBehaviour {
         if (other.tag == "Player")
         {
             conversationWith.SetActive(false);
+            isLooking = false;
+            DialogueTrigger.talking = false;
         }
     }
 }
