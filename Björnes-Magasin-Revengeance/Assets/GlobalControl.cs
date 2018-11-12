@@ -57,9 +57,9 @@ public class GlobalControl : MonoBehaviour {
 
 
             Destroy(gameObject);
-           
-            
-           
+         
+
+            return;
 
 
         }
