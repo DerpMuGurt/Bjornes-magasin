@@ -1943,11 +1943,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1505166678917340, guid: 3f029bee094926b45bbf8108e1292c46,
     type: 2}
   m_PrefabInternal: {fileID: 1227445037}
---- !u!4 &606735767 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4665497673676178, guid: 3f029bee094926b45bbf8108e1292c46,
-    type: 2}
-  m_PrefabInternal: {fileID: 1227445037}
 --- !u!1 &619524949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,7 +3203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conversationWith: {fileID: 530404119}
-  target: {fileID: 606735767}
 --- !u!1 &966824873
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,11 +5663,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114478347340899698, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 606735767}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
