@@ -6,7 +6,7 @@ public class StartConversation : MonoBehaviour
 {
 
     public GameObject conversationWith;
-    public Transform target;
+    Transform target;
     bool isLooking;
 
 
@@ -19,6 +19,7 @@ public class StartConversation : MonoBehaviour
 
     private void Update()
     {
+        target = GameObject.FindWithTag("Player").transform;
         if (isLooking == true)
         {
             //  transform.LookAt(target, transform.up);
