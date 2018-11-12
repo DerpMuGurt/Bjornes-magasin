@@ -308,8 +308,8 @@ GameObject:
   - component: {fileID: 33525545734817550}
   - component: {fileID: 23240192694718574}
   - component: {fileID: 136513984623369752}
-  - component: {fileID: 136815193758957792}
   - component: {fileID: 114478347340899698}
+  - component: {fileID: 65399226860658910}
   m_Layer: 0
   m_Name: Baker (1)
   m_TagString: Untagged
@@ -850,6 +850,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7, y: 7, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65399226860658910
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1996345894069660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 2, z: 5}
+  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65415849338487724
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1324,16 +1336,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136815193758957792
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1996345894069660}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.353567
-  m_Height: 4.707134
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: -0.35356715}
