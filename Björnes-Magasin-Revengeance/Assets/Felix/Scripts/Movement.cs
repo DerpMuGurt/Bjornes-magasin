@@ -29,8 +29,13 @@ public class Movement : MonoBehaviour {
         isTurned90 = false;
 
         CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
-        
 
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        string sceneName = currentScene.name;
+
+
+      
         
         
 
