@@ -24,6 +24,10 @@ public class CameraFollow : MonoBehaviour {
     private float rotY = 0.0f;
     private float rotX = 0.0f;
 
+    
+    public float minimumX = -60F;
+    public float maximumX = 60F;
+
     public bool inBakery;
     public bool inWorld;
 
@@ -80,6 +84,9 @@ public class CameraFollow : MonoBehaviour {
 
         rotY += finalInputX * inputSensitivity * Time.deltaTime;
         rotX += finalInputZ * inputSensitivity * Time.deltaTime;
+
+        
+        rotX = Mathf.Clamp(rotX, minimumX, maximumX);
 
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
         Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);

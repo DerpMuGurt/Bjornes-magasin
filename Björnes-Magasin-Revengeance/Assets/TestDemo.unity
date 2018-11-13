@@ -3690,11 +3690,31 @@ Prefab:
     - target: {fileID: 114144104042809060, guid: 94351f5c6a7b6e3478c00a81b833d406,
         type: 2}
       propertyPath: minDistance
-      value: 0.5
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1838098495456710, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
       propertyPath: m_TagString
       value: CameraStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 114759049401583764, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: minimumY
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114759049401583764, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: maximumY
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 114759049401583764, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: minimumX
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114759049401583764, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: maximumX
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
