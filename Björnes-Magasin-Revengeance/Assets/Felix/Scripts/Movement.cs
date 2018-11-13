@@ -18,6 +18,11 @@ public class Movement : MonoBehaviour {
 
     float lockPos = 0f;
 
+    public bool bakeryLevel;
+    public bool worldLevel;
+
+    public bool isWalking;
+
     
 
     public bool isTurned90;
@@ -30,35 +35,49 @@ public class Movement : MonoBehaviour {
 
         CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
 
-        Scene currentScene = SceneManager.GetActiveScene();
-
-        string sceneName = currentScene.name;
-
-
-      
-        
-        
-
-     
+        bakeryLevel = false;
+        worldLevel = true;
+        isWalking = false;
+       
 
     }
+
+
+
+   
 
     // Update is called once per frame
     void Update() {
 
+        
+
         Scene currentScene = SceneManager.GetActiveScene();
 
         string sceneName = currentScene.name;
 
+        
+
         if (sceneName == "Bageri") {
+            bakeryLevel = true;
+            worldLevel = false;
             cam = GameObject.FindWithTag("MainCamera").transform;
-            CameraStand.SetActive(false);
+            //CameraStand.SetActive(false);
         }
 
         if (sceneName == "TestDemo") {
+            worldLevel = true;
+            bakeryLevel = false;
             cam = GameObject.FindWithTag("MainCamera").transform;
-            CameraStand.SetActive(true);
+           // CameraStand.SetActive(true);
+            
+            
+            
         }
+
+
+        
+
+
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         input = Vector2.ClampMagnitude(input, 2);

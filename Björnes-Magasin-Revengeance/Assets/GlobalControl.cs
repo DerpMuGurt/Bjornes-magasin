@@ -14,6 +14,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject CanvasDialogue;
     public GameObject eventSystem;
     public GameObject RythmGame;
+    public GameObject map;
 
 
     void Awake() {
@@ -26,6 +27,7 @@ public class GlobalControl : MonoBehaviour {
         CanvasDialogue = GameObject.FindGameObjectWithTag("CanvasDialogue");
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem");
         RythmGame = GameObject.FindGameObjectWithTag("RythmGame");
+        map = GameObject.FindGameObjectWithTag("Map");
 
 
 
@@ -39,11 +41,12 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(PickUpTable);
             DontDestroyOnLoad(OutsideBakerySpawn);
-            DontDestroyOnLoad(CameraStand);
+           // DontDestroyOnLoad(CameraStand);
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);
             DontDestroyOnLoad(eventSystem);
             DontDestroyOnLoad(RythmGame);
+            DontDestroyOnLoad(map);
            
          
             Instance = this;
