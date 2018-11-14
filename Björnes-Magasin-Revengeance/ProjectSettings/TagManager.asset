@@ -38,6 +38,9 @@ TagManager:
   - Canvas
   - EventSystem
   - RythmGame
+  - LookAtThis
+  - Map
+  - CameraFollow
   layers:
   - Default
   - TransparentFX
