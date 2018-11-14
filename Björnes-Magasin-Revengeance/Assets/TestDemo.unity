@@ -645,6 +645,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114649485919187278, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.typingSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
@@ -2014,6 +2019,7 @@ MonoBehaviour:
   dialogue:
     name: "Bj\xF6rne"
     myVoice: {fileID: 619524949}
+    typingSpeed: 0
     sentences:
     - Hi
     hasDialogueChoices: 1
@@ -3299,6 +3305,7 @@ MonoBehaviour:
   dialogue:
     name: "Bj\xF6rne"
     myVoice: {fileID: 966824873}
+    typingSpeed: 0
     sentences: []
     hasDialogueChoices: 1
     button1IsActive: 1
@@ -6255,6 +6262,7 @@ MonoBehaviour:
   dialogue:
     name: "Bj\xF6rne"
     myVoice: {fileID: 2073358940}
+    typingSpeed: 0
     sentences: []
     hasDialogueChoices: 0
     button1IsActive: 0
