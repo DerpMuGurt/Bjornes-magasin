@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Movement : MonoBehaviour {
 
 
     public Transform cam;
     public float walkSpeed;
     Vector2 input;
+    Vector3 input2;
 
     public GameObject CameraStand;
 
@@ -16,12 +18,16 @@ public class Movement : MonoBehaviour {
     private Vector3 curLoc;
     private Vector3 prevLoc;
 
+    Rigidbody rb;
+    GameObject player;
+
     float lockPos = 0f;
 
     public bool bakeryLevel;
     public bool worldLevel;
 
     public bool isWalking;
+    float epsilon = 1f;
 
     
 
@@ -30,6 +36,9 @@ public class Movement : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
+        rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        
 
         isTurned90 = false;
 
@@ -80,8 +89,12 @@ public class Movement : MonoBehaviour {
 
 
         input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        input = Vector2.ClampMagnitude(input, 2);
-        
+        input = Vector2.ClampMagnitude(input, 5);
+       
+
+        input2 = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        input2 = Vector3.ClampMagnitude(input, 5);
+        input2 = Vector3.zero;
 
 
 
@@ -97,19 +110,38 @@ public class Movement : MonoBehaviour {
         
        transform.position += (camF * input.y + camR * input.x) * walkSpeed;
 
-        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
+        //transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
 
 
 
         InputListen();
+
         
 
-        if (input != Vector2.zero) {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.localPosition - prevLoc), Time.fixedDeltaTime * lookSpeed);
+        if (input != Vector2.zero || input2 != Vector3.zero) {
+
+
+            
+             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.position - prevLoc), Time.deltaTime * lookSpeed);
 
         }
+    
+       
 
 
+
+    }
+
+    void LookTargetMovementDirection(Vector3 targetPosition, Vector3 targetVelocity) {
+        Vector3 targetLookRotation = (targetPosition + targetVelocity) - targetPosition;
+        if (targetLookRotation != Vector3.zero) {
+            transform.rotation = Quaternion.LookRotation(targetLookRotation);
+        }
+        else {
+            Debug.Log("targetPosition = " + targetPosition);
+            Debug.Log("targetVelocity = " + targetVelocity);
+            Debug.Log("targetLookRotation = " + targetLookRotation);
+        }
     }
 
     private void InputListen() {
