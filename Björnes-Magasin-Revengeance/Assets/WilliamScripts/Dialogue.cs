@@ -8,6 +8,7 @@ public class Dialogue{
     //NAME
     public string name;
     public GameObject myVoice;
+    public float typingSpeed;
     //DIALOGUE
     [TextArea(1, 20)]
     public string[] sentences;

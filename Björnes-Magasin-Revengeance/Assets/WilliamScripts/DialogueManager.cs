@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour {
     public Text choiceButtonText1;
     public Text choiceButtonText2;
     public Text choiceButtonText3;
+    float typingSpeed;
     private Queue<string> sentences;
     private Queue<string> choice1Sentences;
     private Queue<string> choice2Sentences;
@@ -99,6 +100,7 @@ public class DialogueManager : MonoBehaviour {
         stopTalingAfter1 = dialogue.stopTalkigAfterChoice1;
         stopTalingAfter2 = dialogue.stopTalkigAfterChoice2;
         stopTalingAfter3 = dialogue.stopTalkigAfterChoice3;
+        typingSpeed = dialogue.typingSpeed;
 
         sentences.Clear();
 
@@ -151,7 +153,19 @@ public class DialogueManager : MonoBehaviour {
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        //  dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
     }
 
     public void EndDialogue()
@@ -284,7 +298,9 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice1Sentences.Dequeue();
-        choice1Text.text = sentence;
+        //choice1Text.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
     public void DisplayNextChoice2Sentence()
@@ -301,7 +317,9 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice2Sentences.Dequeue();
-        choice2Text.text = sentence;
+        // choice2Text.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
     public void DisplayNextChoice3Sentence()
@@ -318,6 +336,8 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice3Sentences.Dequeue();
-        choice3Text.text = sentence;
+        // choice3Text.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 }
