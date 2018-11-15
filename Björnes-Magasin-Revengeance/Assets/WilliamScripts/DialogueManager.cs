@@ -14,7 +14,6 @@ public class DialogueManager : MonoBehaviour {
     public Text choiceButtonText1;
     public Text choiceButtonText2;
     public Text choiceButtonText3;
-    float typingSpeed;
     private Queue<string> sentences;
     private Queue<string> choice1Sentences;
     private Queue<string> choice2Sentences;
@@ -36,6 +35,8 @@ public class DialogueManager : MonoBehaviour {
     bool button2;
     bool button3;
     bool isTalkingWith;
+
+    float typingSpeed;
 
     public GameObject iAmTalking;
     public GameObject isTalkingTo;
@@ -101,6 +102,12 @@ public class DialogueManager : MonoBehaviour {
         stopTalingAfter2 = dialogue.stopTalkigAfterChoice2;
         stopTalingAfter3 = dialogue.stopTalkigAfterChoice3;
         typingSpeed = dialogue.typingSpeed;
+
+
+        if (iAmTalking.tag == "Player")
+        {
+            nameText.text = "Player";
+        }
 
         sentences.Clear();
 
