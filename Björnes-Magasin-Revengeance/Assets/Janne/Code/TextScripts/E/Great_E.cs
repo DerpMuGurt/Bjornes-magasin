@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class Great_E : MonoBehaviour
 {
-
     public Text Great_Text;
 
     bool active = false;
 
+    ScoreText Score;
+
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
     }
@@ -21,11 +24,11 @@ public class Great_E : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("joystick button 0"))
+            if (Input.GetKey(KeyCode.E))
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 5;
+                Score.ScorePoints += 5;
             }
             StartCoroutine(MyTime());
             active = false;
@@ -38,4 +41,5 @@ public class Great_E : MonoBehaviour
         yield return new WaitForSeconds(1);
         Great_Text.enabled = false;
     }
+
 }

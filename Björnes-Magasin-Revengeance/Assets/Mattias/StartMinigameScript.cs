@@ -18,6 +18,7 @@ public class StartMinigameScript : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.E))
         {
+            FindObjectOfType<Movement>().enabled = false;
             cubeCollections.SetActive(true);
         }
     }

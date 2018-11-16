@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartConversation : MonoBehaviour
-{
+public class StartConversation : MonoBehaviour {
 
     public GameObject conversationWith;
     Transform target;
     bool isLooking;
-
-
 
     void Start()
     {
@@ -23,8 +20,8 @@ public class StartConversation : MonoBehaviour
         if (isLooking == true)
         {
             //  transform.LookAt(target, transform.up);
-            Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
-            transform.LookAt(targetPosition);
+             Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
+             transform.LookAt(targetPosition);
         }
     }
 

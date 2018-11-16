@@ -72,6 +72,7 @@ public class SelectorScript : MonoBehaviour
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
+            FindObjectOfType<Movement>().enabled = true;
         }
         if (failCounter == pointsToReach)
         {
@@ -79,6 +80,7 @@ public class SelectorScript : MonoBehaviour
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
+            FindObjectOfType<Movement>().enabled = true;
         }
     }
     void OnTriggerStay(Collider other)

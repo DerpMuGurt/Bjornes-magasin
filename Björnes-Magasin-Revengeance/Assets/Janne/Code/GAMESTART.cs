@@ -8,12 +8,22 @@ public class GAMESTART : MonoBehaviour
 
     void Start()
     {
-        Minigame.SetActive(false); 
+        //Minigame.SetActive(false);
+        //bool canStart = true;
     }
+
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if (Input.GetKey(KeyCode.E) && other.tag == "Player" || Input.GetButton("joystick button 0") && other.tag == "Player")
+    //    {
+    //        FindObjectOfType<Movement>().enabled = false;
+    //        Minigame.SetActive(true);
+    //    }
+    //}
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.E) && other.tag == "Player" || Input.GetButton("joystick button 0") && other.tag == "Player")
+        if (other.gameObject.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             FindObjectOfType<Movement>().enabled = false;
             Minigame.SetActive(true);

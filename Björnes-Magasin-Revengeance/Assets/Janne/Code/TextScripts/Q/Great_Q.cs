@@ -8,9 +8,11 @@ public class Great_Q : MonoBehaviour
     public Text Great_Text;
 
     bool active = false;
-
+    ScoreText Score;
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
     }
@@ -20,11 +22,11 @@ public class Great_Q : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.Q) || Input.GetButtonDown("joystick button 1"))
+            if (Input.GetKey(KeyCode.Q))
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 5;
+                Score.ScorePoints += 5;
             }
             StartCoroutine(MyTime());
             active = false;

@@ -5,13 +5,17 @@ using UnityEngine.UI;
 
 public class Good_E : MonoBehaviour
 {
-    
+
     public Text Good_Text;
 
     bool active = false;
 
+    ScoreText Score;
+
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Good_Text = GameObject.FindGameObjectWithTag("Good_Text").GetComponent<Text>();
         Good_Text.text = "GOOD!";
         Good_Text.enabled = false;
     }
@@ -21,11 +25,11 @@ public class Good_E : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Good")
         {
-            if (Input.GetKey(KeyCode.E) || Input.GetButtonDown("joystick button 0"))
-            { 
+            if (Input.GetKey(KeyCode.E))
+            {
                 Good_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 1;
+                Score.ScorePoints += 1;
             }
             StartCoroutine(MyTime());
             active = false;
@@ -37,4 +41,5 @@ public class Good_E : MonoBehaviour
         yield return new WaitForSeconds(1);
         Good_Text.enabled = false;
     }
+
 }

@@ -5,23 +5,36 @@ using UnityEngine.UI;
 
 public class ScoreText : MonoBehaviour
 {
-    public static int scoreValue;
+    public float maxScorePoints;
+    public float ScorePoints;
     public GameObject Minigame;
 
     void Start()
     {
-        scoreValue = 0;
+        ScorePoints = 0;
     }
 
     void Update()
     {
-        scoreValue.ToString();
+        ScorePoints.ToString();
 
-        if (scoreValue > 30)
+        if (ScorePoints >= maxScorePoints)
         {
-            Debug.Log("ItsOVer30!");
-            Minigame.SetActive(false);
-            FindObjectOfType<Movement>().enabled = true;
+
+            Minigame.gameObject.SetActive(false);
         }
+
+
     }
+
+    void OnDisable()
+    {
+        FindObjectOfType<Movement>().enabled = true;
+     //   ScorePoints = 0;
+    }
+
+    //void OnEnable()
+    //{
+    //    ScorePoints = 0;
+    //}
 }

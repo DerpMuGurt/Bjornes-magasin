@@ -9,11 +9,14 @@ public class Great_W : MonoBehaviour
 
     bool active = false;
 
+    ScoreText Score;
+
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
-
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -21,11 +24,11 @@ public class Great_W : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.W) || Input.GetButtonDown("joystick button 3"))
+            if (Input.GetKey(KeyCode.W))
             {
                 Great_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 5;
+                Score.ScorePoints += 5;
             }
             StartCoroutine(MyTime());
             active = false;

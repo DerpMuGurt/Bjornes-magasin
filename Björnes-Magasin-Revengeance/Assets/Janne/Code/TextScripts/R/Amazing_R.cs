@@ -9,11 +9,14 @@ public class Amazing_R : MonoBehaviour
 
     bool active = false;
 
+    ScoreText Score;
+
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Amazing_Text = GameObject.FindGameObjectWithTag("Amazing_Text").GetComponent<Text>();
         Amazing_Text.text = "Amazing!";
         Amazing_Text.enabled = false;
-
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -21,11 +24,11 @@ public class Amazing_R : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Amazing")
         {
-            if (Input.GetKey(KeyCode.R) || Input.GetButtonDown("joystick button 2"))
+            if (Input.GetKey(KeyCode.R))
             {
                 Amazing_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 10;
+                Score.ScorePoints += 10;
             }
             StartCoroutine(MyTime());
             active = false;
@@ -37,4 +40,5 @@ public class Amazing_R : MonoBehaviour
         yield return new WaitForSeconds(1);
         Amazing_Text.enabled = false;
     }
+
 }

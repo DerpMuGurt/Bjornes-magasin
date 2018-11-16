@@ -9,8 +9,12 @@ public class Good_R : MonoBehaviour
 
     bool active = false;
 
+    ScoreText Score;
+
     void Start()
     {
+        Score = FindObjectOfType<ScoreText>();
+        Good_Text = GameObject.FindGameObjectWithTag("Good_Text").GetComponent<Text>();
         Good_Text.text = "GOOD!";
         Good_Text.enabled = false;
     }
@@ -20,11 +24,11 @@ public class Good_R : MonoBehaviour
         active = true;
         if (collision.gameObject.tag == "Good")
         {
-            if (Input.GetKey(KeyCode.R) || Input.GetButtonDown("joystick button 1"))
+            if (Input.GetKey(KeyCode.R))
             {
                 Good_Text.enabled = true;
                 Destroy(gameObject);
-                ScoreText.scoreValue += 1;
+                Score.ScorePoints += 1;
             }
             StartCoroutine(MyTime());
             active = false;

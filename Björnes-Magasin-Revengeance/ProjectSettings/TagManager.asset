@@ -41,6 +41,9 @@ TagManager:
   - LookAtThis
   - Map
   - CameraFollow
+  - Good_Text
+  - Great_Text
+  - Amazing_Text
   layers:
   - Default
   - TransparentFX
