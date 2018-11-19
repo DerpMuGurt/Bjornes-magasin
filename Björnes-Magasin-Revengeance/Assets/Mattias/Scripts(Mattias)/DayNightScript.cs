@@ -170,9 +170,5 @@ public class DayNightScript : MonoBehaviour
         {
             weekNumber = 1;
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            timer += 60;
-        }
     }
 }
