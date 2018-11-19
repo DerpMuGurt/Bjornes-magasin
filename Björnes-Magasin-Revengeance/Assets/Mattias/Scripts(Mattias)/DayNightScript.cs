@@ -8,15 +8,19 @@ public class DayNightScript : MonoBehaviour
 
     public Text text;
     public Text dayText;
-    public Text timeText;
+    public Text clockText;
     public Light dayLight;
     public float timer = 0;
     public int days;
     int weekNumber;
     int maxDays = 32;
     int months;
-    public Color orange;
-    public Color darkOrange;
+    Color orange;
+    Color darkOrange;
+    Color brightYellow;
+    Color dayColor = Color.white;
+    Color nightColor = Color.black;
+
     public enum Weekdays //enumerates weekdays
     {
         Monday,
@@ -44,15 +48,17 @@ public class DayNightScript : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         text = text.GetComponent<Text>();
         dayText = dayText.GetComponent<Text>();
-        timeText = timeText.GetComponent<Text>();
         dayLight = dayLight.GetComponent<Light>();
+        clockText = clockText.GetComponent<Text>();
+        orange = new Color32(255, 135, 0, 255);
+        darkOrange = new Color32(255, 30, 0, 255);
+        brightYellow = new Color32(255, 244, 214, 255);
         Debug.Log(timeOfDay);
-        orange = new Color32(255, 165, 0, 255);
-        darkOrange = new Color32(255, 140, 0, 255);
-        timer = 180;
+        timer = 160;
         days = 1;
         months = 2;
         weekNumber = 1;
+
     }
 
     void Update()
@@ -88,41 +94,39 @@ public class DayNightScript : MonoBehaviour
                 break;
         }
 
+
         int minutes = (int)timer / 60; //clock that displays minutes
         int seconds = (int)timer % 60; //clock that displays seconds
-
-        dayText.text = ("Day ") + days.ToString();
-        timeText.text = timeOfDay.ToString();
-        text.text = weekDays.ToString();
-
+        {
+            dayText.text = ("Day ") + days.ToString();
+            clockText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+            text.text = weekDays.ToString();
+        }
         if (timer >= 180)
         {
             timeOfDay = TimeOfDay.Day;
-            dayLight.color = Color.white;
+            dayLight.color = brightYellow;
             Debug.Log("It's day");
-            Debug.Log(dayLight.color);
         }
         if (timer >= 360)
         {
             timeOfDay = TimeOfDay.Evening;
             dayLight.color = orange;
             Debug.Log("It's evening");
-            Debug.Log(dayLight.color);
         }
         if (timer >= 540)
         {
             timeOfDay = TimeOfDay.Night;
-            dayLight.color = Color.black;
+            dayLight.color = nightColor;
             Debug.Log("It's night");
-            Debug.Log(dayLight.color);
         }
         if (timer <= 179)
         {
             timeOfDay = TimeOfDay.Morning;
             dayLight.color = darkOrange;
             Debug.Log("It's morning");
-            Debug.Log(dayLight.color);
         }
+
         if (timer >= 720)
         {
             timer = 0;
@@ -165,6 +169,10 @@ public class DayNightScript : MonoBehaviour
         if (weekNumber == 8)
         {
             weekNumber = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            timer += 60;
         }
     }
 }
