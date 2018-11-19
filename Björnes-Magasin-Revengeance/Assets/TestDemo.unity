@@ -2579,7 +2579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1822741208069482, guid: ac9621e3269a8124ab3e54dd884311da, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114369598010227518, guid: ac9621e3269a8124ab3e54dd884311da,
         type: 2}
@@ -2673,6 +2673,10 @@ Prefab:
     - target: {fileID: 1110397378045282, guid: 05007c34bd34dbb49b777bd65b5d3809, type: 2}
       propertyPath: m_TagString
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05007c34bd34dbb49b777bd65b5d3809, type: 2}
@@ -2848,6 +2852,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &775019940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775019934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05de9b0de81216b44ae3fc7c0990af8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubeCollections: {fileID: 1466192772}
 --- !u!4 &775019941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4669469202310454, guid: 05007c34bd34dbb49b777bd65b5d3809,
@@ -3434,6 +3450,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136340325401080666, guid: 05007c34bd34dbb49b777bd65b5d3809, type: 2}
     - {fileID: 136241950865632842, guid: 05007c34bd34dbb49b777bd65b5d3809, type: 2}
@@ -3663,7 +3683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &974146344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5086,6 +5106,11 @@ Transform:
   m_Father: {fileID: 817811726}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1466192772 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1822741208069482, guid: ac9621e3269a8124ab3e54dd884311da,
+    type: 2}
+  m_PrefabInternal: {fileID: 689043612}
 --- !u!1 &1496467784
 GameObject:
   m_ObjectHideFlags: 0
