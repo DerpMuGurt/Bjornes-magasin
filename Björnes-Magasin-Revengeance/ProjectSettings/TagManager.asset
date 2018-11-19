@@ -44,6 +44,7 @@ TagManager:
   - Good_Text
   - Great_Text
   - Amazing_Text
+  - LoadController
   layers:
   - Default
   - TransparentFX

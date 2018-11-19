@@ -15,6 +15,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject eventSystem;
     public GameObject RythmGame;
     public GameObject map;
+    public GameObject loadController;
 
 
     void Awake() {
@@ -28,7 +29,7 @@ public class GlobalControl : MonoBehaviour {
         eventSystem = GameObject.FindGameObjectWithTag("EventSystem");
         RythmGame = GameObject.FindGameObjectWithTag("RythmGame");
         map = GameObject.FindGameObjectWithTag("Map");
-
+        loadController = GameObject.FindGameObjectWithTag("LoadController");
 
 
 
@@ -41,7 +42,8 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(PickUpTable);
             DontDestroyOnLoad(OutsideBakerySpawn);
-           // DontDestroyOnLoad(CameraStand);
+            // DontDestroyOnLoad(CameraStand);
+            DontDestroyOnLoad(loadController);
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);
             DontDestroyOnLoad(eventSystem);
