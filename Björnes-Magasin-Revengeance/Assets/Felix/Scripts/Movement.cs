@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour {
 
 
     public Transform cam;
+    public Transform cam2;
     public float walkSpeed;
     Vector2 input;
     Vector3 input2;
@@ -82,6 +83,10 @@ public class Movement : MonoBehaviour {
             
             
         }
+
+
+     
+
 
 
         

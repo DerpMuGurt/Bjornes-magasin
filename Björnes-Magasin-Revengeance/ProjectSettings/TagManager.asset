@@ -45,6 +45,7 @@ TagManager:
   - Great_Text
   - Amazing_Text
   - LoadController
+  - MainMainCamera
   layers:
   - Default
   - TransparentFX

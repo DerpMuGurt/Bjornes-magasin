@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311527, g: 0.3807378, b: 0.3587335, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311554, g: 0.38073874, b: 0.3587339, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1353,6 +1353,7 @@ GameObject:
   - component: {fileID: 472145845}
   - component: {fileID: 472145844}
   - component: {fileID: 472145846}
+  - component: {fileID: 472145847}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Light
@@ -1426,6 +1427,17 @@ MonoBehaviour:
   axis: 0
   direction: 1
   timeOfDay: 0
+--- !u!114 &472145847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472145843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d652ac3767d5c664abffee84e1e8fa65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &476682457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,6 +4240,10 @@ Prefab:
         type: 2}
       propertyPath: minDistance
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642041769409170, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81008641123135362, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
@@ -7420,6 +7436,22 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2060676495}
   m_CullTransparentMesh: 0
+--- !u!1 &2067378230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1642041769409170, guid: 94351f5c6a7b6e3478c00a81b833d406,
+    type: 2}
+  m_PrefabInternal: {fileID: 1238375843}
+--- !u!114 &2067378234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067378230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59f457562d9c034d98793afb7bd7d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2073358940
 GameObject:
   m_ObjectHideFlags: 0
