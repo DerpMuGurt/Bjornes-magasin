@@ -7,6 +7,7 @@ public class StartConversation : MonoBehaviour {
     public GameObject conversationWith;
     Transform target;
     bool isLooking;
+    public GameObject guiObject;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class StartConversation : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            guiObject.SetActive(true);
             conversationWith.SetActive(true);
             isLooking = true;
         }
@@ -38,6 +40,7 @@ public class StartConversation : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            guiObject.SetActive(false);
             conversationWith.SetActive(false);
             isLooking = false;
             DialogueTrigger.talking = false;
