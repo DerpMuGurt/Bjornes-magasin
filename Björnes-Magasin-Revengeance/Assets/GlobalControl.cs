@@ -17,6 +17,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject map;
     public GameObject loadController;
     public GameObject light;
+    public GameObject lampPost;
 
 
     void Awake() {
@@ -32,6 +33,7 @@ public class GlobalControl : MonoBehaviour {
         map = GameObject.FindGameObjectWithTag("Map");
         loadController = GameObject.FindGameObjectWithTag("LoadController");
         light = GameObject.FindGameObjectWithTag("Light");
+        lampPost = GameObject.FindGameObjectWithTag("LampPost");
 
 
 
@@ -52,6 +54,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(RythmGame);
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
+            DontDestroyOnLoad(lampPost);
            
          
             Instance = this;

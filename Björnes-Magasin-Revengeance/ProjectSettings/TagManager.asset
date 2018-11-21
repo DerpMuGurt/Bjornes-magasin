@@ -46,6 +46,9 @@ TagManager:
   - Amazing_Text
   - LoadController
   - MainMainCamera
+  - LampPost
+  - PickupPosition
+  - Egg
   layers:
   - Default
   - TransparentFX
