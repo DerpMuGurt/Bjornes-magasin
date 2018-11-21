@@ -22021,11 +22021,16 @@ Prefab:
     - target: {fileID: 114144104042809060, guid: 94351f5c6a7b6e3478c00a81b833d406,
         type: 2}
       propertyPath: minDistance
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1642041769409170, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
       propertyPath: m_TagString
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114144104042809060, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: smooth
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81008641123135362, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
