@@ -44,7 +44,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(player);
             DontDestroyOnLoad(PickUpTable);
             DontDestroyOnLoad(OutsideBakerySpawn);
-            // DontDestroyOnLoad(CameraStand);
+            DontDestroyOnLoad(CameraStand);
             DontDestroyOnLoad(loadController);
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);

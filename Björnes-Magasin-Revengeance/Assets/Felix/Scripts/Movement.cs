@@ -70,7 +70,7 @@ public class Movement : MonoBehaviour {
         if (sceneName == "Bageri") {
             bakeryLevel = true;
             worldLevel = false;
-            cam = GameObject.FindWithTag("MainCamera").transform;
+            cam = GameObject.FindWithTag("MainCamera2").transform;
             //CameraStand.SetActive(false);
         }
 
