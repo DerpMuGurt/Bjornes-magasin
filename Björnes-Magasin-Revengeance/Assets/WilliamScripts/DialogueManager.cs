@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -48,6 +49,12 @@ public class DialogueManager : MonoBehaviour {
     public GameObject Button1Object;
     public GameObject Button2Object;
     public GameObject Button3Object;
+
+    public AudioClip[] voiceClipList;
+    public AudioClip voiceClip;
+    public AudioSource voiceSource;
+
+    public static bool noice;
 
     void Update()
     {
@@ -160,19 +167,42 @@ public class DialogueManager : MonoBehaviour {
         }
 
         string sentence = sentences.Dequeue();
-        //  dialogueText.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(startVoiceTime(sentence));
     }
 
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence(string sentence)
     {
+        noice = true;
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        yield return new WaitForSeconds(typingSpeed);
+        noice = false;
+    }
+
+    IEnumerator startVoiceTime(string sentence)
+    {
+        foreach (char letter in sentence)
+        {
+            if (noice)
+            {
+                int Index = Random.Range(0, voiceClipList.Length);
+                voiceClip = voiceClipList[Index];
+                voiceSource.clip = voiceClip;
+                voiceSource.PlayOneShot(voiceClip);
+                yield return new WaitForSeconds(0.3f);
+            }
+        }
+        if (noice == false)
+        {
+            voiceSource.clip = voiceClip;
+        }
+
     }
 
     public void EndDialogue()
@@ -183,6 +213,7 @@ public class DialogueManager : MonoBehaviour {
         choice1 = false;
         choice2 = false;
         choice3 = false;
+        noice = false;
     }
 
     public void StartChoice()
@@ -305,9 +336,9 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice1Sentences.Dequeue();
-        //choice1Text.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(startVoiceTime(sentence));
     }
 
     public void DisplayNextChoice2Sentence()
@@ -324,9 +355,9 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice2Sentences.Dequeue();
-        // choice2Text.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(startVoiceTime(sentence));
     }
 
     public void DisplayNextChoice3Sentence()
@@ -343,8 +374,8 @@ public class DialogueManager : MonoBehaviour {
             return;
         }
         string sentence = choice3Sentences.Dequeue();
-        // choice3Text.text = sentence;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(startVoiceTime(sentence));
     }
 }
