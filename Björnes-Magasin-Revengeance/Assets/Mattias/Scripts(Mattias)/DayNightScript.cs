@@ -10,6 +10,7 @@ public class DayNightScript : MonoBehaviour
     public Text dayText;
     public Text clockText;
     public Light dayLight;
+    public Light streetLight;
     public float timer = 0;
     public int days;
     int weekNumber;
@@ -49,6 +50,7 @@ public class DayNightScript : MonoBehaviour
         text = text.GetComponent<Text>();
         dayText = dayText.GetComponent<Text>();
         dayLight = dayLight.GetComponent<Light>();
+        streetLight = streetLight.GetComponent<Light>();
         clockText = clockText.GetComponent<Text>();
         orange = new Color32(255, 135, 0, 255);
         darkOrange = new Color32(255, 30, 0, 255);
@@ -118,12 +120,14 @@ public class DayNightScript : MonoBehaviour
         {
             timeOfDay = TimeOfDay.Night;
             dayLight.color = nightColor;
+            streetLight.gameObject.SetActive(true);
             Debug.Log("It's night");
         }
         if (timer <= 179)
         {
             timeOfDay = TimeOfDay.Morning;
             dayLight.color = darkOrange;
+            streetLight.gameObject.SetActive(false);
             Debug.Log("It's morning");
         }
 
