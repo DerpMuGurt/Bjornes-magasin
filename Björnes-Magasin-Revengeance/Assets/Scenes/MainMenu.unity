@@ -1617,6 +1617,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105481200}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &106187638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1555598223551934, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 192557945}
 --- !u!1 &118221105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,6 +3219,126 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160383750507656, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160383750507656, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160383750507656, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292130056335016, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292130056335016, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292130056335016, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.4811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257078499147276, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257078499147276, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257078499147276, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383052601573360, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383052601573360, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383052601573360, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073813795260338, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073813795260338, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114073813795260338, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852167360618042, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852167360618042, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114852167360618042, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847950641213442, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847950641213442, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114847950641213442, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932867756667826, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932867756667826, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114932867756667826, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.48235294
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9fc85509a6132c4bb0eadaeec2734bf, type: 2}
@@ -5917,6 +6042,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 429987878}
   m_Mesh: {fileID: 4300000, guid: 772562718a23c944aa54c12259b11195, type: 3}
+--- !u!1 &430333017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1545877309025296, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 192557945}
+--- !u!114 &430333019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430333017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09662d8752d621b498daa6dd3297c635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1415310695}
+  selectedObject: {fileID: 790912242}
 --- !u!1 &441637143
 GameObject:
   m_ObjectHideFlags: 0
@@ -6509,6 +6652,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 475715593}
   m_Mesh: {fileID: 4300000, guid: b5b77b789f1e2904fa28c7f00c2d0b7f, type: 3}
+--- !u!1 &481611162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1917692108747118, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 192557945}
+--- !u!114 &481611163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481611162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09662d8752d621b498daa6dd3297c635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1415310695}
+  selectedObject: {fileID: 106187638}
 --- !u!1 &492780782
 GameObject:
   m_ObjectHideFlags: 0
@@ -11134,6 +11295,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 784755153}
   m_Mesh: {fileID: 4300000, guid: b5b77b789f1e2904fa28c7f00c2d0b7f, type: 3}
+--- !u!1 &790912242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1147384094574144, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+    type: 2}
+  m_PrefabInternal: {fileID: 192557945}
 --- !u!1 &798115478
 GameObject:
   m_ObjectHideFlags: 0
