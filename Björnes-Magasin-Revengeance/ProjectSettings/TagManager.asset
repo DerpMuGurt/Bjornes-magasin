@@ -50,6 +50,8 @@ TagManager:
   - PickupPosition
   - Egg
   - Baker
+  - Gui
+  - Pause
   layers:
   - Default
   - TransparentFX
