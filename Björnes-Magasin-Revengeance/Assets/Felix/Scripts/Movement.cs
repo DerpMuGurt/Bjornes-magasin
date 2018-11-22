@@ -79,17 +79,21 @@ public class Movement : MonoBehaviour {
             bakeryLevel = false;
             cam = GameObject.FindWithTag("MainCamera").transform;
            // CameraStand.SetActive(true);
-            
-            
-            
+           
+        }
+
+        if (sceneName == "MainMenu") {
+          
+            cam = GameObject.FindWithTag("MainCamera").transform;
+            //CameraStand.SetActive(false);
         }
 
 
-     
 
 
 
-        
+
+
 
 
 

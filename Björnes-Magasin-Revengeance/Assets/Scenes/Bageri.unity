@@ -146,7 +146,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 2
+  m_Height: 1.9999999
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &200309693
@@ -234,7 +234,7 @@ CapsuleCollider:
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.0000005364418, y: 0, z: -0.00000008940697}
 --- !u!23 &214713693
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -433,7 +433,7 @@ CapsuleCollider:
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.00000005960465, y: 0, z: -0.00000008940697}
 --- !u!23 &477049435
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1275,7 +1275,7 @@ CapsuleCollider:
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.00000005960465, y: 0, z: -0.00000008940697}
 --- !u!23 &1054658580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1446,7 +1446,7 @@ CapsuleCollider:
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.0000005364418, y: 0, z: -0.00000008940697}
 --- !u!23 &1155038319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2121,7 +2121,7 @@ CapsuleCollider:
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.0000005364418, y: 0, z: -0.00000008940697}
 --- !u!23 &2014119882
 MeshRenderer:
   m_ObjectHideFlags: 0
