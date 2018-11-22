@@ -49,6 +49,7 @@ TagManager:
   - LampPost
   - PickupPosition
   - Egg
+  - Baker
   layers:
   - Default
   - TransparentFX
