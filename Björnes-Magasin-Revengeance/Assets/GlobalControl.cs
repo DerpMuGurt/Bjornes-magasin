@@ -57,6 +57,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);
             DontDestroyOnLoad(eventSystem);
+           
             DontDestroyOnLoad(RythmGame);
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
