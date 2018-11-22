@@ -52,6 +52,7 @@ TagManager:
   - Baker
   - Gui
   - Pause
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
