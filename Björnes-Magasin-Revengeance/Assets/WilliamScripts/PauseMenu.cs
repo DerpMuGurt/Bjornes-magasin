@@ -11,10 +11,14 @@ public class PauseMenu : MonoBehaviour {
 
     public static bool canPause;
 
+    public GameObject EventManager;
 
-	void Start()
+
+    void Start()
 	{
-		Cursor.visible = (false);
+        canPause = true;
+
+        Cursor.visible = (false);
 	}
 	// Update is called once per frame
 	void Update ()
@@ -31,7 +35,18 @@ public class PauseMenu : MonoBehaviour {
 				Pause();
 			}
 		}
-	}
+
+        if (canPause == true)
+        {
+            EventManager.SetActive(true);
+        }
+
+        if (canPause == false)
+        {
+            EventManager.SetActive(false);
+        }
+
+    }
 
 
 
