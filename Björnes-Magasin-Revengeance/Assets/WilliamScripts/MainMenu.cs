@@ -10,10 +10,12 @@ public class MainMenu : MonoBehaviour {
 	{
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = (true);
+        Time.timeScale = 0f;
     }
 
     public void LoadLevel(int sceneIndex)
 	{
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = (true);
         PauseMenu.canPause = true;
