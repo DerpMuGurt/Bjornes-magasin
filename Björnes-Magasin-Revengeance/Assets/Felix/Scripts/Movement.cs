@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour {
     public bool worldLevel;
 
     public bool isWalking;
+    public bool isIdle;
     float epsilon = 1f;
 
     
@@ -59,7 +60,20 @@ public class Movement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        
+
+
+        if (rb.velocity.magnitude > 0) {
+            isWalking = true;
+            isIdle = false;
+        }
+
+        if(rb.velocity.magnitude == 0) {
+
+            isWalking = false;
+            isIdle = true;
+
+        }
+
 
         Scene currentScene = SceneManager.GetActiveScene();
 
