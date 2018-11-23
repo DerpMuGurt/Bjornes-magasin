@@ -22,6 +22,8 @@ public class Movement : MonoBehaviour {
     Rigidbody rb;
     GameObject player;
 
+    Animator animator;
+
     float lockPos = 0f;
 
     public bool bakeryLevel;
@@ -62,18 +64,7 @@ public class Movement : MonoBehaviour {
 
 
 
-        if (rb.velocity.magnitude > 0) {
-            isWalking = true;
-            isIdle = false;
-        }
-
-        if(rb.velocity.magnitude == 0) {
-
-            isWalking = false;
-            isIdle = true;
-
-        }
-
+     
 
         Scene currentScene = SceneManager.GetActiveScene();
 
