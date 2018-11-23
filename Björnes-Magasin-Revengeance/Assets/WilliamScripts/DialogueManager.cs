@@ -50,7 +50,7 @@ public class DialogueManager : MonoBehaviour {
     public GameObject Button2Object;
     public GameObject Button3Object;
 
-    public AudioClip[] voiceClipList;
+    public static AudioClip[] voiceClipListDialogue;
     public AudioClip voiceClip;
     public AudioSource voiceSource;
 
@@ -191,8 +191,8 @@ public class DialogueManager : MonoBehaviour {
         {
             if (noice)
             {
-                int Index = Random.Range(0, voiceClipList.Length);
-                voiceClip = voiceClipList[Index];
+                int Index = Random.Range(0, voiceClipListDialogue.Length);
+                voiceClip = voiceClipListDialogue[Index];
                 voiceSource.clip = voiceClip;
                 voiceSource.PlayOneShot(voiceClip);
                 yield return new WaitForSeconds(0.3f);

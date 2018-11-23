@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4604663031644178}
+  - component: {fileID: 114108874247017520}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1049,6 +1050,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Talk [E]
+--- !u!114 &114108874247017520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209985613954426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb4262b3318162499befaf17422c521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voiceClipList: []
 --- !u!114 &114114331624622104
 MonoBehaviour:
   m_ObjectHideFlags: 1
