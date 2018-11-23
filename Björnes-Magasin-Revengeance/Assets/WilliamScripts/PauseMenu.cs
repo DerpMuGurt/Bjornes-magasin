@@ -16,8 +16,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Start()
 	{
-        canPause = true;
-
+        SettinsMenu.resolutionSet = true;
         Cursor.visible = (false);
 	}
 	// Update is called once per frame
@@ -44,6 +43,7 @@ public class PauseMenu : MonoBehaviour {
         if (canPause == false)
         {
             EventManager.SetActive(false);
+            pauseMenuUI.SetActive(false);
         }
 
     }

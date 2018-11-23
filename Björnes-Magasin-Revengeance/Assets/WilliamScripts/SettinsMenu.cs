@@ -12,11 +12,16 @@ public class SettinsMenu : MonoBehaviour {
 
 	Resolution[] resolutions;
 
+    public static bool resolutionSet;
+
 	void Start ()
 	{
-		resolutions = Screen.resolutions;
-		//takes away text
-		resolutionDropdown.ClearOptions ();
+        //if (resolutionSet == false)
+        //{
+        //}
+            resolutions = Screen.resolutions;
+        //takes away text
+        resolutionDropdown.ClearOptions ();
 		//adds resolutions
 		int currentResolution = 0;
 		List<string> options = new List<string> ();
@@ -41,7 +46,7 @@ public class SettinsMenu : MonoBehaviour {
 
 	public void SetResolution (int resolutionIndex)
 	{
-		Resolution resolution = resolutions [resolutionIndex];
+        Resolution resolution = resolutions [resolutionIndex];
 		Screen.SetResolution (resolution.width, resolution.height, Screen.fullScreen);
 	}
 
