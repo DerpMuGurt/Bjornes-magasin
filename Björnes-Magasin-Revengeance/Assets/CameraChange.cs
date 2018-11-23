@@ -42,7 +42,7 @@ public class CameraChange : MonoBehaviour {
         {
             if (guiObject.activeInHierarchy == true)
             {
-                objectToHide.GetComponentInChildren<Renderer>().enabled = false;
+                objectToHide.SetActive(false);
                 isLooking = true;
                 cameraToHide.SetActive(false);
                 cameraToShow.SetActive(true);
@@ -59,7 +59,7 @@ public class CameraChange : MonoBehaviour {
         {
             if (guiObject.activeInHierarchy == true)
             {
-                objectToHide.GetComponentInChildren<Renderer>().enabled = true;
+                objectToHide.SetActive(true);
                 isLooking = false;
                 cameraToHide.SetActive(true);
                 cameraToShow.SetActive(false);
