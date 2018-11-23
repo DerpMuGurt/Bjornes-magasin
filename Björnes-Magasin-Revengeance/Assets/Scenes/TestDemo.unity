@@ -18092,6 +18092,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974331833}
   m_Mesh: {fileID: 4300000, guid: b5b77b789f1e2904fa28c7f00c2d0b7f, type: 3}
+--- !u!1 &974500503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974500504}
+  m_Layer: 0
+  m_Name: EggTarget
+  m_TagString: EggTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974500504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974500503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.35, y: -9.680754, z: -6.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976366326
 GameObject:
   m_ObjectHideFlags: 0
@@ -20807,6 +20835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PickupPosition: {fileID: 0}
   Egg: {fileID: 0}
+  eggTarget: {fileID: 0}
   carryThis: 0
 --- !u!1 &1123829466
 GameObject:
@@ -31951,8 +31980,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.38302612, y: 0.018567601, z: 0.44125476}
-  m_Center: {x: 0.017491514, y: -0.49071577, z: -0.018952688}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1772282628
 GameObject:
   m_ObjectHideFlags: 0
