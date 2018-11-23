@@ -66,7 +66,12 @@ public class CarryObject : MonoBehaviour {
             carryThis = true;
 
        
-        }        
+        } 
+        
+
+
+
+
     }
 
      void OnTriggerExit(Collider other) {

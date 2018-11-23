@@ -20,6 +20,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject light;
     public GameObject lampPost;
     public GameObject Egg;
+    public GameObject SpawnPoint;
 
 
     void Awake() {
@@ -39,6 +40,8 @@ public class GlobalControl : MonoBehaviour {
         light = GameObject.FindGameObjectWithTag("Light");
         lampPost = GameObject.FindGameObjectWithTag("LampPost");
         Egg = GameObject.FindGameObjectWithTag("Egg");
+        SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+        
 
  
 
@@ -57,7 +60,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);
             DontDestroyOnLoad(eventSystem);
-           
+            DontDestroyOnLoad(SpawnPoint);
             DontDestroyOnLoad(RythmGame);
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
