@@ -7,18 +7,33 @@ public class CarryObject : MonoBehaviour {
     public GameObject PickupPosition;
     public GameObject Egg;
 
-    public bool carryThis;
+    public GameObject eggTarget;
 
-	// Use this for initialization
-	void Start () {
+    float velocity;
+    float smoothTime;
+
+
+
+    public bool carryThis;
+    
+
+    Rigidbody rb;
+
+    // Use this for initialization
+    void Start () {
 
         PickupPosition = GameObject.FindGameObjectWithTag("PickupPosition");
         Egg = GameObject.FindGameObjectWithTag("Egg");
 
+        eggTarget = GameObject.FindGameObjectWithTag("EggTarget");
+
         carryThis = false;
 
-		
-	}
+        rb = GetComponent<Rigidbody>();
+
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -71,7 +86,9 @@ public class CarryObject : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E) && carryThis == true){
             Egg.transform.position = PickupPosition.transform.position;
             Egg.transform.parent = PickupPosition.transform;
-            
+
+          
+
         }
     }
 
@@ -79,7 +96,10 @@ public class CarryObject : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E) && carryThis == false) {
             Egg.transform.parent = null;
+           
             
+          
+
         }
     }
 

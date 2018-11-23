@@ -53,6 +53,7 @@ TagManager:
   - Gui
   - Pause
   - SpawnPoint
+  - EggTarget
   layers:
   - Default
   - TransparentFX
