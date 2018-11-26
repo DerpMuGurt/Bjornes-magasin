@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a80af425698cf24497faff9e1600b46
+guid: 9a9b4949d5312214faf43a0d73e20d90
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -197,7 +197,7 @@ ModelImporter:
       name: Character_Rig|Character_RigAction
       takeName: Character_Rig|Character_RigAction
       firstFrame: 0
-      lastFrame: 59
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

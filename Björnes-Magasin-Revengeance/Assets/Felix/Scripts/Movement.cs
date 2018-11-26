@@ -48,6 +48,9 @@ public class Movement : MonoBehaviour {
 
         CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
 
+        animator = GetComponentInChildren<Animator>();
+
+
         bakeryLevel = false;
         worldLevel = true;
         isWalking = false;
@@ -72,6 +75,37 @@ public class Movement : MonoBehaviour {
 
         
 
+        //Animations
+        if (Input.GetAxis("Horizontal")!= 0 || Input.GetAxis("Vertical") != 0){
+
+            animator.SetBool("isWalking", true);
+            animator.SetBool("isIdle", false);
+
+        }
+        else {
+
+            animator.SetBool("isWalking", false);
+            animator.SetBool("isIdle", true);
+
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift)) {
+
+            walkSpeed = 0.15f;
+            animator.SetBool("isJogging", true);
+            animator.SetBool("isWalking", false);
+
+
+        }
+        else {
+
+            walkSpeed = 0.06f;
+            animator.SetBool("isJogging", false);
+        }
+
+
+
+        //check which scene it is
         if (sceneName == "Bageri") {
             bakeryLevel = true;
             worldLevel = false;
