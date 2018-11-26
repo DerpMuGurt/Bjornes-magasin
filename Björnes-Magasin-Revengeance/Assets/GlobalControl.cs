@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GlobalControl : MonoBehaviour {
 
     public static GlobalControl Instance;
@@ -18,9 +19,13 @@ public class GlobalControl : MonoBehaviour {
     public GameObject loadController;
     public GameObject light;
     public GameObject lampPost;
+    public GameObject Egg;
+    public GameObject SpawnPoint;
 
 
     void Awake() {
+
+
 
         player = GameObject.FindGameObjectWithTag("Player");
         PickUpTable = GameObject.FindGameObjectWithTag("PickUpTable");
@@ -34,7 +39,11 @@ public class GlobalControl : MonoBehaviour {
         loadController = GameObject.FindGameObjectWithTag("LoadController");
         light = GameObject.FindGameObjectWithTag("Light");
         lampPost = GameObject.FindGameObjectWithTag("LampPost");
+        Egg = GameObject.FindGameObjectWithTag("Egg");
+        SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+        
 
+ 
 
 
 
@@ -51,10 +60,12 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(Canvas);
             DontDestroyOnLoad(CanvasDialogue);
             DontDestroyOnLoad(eventSystem);
+            DontDestroyOnLoad(SpawnPoint);
             DontDestroyOnLoad(RythmGame);
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
             DontDestroyOnLoad(lampPost);
+            DontDestroyOnLoad(Egg);
            
          
             Instance = this;

@@ -9,15 +9,20 @@ public class PauseMenu : MonoBehaviour {
 
 	public GameObject pauseMenuUI;
 
+    public static bool canPause;
 
-	void Start()
+    public GameObject EventManager;
+
+
+    void Start()
 	{
-		Cursor.visible = (false);
+        SettinsMenu.resolutionSet = true;
+        Cursor.visible = (false);
 	}
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7")) 
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7") && canPause == true) 
 		{
 			
  			if (GameIsPaused) 
@@ -29,7 +34,19 @@ public class PauseMenu : MonoBehaviour {
 				Pause();
 			}
 		}
-	}
+
+        if (canPause == true)
+        {
+            EventManager.SetActive(true);
+        }
+
+        if (canPause == false)
+        {
+            EventManager.SetActive(false);
+            pauseMenuUI.SetActive(false);
+        }
+
+    }
 
 
 
@@ -54,11 +71,14 @@ public class PauseMenu : MonoBehaviour {
 
 	public void LoadMenu()
 	{
-		Debug.Log ("Load Menu");
+        canPause = false;
+        pauseMenuUI.SetActive(false);
+        Debug.Log ("Load Menu");
 		Time.timeScale = 1f;
 		GameIsPaused = false;
-		SceneManager.LoadScene (0);
-	}
+        SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<Movement>().enabled = true;
+    }
 	public void QuitGame()
 	{
 		Debug.Log ("Quitting Game");

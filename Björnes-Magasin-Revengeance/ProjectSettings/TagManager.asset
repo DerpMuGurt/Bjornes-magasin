@@ -49,6 +49,11 @@ TagManager:
   - LampPost
   - PickupPosition
   - Egg
+  - Baker
+  - Gui
+  - Pause
+  - SpawnPoint
+  - EggTarget
   layers:
   - Default
   - TransparentFX

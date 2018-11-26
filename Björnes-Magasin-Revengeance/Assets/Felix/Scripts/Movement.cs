@@ -22,12 +22,15 @@ public class Movement : MonoBehaviour {
     Rigidbody rb;
     GameObject player;
 
+    Animator animator;
+
     float lockPos = 0f;
 
     public bool bakeryLevel;
     public bool worldLevel;
 
     public bool isWalking;
+    public bool isIdle;
     float epsilon = 1f;
 
     
@@ -59,7 +62,9 @@ public class Movement : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        
+
+
+     
 
         Scene currentScene = SceneManager.GetActiveScene();
 
@@ -79,17 +84,21 @@ public class Movement : MonoBehaviour {
             bakeryLevel = false;
             cam = GameObject.FindWithTag("MainCamera").transform;
            // CameraStand.SetActive(true);
-            
-            
-            
+           
+        }
+
+        if (sceneName == "MainMenu") {
+          
+            cam = GameObject.FindWithTag("MainCamera").transform;
+            //CameraStand.SetActive(false);
         }
 
 
-     
 
 
 
-        
+
+
 
 
 
