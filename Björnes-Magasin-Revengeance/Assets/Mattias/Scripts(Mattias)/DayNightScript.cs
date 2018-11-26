@@ -25,7 +25,6 @@ public class DayNightScript : MonoBehaviour
     public Color nightTrans = new Color32(166, 73, 142, 255);
     public Color morningTrans = new Color32(255, 192, 203, 255);
     public Color currentColor;
-    public bool analog;
 
     public enum Weekdays //enumerates weekdays
     {
