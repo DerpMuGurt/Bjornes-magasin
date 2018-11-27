@@ -30,10 +30,22 @@ public class CameraCollision : MonoBehaviour {
 
         if (Physics.Linecast(transform.parent.position, desiredCameraPos, out hit)) {
             distance = Mathf.Clamp(hit.distance * 0, minDistance, maxDistance);
+
+            if (hit.collider.gameObject.tag == "InvisibleWall") {
+                distance = maxDistance;
+            }
+
         }
+
         else {
             distance = maxDistance;
+           
         }
-        transform.localPosition = Vector3.Lerp(transform.localPosition, dollyDir * distance, Time.deltaTime * smooth);
+            transform.localPosition = Vector3.Lerp(transform.localPosition, dollyDir * distance, Time.deltaTime * smooth);
+
+     
+
+        }
+
+  
     }
-}

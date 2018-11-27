@@ -6,6 +6,7 @@ public class CarryObject : MonoBehaviour {
 
     public GameObject PickupPosition;
     public GameObject Egg;
+    public GameObject water;
 
     public GameObject eggTarget;
 
@@ -24,6 +25,7 @@ public class CarryObject : MonoBehaviour {
 
         PickupPosition = GameObject.FindGameObjectWithTag("PickupPosition");
         Egg = GameObject.FindGameObjectWithTag("Egg");
+        water = GameObject.FindGameObjectWithTag("Water");
 
         eggTarget = GameObject.FindGameObjectWithTag("EggTarget");
 
@@ -61,7 +63,7 @@ public class CarryObject : MonoBehaviour {
 
      void OnTriggerStay(Collider other) {
 
-        if(other.gameObject.tag == "Egg" ){
+        if(other.gameObject.tag == "Egg" || other.gameObject.tag == "Water" ){
 
             carryThis = true;
 
@@ -76,7 +78,7 @@ public class CarryObject : MonoBehaviour {
 
      void OnTriggerExit(Collider other) {
 
-        if (other.gameObject.tag == "Egg") {
+        if (other.gameObject.tag == "Egg" || other.gameObject.tag == "Water") {
 
             carryThis = false;
 

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeCameraTownHall : MonoBehaviour {
+public class TownHallCamera : MonoBehaviour {
 
 
-    
+
     public GameObject cam1;
     public GameObject CamPos1;
     public GameObject CamPos2;
     public GameObject CamPos3;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
 
         cam1 = GameObject.FindGameObjectWithTag("vcam");
@@ -22,20 +22,43 @@ public class ChangeCameraTownHall : MonoBehaviour {
 
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
 
 
 
     }
 
 
-     void OnTriggerEnter(Collider other) {
+    void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "CamTriggerOne") {
 
             cam1.transform.position = CamPos1.transform.position;
-            
+
+        }
+
+        if (other.gameObject.tag == "CamTriggerTwo") {
+
+            cam1.transform.position = CamPos2.transform.position;
+
+        }
+
+        if (other.gameObject.tag == "CamTriggerThree") {
+
+            cam1.transform.position = CamPos3.transform.position;
+
+        }
+
+
+
+    }
+
+    void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "CamTriggerOne") {
+
+            cam1.transform.position = CamPos1.transform.position;
+
         }
 
         if (other.gameObject.tag == "CamTriggerTwo") {

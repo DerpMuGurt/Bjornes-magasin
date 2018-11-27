@@ -54,6 +54,12 @@ TagManager:
   - Pause
   - SpawnPoint
   - EggTarget
+  - BottomTrigger
+  - TopTrigger
+  - MiddleTrigger
+  - TownHallCam
+  - TownHallSpawn
+  - InvisibleWall
   layers:
   - Default
   - TransparentFX

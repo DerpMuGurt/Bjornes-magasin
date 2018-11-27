@@ -127,6 +127,11 @@ public class Movement : MonoBehaviour {
             //CameraStand.SetActive(false);
         }
 
+        if (sceneName == "TownHall") {
+
+            cam = GameObject.FindWithTag("TownHallCam").transform;
+            //CameraStand.SetActive(false);
+        }
 
 
 

@@ -547,12 +547,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4665497673676178}
   - component: {fileID: 136963238878542934}
-  - component: {fileID: 114112802721137378}
   - component: {fileID: 54333378660978712}
   - component: {fileID: 114209536323122492}
   - component: {fileID: 114613265600891590}
   - component: {fileID: 114659042524903948}
   - component: {fileID: 114606367318389892}
+  - component: {fileID: 114423115769316790}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2268,7 +2268,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1667708485146272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.092, z: 0.438}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0.438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4665497673676178}
@@ -2375,7 +2375,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114112802721137378
+--- !u!114 &114209536323122492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505166678917340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05abddf5cee7b944bc77fe53467e685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114423115769316790
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2388,7 +2399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   cam2: {fileID: 0}
-  walkSpeed: 0.2
+  walkSpeed: 0.06
   CameraStand: {fileID: 0}
   lookSpeed: 10
   bakeryLevel: 0
@@ -2396,17 +2407,6 @@ MonoBehaviour:
   isWalking: 0
   isIdle: 0
   isTurned90: 0
---- !u!114 &114209536323122492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1505166678917340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b05abddf5cee7b944bc77fe53467e685, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114606367318389892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2459,9 +2459,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.2288303
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.849453, z: 0}
 --- !u!137 &137257015104470154
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -19,7 +19,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject loadController;
     public GameObject light;
     public GameObject lampPost;
-    public GameObject Egg;
+    
     public GameObject SpawnPoint;
 
 
@@ -39,7 +39,7 @@ public class GlobalControl : MonoBehaviour {
         loadController = GameObject.FindGameObjectWithTag("LoadController");
         light = GameObject.FindGameObjectWithTag("Light");
         lampPost = GameObject.FindGameObjectWithTag("LampPost");
-        Egg = GameObject.FindGameObjectWithTag("Egg");
+        
         SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
         
 
@@ -65,7 +65,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
             DontDestroyOnLoad(lampPost);
-            DontDestroyOnLoad(Egg);
+           
            
          
             Instance = this;
