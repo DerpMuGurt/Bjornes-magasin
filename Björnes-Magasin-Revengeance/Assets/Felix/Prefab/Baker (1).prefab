@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 114770473709862806}
   - component: {fileID: 65398575391024260}
   m_Layer: 0
-  m_Name: Talk (8)
+  m_Name: Talk (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,6 +298,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1723743543579188
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4678766739202278}
+  - component: {fileID: 114160281952405646}
+  - component: {fileID: 65482869007082938}
+  m_Layer: 0
+  m_Name: Talk (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1854452586385156
 GameObject:
   m_ObjectHideFlags: 1
@@ -387,10 +404,10 @@ Transform:
   m_GameObject: {fileID: 1382153000758100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 4604663031644178}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4222757059690000
 Transform:
@@ -398,13 +415,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561126132975004}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4782466984699904}
   m_Father: {fileID: 4249708286559782}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4249708286559782
 Transform:
@@ -412,17 +429,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1996345894069660}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.639999, y: 0.665, z: 22}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 27.32, y: 3.2, z: 49.83}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4604663031644178}
   - {fileID: 4562395095838652}
-  - {fileID: 4222757059690000}
   - {fileID: 224415638309253950}
+  - {fileID: 4222757059690000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4300908243391204
 Transform:
   m_ObjectHideFlags: 1
@@ -561,6 +578,7 @@ Transform:
   - {fileID: 4300908243391204}
   - {fileID: 4677213275326818}
   - {fileID: 4410058607625640}
+  - {fileID: 4678766739202278}
   - {fileID: 4113885196128608}
   m_Father: {fileID: 4249708286559782}
   m_RootOrder: 0
@@ -577,6 +595,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4604663031644178}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4678766739202278
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723743543579188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4604663031644178}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4781518686449910
 Transform:
@@ -957,6 +988,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 2, z: 5}
   m_Center: {x: 0, y: 0, z: 1.11}
+--- !u!65 &65482869007082938
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723743543579188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65521250161926458
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1111,6 +1154,45 @@ MonoBehaviour:
     choice3Triggers: {fileID: 0}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
+--- !u!114 &114160281952405646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723743543579188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Baker
+    hasVoice: 1
+    myVoice: {fileID: 1723743543579188}
+    typingSpeed: 0
+    sentences:
+    - It's perfect! Now I just have to make it... Will you help?
+    hasDialogueChoices: 1
+    button1IsActive: 1
+    button2IsActive: 1
+    button3IsActive: 0
+    Button1Text: yes
+    Button2Text: no
+    Button3Text: 
+    choice1IsRight: 1
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences: []
+    choice2Sentences: []
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 1
+    stopTalkigAfterChoice2: 1
+    stopTalkigAfterChoice3: 1
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
 --- !u!114 &114191276436726530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1150,7 +1232,7 @@ MonoBehaviour:
     stopTalkigAfterChoice3: 0
     choice1Triggers: {fileID: 0}
     choice2Triggers: {fileID: 0}
-    choice3Triggers: {fileID: 1382153000758100}
+    choice3Triggers: {fileID: 1723743543579188}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
 --- !u!114 &114259654691936110
@@ -1441,13 +1523,13 @@ MonoBehaviour:
     myVoice: {fileID: 1382153000758100}
     typingSpeed: 0
     sentences:
-    - It's perfect! But, I forget what its called...How about you name it?
+    - Now to bake it!
     hasDialogueChoices: 0
     button1IsActive: 0
     button2IsActive: 0
     button3IsActive: 0
-    Button1Text: 
-    Button2Text: 
+    Button1Text: yes
+    Button2Text: no
     Button3Text: 
     choice1IsRight: 0
     choice2IsRight: 0
@@ -1455,9 +1537,9 @@ MonoBehaviour:
     choice1Sentences: []
     choice2Sentences: []
     choice3Sentences: []
-    stopTalkigAfterChoice1: 1
-    stopTalkigAfterChoice2: 1
-    stopTalkigAfterChoice3: 1
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
     choice1Triggers: {fileID: 0}
     choice2Triggers: {fileID: 0}
     choice3Triggers: {fileID: 0}
@@ -1543,7 +1625,7 @@ RectTransform:
   m_Children:
   - {fileID: 224625470473028962}
   m_Father: {fileID: 4249708286559782}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
