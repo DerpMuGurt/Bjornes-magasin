@@ -21156,7 +21156,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4665497673676178, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.632
+      value: 0.596
       objectReference: {fileID: 0}
     - target: {fileID: 4665497673676178, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21187,6 +21187,11 @@ Prefab:
       propertyPath: CameraStand
       value: 
       objectReference: {fileID: 1814060271}
+    - target: {fileID: 136963238878542934, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.88
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114606367318389892, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
