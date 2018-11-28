@@ -22,6 +22,15 @@ public class SelectorScript : MonoBehaviour
     Vector2 speedAmount;
     public Canvas cubeCollection;
     public Image cubeWrong1, cubeWrong2, cubeWrong3, cubeWrong4, cubeRight;
+    GameObject[] hitBoxes;
+    int hitIndex;
+    float speedIncrease = 10;
+    public float advancedSpeed;
+    public bool isAdvanced;
+    public Canvas[] canvasList;
+    Canvas currentCanvas;
+    int canvasInt;
+    public GameObject startObject;
 
     void Start()
     {
@@ -32,30 +41,35 @@ public class SelectorScript : MonoBehaviour
         startX = new Vector3(-70, transform.position.y, transform.position.z);
         cubeRight = GetComponent<Image>();
         cubeRight.GetComponent<BoxCollider2D>();
-
+        canvasInt = Random.Range(0, canvasList.Length);
+        currentCanvas = canvasList[canvasInt];
+        currentCanvas.gameObject.SetActive(true);
+        print(currentCanvas.name);
     }
     void FixedUpdate()
     {
         timer += Time.deltaTime;
         if (timer >= waitTimer)
         {
-            speed = gameSpeed;
-            
+            speed = gameSpeed + speedIncrease;
+
         }
         pointReaching = points;
     }
 
-   
+
     void Update()
     {
         speedAmount.x = speedDirection * speed * Time.deltaTime;
         if (speedDirection > 0.0f && transform.position.x > wallRight)
         {
             speedDirection = -1.0f;
+            speedIncrease = 0;
         }
         else if (speedDirection < 0.0f && transform.position.x <= wallLeft)
         {
             speedDirection = 1.0f;
+            speedIncrease = 0;
         }
         transform.Translate(speedAmount);
 
@@ -64,15 +78,15 @@ public class SelectorScript : MonoBehaviour
             speed = 0f;
             timer = 0;
             Debug.Log(points);
-           
+
         }
-        if (pointReaching >= pointsToReach)
+        if (pointReaching == pointsToReach)
         {
             pointReaching = 0;
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
-            FindObjectOfType<Movement>().enabled = true;
+            Instantiate<GameObject>(startObject);
         }
         if (failCounter == pointsToReach)
         {
@@ -80,7 +94,14 @@ public class SelectorScript : MonoBehaviour
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
-            FindObjectOfType<Movement>().enabled = true;
+        }
+        if (isAdvanced)
+        {
+            speedIncrease += advancedSpeed;
+        }
+        else
+        {
+            speedIncrease++;
         }
     }
     void OnTriggerStay(Collider other)
@@ -88,17 +109,21 @@ public class SelectorScript : MonoBehaviour
         if (other.gameObject.name == "ImageRight")
         {
             print("hello");
-            if (Input.GetKeyDown("space") && speed >= 50)            
+            if (Input.GetKeyDown("space") && speed >= 50)
             {
                 points += 1;
-                
+                speedIncrease = 0;
+                currentCanvas.gameObject.SetActive(false);
+                canvasInt = Random.Range(0, canvasList.Length);
+                currentCanvas = canvasList[canvasInt];
+                currentCanvas.gameObject.SetActive(true);
             }
         }
-        if(other.gameObject == cubeWrong1 || other.gameObject == cubeWrong2 || other.gameObject == cubeWrong3 || other.gameObject == cubeWrong4)
+        if (other.gameObject == cubeWrong1 || other.gameObject == cubeWrong2 || other.gameObject == cubeWrong3 || other.gameObject == cubeWrong4)
         {
-            if(Input.GetKeyDown("space") && speed >= 50)
+            if (Input.GetKeyDown("space") && speed >= 50)
             {
-               
+
             }
         }
     }

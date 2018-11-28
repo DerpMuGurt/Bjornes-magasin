@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311554, g: 0.38073874, b: 0.3587339, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311527, g: 0.3807378, b: 0.3587335, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3111,7 +3111,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 139371603}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 24.1, y: -1.2, z: -71.7}
+  m_LocalPosition: {x: 24.1, y: -54.1, z: -71.7}
   m_LocalScale: {x: 116.87611, y: 1.1098684, z: 209.34778}
   m_Children: []
   m_Father: {fileID: 1331326038}
@@ -8706,6 +8706,10 @@ MonoBehaviour:
   cubeWrong3: {fileID: 60710895}
   cubeWrong4: {fileID: 31738960}
   cubeRight: {fileID: 2000152408}
+  advancedSpeed: 0
+  isAdvanced: 0
+  canvasList: []
+  startObject: {fileID: 0}
 --- !u!114 &514007281
 MonoBehaviour:
   m_ObjectHideFlags: 0
