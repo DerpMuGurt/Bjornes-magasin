@@ -15761,6 +15761,11 @@ Prefab:
       propertyPath: m_Name
       value: MiniGame
       objectReference: {fileID: 0}
+    - target: {fileID: 224517437804741272, guid: 05007c34bd34dbb49b777bd65b5d3809,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05007c34bd34dbb49b777bd65b5d3809, type: 2}
   m_IsPrefabAsset: 0
@@ -26375,6 +26380,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1527520526}
   m_Mesh: {fileID: 4300000, guid: b5b77b789f1e2904fa28c7f00c2d0b7f, type: 3}
+--- !u!1 &1537698261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1996345894069660, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1896701996}
+--- !u!114 &1537698262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537698261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c5ec1ed5fe64ad42b5dbee96f7b240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550832912
 GameObject:
   m_ObjectHideFlags: 0
@@ -32374,7 +32395,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4249708286559782, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.665
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 4249708286559782, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
       propertyPath: m_LocalPosition.z

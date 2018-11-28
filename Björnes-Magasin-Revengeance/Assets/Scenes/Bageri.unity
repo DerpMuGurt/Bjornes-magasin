@@ -1238,6 +1238,11 @@ Prefab:
       propertyPath: dialogue.choice1Triggers
       value: 
       objectReference: {fileID: 1826859213}
+    - target: {fileID: 224415638309253950, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
@@ -2655,7 +2660,7 @@ Prefab:
     - target: {fileID: 114811051444132618, guid: bc52df4ec4e222e45a9fd2e0e7aa2a91,
         type: 2}
       propertyPath: dialogue.typingSpeed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114811051444132618, guid: bc52df4ec4e222e45a9fd2e0e7aa2a91,
         type: 2}
