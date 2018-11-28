@@ -86,7 +86,7 @@ public class SelectorScript : MonoBehaviour
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
-            Instantiate<GameObject>(startObject);
+            startObject.SetActive(true);
         }
         if (failCounter == pointsToReach)
         {
