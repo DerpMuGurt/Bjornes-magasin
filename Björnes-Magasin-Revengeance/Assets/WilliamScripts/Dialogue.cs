@@ -7,6 +7,7 @@ public class Dialogue{
 
     //NAME
     public string name;
+    public bool hasVoice;
     public GameObject myVoice;
     public float typingSpeed;
     //DIALOGUE

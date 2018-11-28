@@ -8,11 +8,14 @@ public class StartConversation : MonoBehaviour {
     Transform target;
     bool isLooking;
     public GameObject guiObject;
+    private Quaternion originalRotationValue;
+    float rotationResetSpeed = 1.0f;
 
     void Start()
     {
         conversationWith.SetActive(false);
         isLooking = false;
+        originalRotationValue = transform.rotation;
     }
 
     private void Update()
@@ -44,7 +47,8 @@ public class StartConversation : MonoBehaviour {
             conversationWith.SetActive(false);
             isLooking = false;
             DialogueTrigger.talking = false;
-            transform.rotation = Quaternion.identity;
+            // transform.rotation = Quaternion.identity;
+            transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time * rotationResetSpeed);
         }
     }
 }

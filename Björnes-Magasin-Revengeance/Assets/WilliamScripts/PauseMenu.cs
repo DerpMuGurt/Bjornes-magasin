@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Start()
 	{
+        canPause = true;
         SettinsMenu.resolutionSet = true;
         Cursor.visible = (false);
 	}

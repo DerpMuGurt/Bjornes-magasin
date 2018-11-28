@@ -413,7 +413,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1996345894069660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.639999, y: 0.665, z: 1.46}
+  m_LocalPosition: {x: 8.639999, y: 0.665, z: 22}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4604663031644178}
@@ -1061,7 +1061,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb4262b3318162499befaf17422c521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceClipList: []
+  voiceClipList:
+  - {fileID: 8300000, guid: 0951bcae3e6bc1949981b7435e5d131f, type: 3}
+  - {fileID: 8300000, guid: 58c785c6794b3a5488eaa52f91db3b78, type: 3}
+  - {fileID: 8300000, guid: 4d3fa3eea2a510242ae87073c6316fa2, type: 3}
+  - {fileID: 8300000, guid: 638975c43d2553242b5ace65e3c260fc, type: 3}
+  - {fileID: 8300000, guid: 96e75468fce891a4083a00c9cefd1e3b, type: 3}
+  - {fileID: 8300000, guid: 3620dbfc65305c948a8b70348e5c12c5, type: 3}
+  - {fileID: 8300000, guid: 8795b0f2da436b145b436b844c297a46, type: 3}
+  - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
+  - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
 --- !u!114 &114114331624622104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1075,6 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1230793004323914}
     typingSpeed: 0
     sentences:
@@ -1114,6 +1124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1132378304613830}
     typingSpeed: 0
     sentences:
@@ -1155,6 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1538717431489246}
     typingSpeed: 0
     sentences:
@@ -1197,6 +1209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1695043397838182}
     typingSpeed: 0
     sentences:
@@ -1240,6 +1253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1091853731484166}
     typingSpeed: 0
     sentences:
@@ -1280,6 +1294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1512910706035080}
     typingSpeed: 0
     sentences:
@@ -1382,6 +1397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1324794090168372}
     typingSpeed: 0
     sentences:
@@ -1421,6 +1437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1382153000758100}
     typingSpeed: 0
     sentences:
@@ -1459,6 +1476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: Baker
+    hasVoice: 1
     myVoice: {fileID: 1401549057721254}
     typingSpeed: 0
     sentences:

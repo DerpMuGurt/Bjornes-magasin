@@ -55,6 +55,7 @@ public class DialogueManager : MonoBehaviour {
     public AudioSource voiceSource;
 
     public static bool noice;
+    public bool hasNoice;
 
     void Update()
     {
@@ -88,6 +89,7 @@ public class DialogueManager : MonoBehaviour {
     public void StartDialogue(Dialogue dialogue)
     {
         doneTalking = false;
+        hasNoice = dialogue.hasVoice;
         nameText.text = dialogue.name;
         playerHasFollowUp = dialogue.hasDialogueChoices;
         iAmTalking = dialogue.myVoice;
@@ -169,7 +171,10 @@ public class DialogueManager : MonoBehaviour {
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        StartCoroutine(startVoiceTime(sentence));
+        if(hasNoice == true)
+        {
+            StartCoroutine(startVoiceTime(sentence));
+        }
     }
 
     IEnumerator TypeSentence(string sentence)

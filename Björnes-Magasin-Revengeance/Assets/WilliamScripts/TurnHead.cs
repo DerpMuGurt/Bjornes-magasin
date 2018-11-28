@@ -8,10 +8,14 @@ public class TurnHead : MonoBehaviour
     public GameObject turnThis;
     Transform target;
     bool isLooking;
+    private Quaternion originalRotationValue;
+    float rotationResetSpeed = 1.0f;
+
 
     void Start()
     {
         isLooking = false;
+        originalRotationValue = transform.rotation;
     }
 
     private void Update()
@@ -37,8 +41,7 @@ public class TurnHead : MonoBehaviour
         if (other.tag == "Player")
         {
             isLooking = false;
-            turnThis.transform.rotation = Quaternion.identity;
-
+          turnThis.transform.rotation = Quaternion.Slerp(transform.rotation, originalRotationValue, Time.time * rotationResetSpeed);
         }
     }
 }
