@@ -22,8 +22,8 @@ public class SettinsMenu : MonoBehaviour {
             resolutions = Screen.resolutions;
         //takes away text
         resolutionDropdown.ClearOptions ();
-		//adds resolutions
-		int currentResolution = 0;
+        //adds resolutions
+        PlayerPrefs.SetInt( currentResolution = 0);
 		List<string> options = new List<string> ();
 		//format
 		int currentResolutionIndex = 0;
@@ -48,7 +48,7 @@ public class SettinsMenu : MonoBehaviour {
 	{
         Resolution resolution = resolutions [resolutionIndex];
 		Screen.SetResolution (resolution.width, resolution.height, Screen.fullScreen);
-	}
+    }
 
 	public void SetVolume (float volume)
 	{
