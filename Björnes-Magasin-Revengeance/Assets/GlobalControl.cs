@@ -19,6 +19,8 @@ public class GlobalControl : MonoBehaviour {
     public GameObject loadController;
     public GameObject light;
     public GameObject lampPost;
+    public GameObject optionMenu;
+    public GameObject music;
     
     public GameObject SpawnPoint;
 
@@ -39,7 +41,8 @@ public class GlobalControl : MonoBehaviour {
         loadController = GameObject.FindGameObjectWithTag("LoadController");
         light = GameObject.FindGameObjectWithTag("Light");
         lampPost = GameObject.FindGameObjectWithTag("LampPost");
-        
+        optionMenu = GameObject.FindGameObjectWithTag("OptionMenu");
+        music = GameObject.FindGameObjectWithTag("Music");
         SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
         
 
@@ -65,6 +68,8 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(map);
             DontDestroyOnLoad(light);
             DontDestroyOnLoad(lampPost);
+            DontDestroyOnLoad(optionMenu);
+            DontDestroyOnLoad(music);
            
            
          

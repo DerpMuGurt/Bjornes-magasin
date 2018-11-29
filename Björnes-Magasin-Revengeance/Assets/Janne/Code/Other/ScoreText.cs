@@ -11,13 +11,14 @@ public class ScoreText : MonoBehaviour
     public bool GameComplete = false;
     public GameObject FinishedGame;
     public GameObject Canvas;
+    
   
 
     void Start()
     {
         Minigame.SetActive(true);
         ScorePoints = 0;
-        FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
+       // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
         
     }
 
@@ -27,19 +28,19 @@ public class ScoreText : MonoBehaviour
 
         if (ScorePoints > maxScorePoints)
         {
+            FinishedGame.SetActive(true);
             maxScorePoints = 20;
             ScorePoints = 0;
+            
             Minigame.SetActive(false);
-            
-           
-          //  FindObjectOfType<Movement>().enabled = true;
-            
-            FinishedGame.SetActive(true);
-            Canvas.SetActive(false);
-            Destroy(this);
+
         }
 
     
+        if(maxScorePoints == 20) {
+
+            FinishedGame.SetActive(true);
+        }
 
         /*if (GameComplete)
         {
