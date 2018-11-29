@@ -34,7 +34,7 @@ public class ScoreText : MonoBehaviour
            
           //  FindObjectOfType<Movement>().enabled = true;
             
-            //FinishedGame.SetActive(true);
+            FinishedGame.SetActive(true);
             Canvas.SetActive(false);
             Destroy(this);
         }
