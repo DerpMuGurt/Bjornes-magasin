@@ -12,27 +12,34 @@ public class Amazing_E : MonoBehaviour
 
     ScoreText Score;
 
+    bool MaxScore = false;
+
+    GameObject AmazingE;
+
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
         Amazing_Text = GameObject.FindGameObjectWithTag("Amazing_Text").GetComponent<Text>();
         Amazing_Text.text = "Amazing!";
+        AmazingE = GameObject.FindGameObjectWithTag("E");
         Amazing_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Amazing")
         {
             if (Input.GetKey(KeyCode.E))
             {
                 Amazing_Text.enabled = true;
+                //AmazingE.SetActive(false);
                 Destroy(gameObject);
                 Score.ScorePoints += 10;
+                //play audio here
+               
             }
             StartCoroutine(MyTime());
-            active = false;
+            GameObject E;
         }
     }
 

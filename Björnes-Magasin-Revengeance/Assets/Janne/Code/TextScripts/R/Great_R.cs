@@ -9,31 +9,38 @@ public class Great_R : MonoBehaviour
 
     bool active = false;
 
+    bool MaxScore = false;
+
+    GameObject GreatR;
+
     ScoreText Score;
 
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
         Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
+        GreatR = GameObject.FindGameObjectWithTag("R");
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Great")
         {
             if (Input.GetKey(KeyCode.R))
             {
                 Great_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                //GreatR.SetActive(false);
                 Score.ScorePoints += 5;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
         }
     }
+
 
     IEnumerator MyTime()
     {

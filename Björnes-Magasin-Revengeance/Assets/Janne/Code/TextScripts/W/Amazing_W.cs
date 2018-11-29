@@ -11,27 +11,33 @@ public class Amazing_W : MonoBehaviour
 
     ScoreText Score;
 
+    bool MaxScore = false;
+
+    GameObject AmazingW;
+
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
         Amazing_Text = GameObject.FindGameObjectWithTag("Amazing_Text").GetComponent<Text>();
         Amazing_Text.text = "Amazing!";
+        AmazingW = GameObject.FindGameObjectWithTag("W");
         Amazing_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Amazing")
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                Amazing_Text.enabled = true;
-                Destroy(gameObject);
-                Score.ScorePoints += 10;
-            }
-            StartCoroutine(MyTime());
-            active = false;
+           if (Input.GetKey(KeyCode.W))
+           {
+             Amazing_Text.enabled = true;
+             //set inactive
+             //AmazingW.SetActive(false);
+             Score.ScorePoints += 10;
+             //play audio here
+             Destroy(gameObject);
+           }
+           StartCoroutine(MyTime());
         }
     }
 

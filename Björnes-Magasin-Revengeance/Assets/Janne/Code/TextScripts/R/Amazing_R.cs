@@ -9,6 +9,10 @@ public class Amazing_R : MonoBehaviour
 
     bool active = false;
 
+    bool MaxScore = false;
+
+    GameObject AmazingR;
+
     ScoreText Score;
 
     void Start()
@@ -16,22 +20,24 @@ public class Amazing_R : MonoBehaviour
         Score = FindObjectOfType<ScoreText>();
         Amazing_Text = GameObject.FindGameObjectWithTag("Amazing_Text").GetComponent<Text>();
         Amazing_Text.text = "Amazing!";
+        AmazingR = GameObject.FindGameObjectWithTag("R");
         Amazing_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Amazing")
         {
             if (Input.GetKey(KeyCode.R))
             {
                 Amazing_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                //AmazingR.SetActive(false);
                 Score.ScorePoints += 10;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
         }
     }
 

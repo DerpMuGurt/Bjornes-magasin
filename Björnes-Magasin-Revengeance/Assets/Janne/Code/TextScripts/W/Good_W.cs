@@ -9,6 +9,10 @@ public class Good_W : MonoBehaviour
 
     bool active = false;
 
+    bool MaxScore = false;
+
+    GameObject GoodW;
+
     ScoreText Score;
 
     void Start()
@@ -16,22 +20,24 @@ public class Good_W : MonoBehaviour
         Score = FindObjectOfType<ScoreText>();
         Good_Text = GameObject.FindGameObjectWithTag("Good_Text").GetComponent<Text>();
         Good_Text.text = "GOOD!";
+        GoodW = GameObject.FindGameObjectWithTag("W");
         Good_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Good")
         {
             if (Input.GetKey(KeyCode.W))
             {
                 Good_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                //GoodW.SetActive(false);
                 Score.ScorePoints += 1;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
         }
     }
 
