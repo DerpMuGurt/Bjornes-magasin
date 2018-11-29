@@ -9,30 +9,35 @@ public class Great_E : MonoBehaviour
 
     bool active = false;
 
+    bool MaxScore = false;
+
+    GameObject GreatE;
+
     ScoreText Score;
 
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
         Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
+        GreatE = GameObject.FindGameObjectWithTag("E");
         Great_Text.text = "Great!";
         Great_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Great")
         {
             if (Input.GetKey(KeyCode.E))
             {
                 Great_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                GreatE.SetActive(false);
                 Score.ScorePoints += 5;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
-            GameObject E;
         }
     }
 

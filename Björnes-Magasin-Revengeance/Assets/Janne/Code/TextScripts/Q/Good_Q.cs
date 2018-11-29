@@ -9,6 +9,9 @@ public class Good_Q : MonoBehaviour
 
     bool active = false;
     ScoreText Score;
+    bool MaxScore = false;
+
+    GameObject GoodQ;
 
     void Start()
     {
@@ -16,21 +19,23 @@ public class Good_Q : MonoBehaviour
         Good_Text = GameObject.FindGameObjectWithTag("Good_Text").GetComponent<Text>();
         Good_Text.text = "GOOD!";
         Good_Text.enabled = false;
+        GoodQ = GameObject.FindGameObjectWithTag("Q");
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Good")
         {
             if (Input.GetKey(KeyCode.Q))
             {
                 Good_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                //GoodQ.SetActive(false);
                 Score.ScorePoints += 1;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
         }
     }
 

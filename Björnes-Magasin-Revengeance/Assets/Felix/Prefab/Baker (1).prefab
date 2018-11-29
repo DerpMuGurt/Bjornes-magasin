@@ -156,6 +156,23 @@ GameObject:
   - component: {fileID: 114770473709862806}
   - component: {fileID: 65398575391024260}
   m_Layer: 0
+  m_Name: Talk (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1389336174836650
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4184950514901492}
+  - component: {fileID: 114728421053479210}
+  - component: {fileID: 65630511605085996}
+  m_Layer: 0
   m_Name: Talk (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,6 +424,19 @@ Transform:
   m_LocalScale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 4604663031644178}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4184950514901492
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389336174836650}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 4604663031644178}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4222757059690000
@@ -579,6 +609,7 @@ Transform:
   - {fileID: 4677213275326818}
   - {fileID: 4410058607625640}
   - {fileID: 4678766739202278}
+  - {fileID: 4184950514901492}
   - {fileID: 4113885196128608}
   m_Father: {fileID: 4249708286559782}
   m_RootOrder: 0
@@ -1030,6 +1061,18 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1695043397838182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65630511605085996
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389336174836650}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -1506,6 +1549,45 @@ MonoBehaviour:
     choice3Triggers: {fileID: 0}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
+--- !u!114 &114728421053479210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389336174836650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Baker
+    hasVoice: 1
+    myVoice: {fileID: 1389336174836650}
+    typingSpeed: 0
+    sentences:
+    - Now to bake it!
+    hasDialogueChoices: 1
+    button1IsActive: 1
+    button2IsActive: 1
+    button3IsActive: 0
+    Button1Text: yes
+    Button2Text: no
+    Button3Text: 
+    choice1IsRight: 1
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences: []
+    choice2Sentences: []
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
 --- !u!114 &114770473709862806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1523,7 +1605,7 @@ MonoBehaviour:
     myVoice: {fileID: 1382153000758100}
     typingSpeed: 0
     sentences:
-    - Now to bake it!
+    - Done!
     hasDialogueChoices: 0
     button1IsActive: 0
     button2IsActive: 0

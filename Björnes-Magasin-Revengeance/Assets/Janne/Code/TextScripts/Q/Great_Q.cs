@@ -9,27 +9,33 @@ public class Great_Q : MonoBehaviour
 
     bool active = false;
     ScoreText Score;
+    bool MaxScore = false;
+
+    GameObject GreatQ;
+
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
         Great_Text = GameObject.FindGameObjectWithTag("Great_Text").GetComponent<Text>();
         Great_Text.text = "Great!";
+        GreatQ = GameObject.FindGameObjectWithTag("Q");
         Great_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        active = true;
         if (collision.gameObject.tag == "Great")
         {
             if (Input.GetKey(KeyCode.Q))
             {
                 Great_Text.enabled = true;
-                Destroy(gameObject);
+                //set inactive
+                //GreatQ.SetActive(false);
                 Score.ScorePoints += 5;
+                //play audio here
+                Destroy(gameObject);
             }
             StartCoroutine(MyTime());
-            active = false;
         }
     }
 

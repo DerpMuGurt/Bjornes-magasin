@@ -7,13 +7,9 @@ public class SetSpeed : MonoBehaviour
     Rigidbody2D rb;
     private float speed;
 
-    void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         rb.velocity = new Vector2(-100, 0);
-    }
+    }   
 }
