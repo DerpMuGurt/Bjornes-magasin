@@ -24114,6 +24114,11 @@ Prefab:
       propertyPath: dayLight
       value: 
       objectReference: {fileID: 472145844}
+    - target: {fileID: 114513071250451224, guid: 94351f5c6a7b6e3478c00a81b833d406,
+        type: 2}
+      propertyPath: streetLight
+      value: 
+      objectReference: {fileID: 472145844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94351f5c6a7b6e3478c00a81b833d406, type: 2}
   m_IsPrefabAsset: 0
@@ -25565,6 +25570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92901217ba0b66d4aa3469379341c614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Great_Text: {fileID: 0}
+  active: 0
+  Score: {fileID: 0}
 --- !u!114 &1285550415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28580,6 +28588,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92901217ba0b66d4aa3469379341c614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Great_Text: {fileID: 0}
+  active: 0
+  Score: {fileID: 0}
 --- !u!114 &1428367333
 MonoBehaviour:
   m_ObjectHideFlags: 0
