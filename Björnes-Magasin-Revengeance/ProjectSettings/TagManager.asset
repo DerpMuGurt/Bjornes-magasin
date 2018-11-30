@@ -63,6 +63,7 @@ TagManager:
   - FinishedGame
   - OptionMenu
   - Music
+  - CanvasMenu
   layers:
   - Default
   - TransparentFX
