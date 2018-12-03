@@ -163,7 +163,7 @@ public class Movement : MonoBehaviour {
         
        transform.position += (camF * input.y + camR * input.x) * walkSpeed * Time.deltaTime;
 
-        //transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
+       transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
 
 
 
