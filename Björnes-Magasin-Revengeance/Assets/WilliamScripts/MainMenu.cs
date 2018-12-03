@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = (true);
         PauseMenu.canPause = true;
-        SceneManager.LoadScene("TestDemo");
+        SceneManager.LoadScene("TownHall");
 
     }
 
