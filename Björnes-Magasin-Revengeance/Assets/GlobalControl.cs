@@ -27,6 +27,10 @@ public class GlobalControl : MonoBehaviour {
     public GameObject SpawnPoint;
 
 
+
+
+
+
     void Awake() {
 
 
@@ -88,7 +92,7 @@ public class GlobalControl : MonoBehaviour {
 
 
             Destroy(gameObject);
-         
+          
 
             return;
 
@@ -99,4 +103,8 @@ public class GlobalControl : MonoBehaviour {
 
 
     }
+
+ 
+
+
 }

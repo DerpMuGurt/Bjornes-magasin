@@ -16,6 +16,10 @@ public class SceneManagement : MonoBehaviour {
     public GameObject townHallSpawn;
     public Transform OutsideBakery;
 
+  
+
+    
+
     // Use this for initialization
     void Start () {
 
@@ -70,6 +74,8 @@ public class SceneManagement : MonoBehaviour {
 
 
 
+
+
     
 
 
@@ -78,6 +84,7 @@ public class SceneManagement : MonoBehaviour {
         if(other.gameObject.tag == "EnterBakery") {
 
             SceneManager.LoadScene("Bageri", LoadSceneMode.Single);
+            
 
         }
 
@@ -86,7 +93,7 @@ public class SceneManagement : MonoBehaviour {
             SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
             player.transform.position = OutsideBakerySpawn.transform.position;
             samePlayer.transform.LookAt(OutsideBakery);
-
+            
 
 
         }
@@ -95,6 +102,8 @@ public class SceneManagement : MonoBehaviour {
 
             SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
             player.transform.position = townHallSpawn.transform.position;
+            
+
 
 
 
