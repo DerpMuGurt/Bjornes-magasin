@@ -14,6 +14,7 @@ public class CameraChange : MonoBehaviour {
 
     void Start()
     {
+        objectToHide = GameObject.FindWithTag("PlayerGraphics");
         isLooking = false;
         guiObject.SetActive(false);
 

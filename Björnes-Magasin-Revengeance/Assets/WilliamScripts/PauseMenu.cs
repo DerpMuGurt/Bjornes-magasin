@@ -23,7 +23,9 @@ public class PauseMenu : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7") && canPause == true) 
+        if(DialogueManager.talking == false)
+        {
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7") && canPause == true) 
 		{
 			
  			if (GameIsPaused) 
@@ -35,6 +37,7 @@ public class PauseMenu : MonoBehaviour {
 				Pause();
 			}
 		}
+        }
 
         if (canPause == true)
         {

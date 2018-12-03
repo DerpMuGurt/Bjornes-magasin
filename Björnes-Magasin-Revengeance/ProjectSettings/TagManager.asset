@@ -65,6 +65,8 @@ TagManager:
   - Music
   - CanvasMenu
   - ExitTownHall
+  - NpcCamera
+  - PlayerGraphics
   layers:
   - Default
   - TransparentFX

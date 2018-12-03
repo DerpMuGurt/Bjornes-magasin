@@ -5,6 +5,7 @@ using UnityEngine;
 public class StartConversation : MonoBehaviour {
 
     public GameObject conversationWith;
+    public GameObject conversationCamera;
     Transform target;
     bool isLooking;
     public GameObject guiObject;
@@ -35,6 +36,7 @@ public class StartConversation : MonoBehaviour {
         {
             guiObject.SetActive(true);
             conversationWith.SetActive(true);
+            conversationCamera.SetActive(true);
             isLooking = true;
         }
     }
@@ -43,6 +45,7 @@ public class StartConversation : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+            conversationCamera.SetActive(false);
             guiObject.SetActive(false);
             conversationWith.SetActive(false);
             isLooking = false;

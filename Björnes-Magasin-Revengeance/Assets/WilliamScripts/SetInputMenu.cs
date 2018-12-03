@@ -9,14 +9,22 @@ public class SetInputMenu : MonoBehaviour {
     public GameObject selectedObject;
 
     private bool buttonSelected;
+    bool isWorking;
 
 
     void Update()
     {
-        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
+        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false && isWorking == true)
         {
             eventSystem.SetSelectedGameObject(selectedObject);
             buttonSelected = true;
+        }
+
+        if (EventSystem.current.currentSelectedGameObject == null)
+        {
+            isWorking = false;
+            eventSystem.SetSelectedGameObject(selectedObject);
+            isWorking = true;
         }
     }
 

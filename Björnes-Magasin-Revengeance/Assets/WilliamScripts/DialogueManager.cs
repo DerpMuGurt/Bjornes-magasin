@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour {
     bool button2;
     bool button3;
     bool isTalkingWith;
+    public static bool talking;
 
     float typingSpeed;
 
@@ -59,23 +60,26 @@ public class DialogueManager : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && DialogueTrigger.talking == true || Input.GetKeyDown("joystick button 0") && DialogueTrigger.talking == true)
+        if (PauseMenu.GameIsPaused == false)
         {
-            DisplayNextSentence();
-        }
-        if (Input.GetKeyDown(KeyCode.E) && choice1 == true || Input.GetKeyDown("joystick button 0") && choice1 == true)
-        {
-            DisplayNextChoice1Sentence();
-        }
+            if (Input.GetKeyDown(KeyCode.E) && DialogueTrigger.talking == true || Input.GetKeyDown("joystick button 0") && DialogueTrigger.talking == true)
+            {
+                DisplayNextSentence();
+            }
+            if (Input.GetKeyDown(KeyCode.E) && choice1 == true || Input.GetKeyDown("joystick button 0") && choice1 == true)
+            {
+                DisplayNextChoice1Sentence();
+            }
 
-        if (Input.GetKeyDown(KeyCode.E) && choice2 == true || Input.GetKeyDown("joystick button 0") && choice2 == true)
-        {
-            DisplayNextChoice2Sentence();
-        }
+            if (Input.GetKeyDown(KeyCode.E) && choice2 == true || Input.GetKeyDown("joystick button 0") && choice2 == true)
+            {
+                DisplayNextChoice2Sentence();
+            }
 
-        if (Input.GetKeyDown(KeyCode.E) && choice3 == true || Input.GetKeyDown("joystick button 0") && choice3 == true)
-        {
-            DisplayNextChoice3Sentence();
+            if (Input.GetKeyDown(KeyCode.E) && choice3 == true || Input.GetKeyDown("joystick button 0") && choice3 == true)
+            {
+                DisplayNextChoice3Sentence();
+            }
         }
     }
 
@@ -149,6 +153,8 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
+        talking = true;
+
         FindObjectOfType<Movement>().enabled = false;
         dialogueMenu.SetActive(true);
         if (sentences.Count == 0 && playerHasFollowUp == false && isTalkingWith == false)
@@ -212,6 +218,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void EndDialogue()
     {
+        talking = false;
         FindObjectOfType<Movement>().enabled = true;
         doneTalking = true;
         dialogueMenu.SetActive(false);

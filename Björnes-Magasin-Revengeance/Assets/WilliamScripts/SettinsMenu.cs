@@ -6,23 +6,16 @@ using UnityEngine.UI;
 
 public class SettinsMenu : MonoBehaviour {
 
-//	public AudioMixer audioMixer;
     public AudioClip voiceClip;
     public AudioSource MusicSource;
-
-
     public Dropdown resolutionDropdown;
-
 	Resolution[] resolutions;
 
     public static bool resolutionSet;
 
 	void Start ()
 	{
-        //if (resolutionSet == false)
-        //{
-        //}
-            resolutions = Screen.resolutions;
+        resolutions = Screen.resolutions;
         //takes away text
         resolutionDropdown.ClearOptions ();
 		//adds resolutions

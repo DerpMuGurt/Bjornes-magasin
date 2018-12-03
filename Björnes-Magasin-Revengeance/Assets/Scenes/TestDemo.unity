@@ -23842,6 +23842,10 @@ Prefab:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1730705880}
+    - target: {fileID: 1623850840748032, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
+      propertyPath: m_TagString
+      value: PlayerGraphics
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114606367318389892, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
