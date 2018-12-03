@@ -25,6 +25,8 @@ public class DayNightScript : MonoBehaviour
     public Color nightTrans = new Color32(166, 73, 142, 255);
     public Color morningTrans = new Color32(255, 192, 203, 255);
     public Color currentColor;
+    public static bool isDay = true;
+    public static bool isNight = false;
 
     public enum Weekdays //enumerates weekdays
     {
@@ -121,6 +123,7 @@ public class DayNightScript : MonoBehaviour
         {
             timeOfDay = TimeOfDay.Morning;
             dayLight.color = morningColor;
+            isNight = false;
         }
 
         if (timer >= 300)
@@ -132,6 +135,7 @@ public class DayNightScript : MonoBehaviour
         {
             timeOfDay = TimeOfDay.Day;
             dayLight.color = dayColor;
+            isDay = true;
         }
 
         if (timer >= 480)
@@ -143,11 +147,14 @@ public class DayNightScript : MonoBehaviour
         {
             timeOfDay = TimeOfDay.Evening;
             dayLight.color = eveningColor;
+            isDay = false;
         }
 
         if (timer >= 660)
         {
             dayLight.color = eveningTrans;
+            isNight = true;
+            
         }
 
         if (timer >= 720)
