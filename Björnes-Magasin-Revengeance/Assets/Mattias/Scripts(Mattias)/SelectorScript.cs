@@ -31,6 +31,10 @@ public class SelectorScript : MonoBehaviour
     Canvas currentCanvas;
     int canvasInt;
     public GameObject startObject;
+    public Image amazing;
+    public Image miss;
+    public Image bumperRight;
+    public Image bumperLeft;
 
     void Start()
     {
@@ -45,6 +49,12 @@ public class SelectorScript : MonoBehaviour
         currentCanvas = canvasList[canvasInt];
         currentCanvas.gameObject.SetActive(true);
         print(currentCanvas.name);
+        amazing.GetComponent<Image>();
+        amazing.gameObject.SetActive(false);
+        miss.GetComponent<Image>();
+        miss.gameObject.SetActive(false);
+        bumperRight.GetComponent<Image>();
+        bumperLeft.GetComponent<Image>();
     }
     void FixedUpdate()
     {
@@ -61,16 +71,7 @@ public class SelectorScript : MonoBehaviour
     void Update()
     {
         speedAmount.x = speedDirection * speed * Time.deltaTime;
-        if (speedDirection > 0.0f && transform.position.x > wallRight)
-        {
-            speedDirection = -1.0f;
-            speedIncrease = 0;
-        }
-        else if (speedDirection < 0.0f && transform.position.x <= wallLeft)
-        {
-            speedDirection = 1.0f;
-            speedIncrease = 0;
-        }
+        
         transform.Translate(speedAmount);
 
         if (Input.GetKeyDown("space"))
@@ -106,7 +107,7 @@ public class SelectorScript : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "ImageRight")
+        if (other.gameObject.name == "RightImage")
         {
             print("hello");
             if (Input.GetKeyDown("space") && speed >= 50)
@@ -117,6 +118,7 @@ public class SelectorScript : MonoBehaviour
                 canvasInt = Random.Range(0, canvasList.Length);
                 currentCanvas = canvasList[canvasInt];
                 currentCanvas.gameObject.SetActive(true);
+                amazing.gameObject.SetActive(true);
             }
         }
         if (other.gameObject == cubeWrong1 || other.gameObject == cubeWrong2 || other.gameObject == cubeWrong3 || other.gameObject == cubeWrong4)
@@ -125,6 +127,16 @@ public class SelectorScript : MonoBehaviour
             {
 
             }
+        }
+        if (other.gameObject.name == "BumperRight")
+        {
+            speedDirection = -1.0f;
+            speedIncrease = 0;
+        }
+        if(other.gameObject.name == "BumperLeft")
+        {
+            speedDirection = 1.0f;
+            speedIncrease = 0f;
         }
     }
 }
