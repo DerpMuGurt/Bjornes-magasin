@@ -64,6 +64,7 @@ TagManager:
   - OptionMenu
   - Music
   - CanvasMenu
+  - ExitTownHall
   layers:
   - Default
   - TransparentFX

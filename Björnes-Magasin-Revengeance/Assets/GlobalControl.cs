@@ -19,6 +19,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject loadController;
     public GameObject light;
     public GameObject lampPost;
+    public GameObject townHallSpawn;
     
     public GameObject music;
     public GameObject CanvasMenu;
@@ -42,7 +43,7 @@ public class GlobalControl : MonoBehaviour {
         loadController = GameObject.FindGameObjectWithTag("LoadController");
         light = GameObject.FindGameObjectWithTag("Light");
         lampPost = GameObject.FindGameObjectWithTag("LampPost");
-        
+        townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
         music = GameObject.FindGameObjectWithTag("Music");
         SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
         CanvasMenu = GameObject.FindGameObjectWithTag("CanvasMenu");
@@ -72,6 +73,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(lampPost);
             DontDestroyOnLoad(CanvasMenu);
             DontDestroyOnLoad(music);
+            DontDestroyOnLoad(townHallSpawn);
            
            
          

@@ -91,7 +91,7 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftShift)) {
 
-            walkSpeed = 0.15f;
+            walkSpeed = 5f;
             animator.SetBool("isJogging", true);
             animator.SetBool("isWalking", false);
 
@@ -99,7 +99,7 @@ public class Movement : MonoBehaviour {
         }
         else {
 
-            walkSpeed = 0.06f;
+            walkSpeed = 3f;
             animator.SetBool("isJogging", false);
         }
 
@@ -161,7 +161,7 @@ public class Movement : MonoBehaviour {
         camR = camR.normalized;
 
         
-       transform.position += (camF * input.y + camR * input.x) * walkSpeed;
+       transform.position += (camF * input.y + camR * input.x) * walkSpeed * Time.deltaTime;
 
         //transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
 
