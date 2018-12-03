@@ -3386,10 +3386,41 @@ Prefab:
       objectReference: {fileID: 790521076}
     - target: {fileID: 1123963974825022, guid: d9fc85509a6132c4bb0eadaeec2734bf, type: 2}
       propertyPath: m_TagString
-      value: Untagged
+      value: CanvasMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 532.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224286132371252208, guid: d9fc85509a6132c4bb0eadaeec2734bf,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -351.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 82835114413215962, guid: d9fc85509a6132c4bb0eadaeec2734bf, type: 2}
+    - {fileID: 81002036106472434, guid: d9fc85509a6132c4bb0eadaeec2734bf, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: d9fc85509a6132c4bb0eadaeec2734bf, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &202689149
@@ -5440,6 +5471,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 355686628}
   m_Mesh: {fileID: 4300000, guid: b5b77b789f1e2904fa28c7f00c2d0b7f, type: 3}
+--- !u!1 &357661050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1166851882206692, guid: 6452c3c23e61eb1429593239f2c30696,
+    type: 2}
+  m_PrefabInternal: {fileID: 793966620}
+--- !u!114 &357661051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 357661050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ef49a92aa847a48a21418faf680c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &362095625
 GameObject:
   m_ObjectHideFlags: 0
@@ -11354,6 +11401,7 @@ GameObject:
   - component: {fileID: 790521077}
   - component: {fileID: 790521076}
   - component: {fileID: 790521075}
+  - component: {fileID: 790521078}
   m_Layer: 0
   m_Name: Music
   m_TagString: Music
@@ -11486,6 +11534,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &790521078
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790521074}
+  m_Enabled: 1
 --- !u!1 &790912242 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1147384094574144, guid: d9fc85509a6132c4bb0eadaeec2734bf,
@@ -11534,7 +11589,7 @@ Prefab:
         type: 2}
       propertyPath: optionMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 430333017}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6452c3c23e61eb1429593239f2c30696, type: 2}
   m_IsPrefabAsset: 0

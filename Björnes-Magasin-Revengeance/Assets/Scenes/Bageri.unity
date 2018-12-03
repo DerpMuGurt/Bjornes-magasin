@@ -929,7 +929,6 @@ GameObject:
   m_Component:
   - component: {fileID: 679300033}
   - component: {fileID: 679300032}
-  - component: {fileID: 679300031}
   - component: {fileID: 679300034}
   m_Layer: 0
   m_Name: Main Camera
@@ -938,13 +937,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &679300031
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 679300030}
-  m_Enabled: 1
 --- !u!20 &679300032
 Camera:
   m_ObjectHideFlags: 0
@@ -2506,6 +2498,10 @@ Prefab:
         type: 2}
       propertyPath: maxScorePoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309068256832458, guid: 7f5d74069802b9640bd0aec660c36645, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f5d74069802b9640bd0aec660c36645, type: 2}
