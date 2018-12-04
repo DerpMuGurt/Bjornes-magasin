@@ -1637,6 +1637,21 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.stopTalkigAfterChoice2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.stopTalkigAfterChoice3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.stopTalkigAfterChoice1
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0

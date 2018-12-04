@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour {
 
 void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && talking == false && isAsking == false)
+        if (other.tag == "Player" && talking == false && isAsking == false && ScoreText.GameComplete == false)
         {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 talking = true;
