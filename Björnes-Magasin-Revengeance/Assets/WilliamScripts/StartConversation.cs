@@ -28,11 +28,15 @@ public class StartConversation : MonoBehaviour {
              Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
              transform.LookAt(targetPosition);
         }
+        if (DialogueManager.talking == true)
+        {
+            guiObject.SetActive(false);
+        }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && DialogueManager.talking == false)
         {
             guiObject.SetActive(true);
             conversationWith.SetActive(true);
