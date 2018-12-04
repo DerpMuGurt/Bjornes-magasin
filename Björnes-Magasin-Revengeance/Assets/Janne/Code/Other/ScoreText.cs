@@ -8,7 +8,7 @@ public class ScoreText : MonoBehaviour
     public float maxScorePoints;
     public float ScorePoints;
     public GameObject Minigame;
-    public bool GameComplete = false;
+    public bool GameComplete;
     public GameObject FinishedGame;
     public GameObject Canvas;
     
@@ -26,6 +26,8 @@ public class ScoreText : MonoBehaviour
 
     void Update()
     {
+
+        GameComplete = true;
         ScorePoints.ToString();
         FindObjectOfType<Movement>().enabled = false;
         
@@ -38,7 +40,8 @@ public class ScoreText : MonoBehaviour
 
             FindObjectOfType<Movement>().enabled = true;
             Minigame.SetActive(false);
-          
+            GameComplete = false;
+
 
 
 
@@ -50,6 +53,7 @@ public class ScoreText : MonoBehaviour
    if(maxScorePoints >= 20) {
 
             FinishedGame.SetActive(true);
+            GameComplete = false;
         }
 
 
