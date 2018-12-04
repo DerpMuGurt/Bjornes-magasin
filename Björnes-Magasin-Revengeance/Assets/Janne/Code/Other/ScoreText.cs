@@ -8,7 +8,7 @@ public class ScoreText : MonoBehaviour
     public float maxScorePoints;
     public float ScorePoints;
     public GameObject Minigame;
-    public bool GameComplete;
+    public static bool GameComplete;
     public GameObject FinishedGame;
     public GameObject Canvas;
     
