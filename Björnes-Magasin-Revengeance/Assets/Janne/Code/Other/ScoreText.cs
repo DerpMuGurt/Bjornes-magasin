@@ -28,26 +28,28 @@ public class ScoreText : MonoBehaviour
     {
         ScorePoints.ToString();
         FindObjectOfType<Movement>().enabled = false;
+        
 
-        if (ScorePoints > maxScorePoints)
+        if (ScorePoints >= maxScorePoints)
         {
            // FinishedGame.SetActive(true);
             maxScorePoints = 20;
             ScorePoints = 0;
 
-       
-
-            Minigame.SetActive(false);
-            FinishedGame.SetActive(true);
             FindObjectOfType<Movement>().enabled = true;
+            Minigame.SetActive(false);
+          
+
+
+
+
+            //FindObjectOfType<Movement>().enabled = true;
 
         }
 
-    if(maxScorePoints >= 20) {
+   if(maxScorePoints >= 20) {
 
             FinishedGame.SetActive(true);
-            FindObjectOfType<Movement>().enabled = true;
-
         }
 
 
