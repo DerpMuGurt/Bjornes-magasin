@@ -67,6 +67,8 @@ TagManager:
   - ExitTownHall
   - NpcCamera
   - PlayerGraphics
+  - BrokenBakery
+  - FixedBakery
   layers:
   - Default
   - TransparentFX

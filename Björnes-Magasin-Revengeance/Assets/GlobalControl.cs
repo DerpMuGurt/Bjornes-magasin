@@ -20,6 +20,8 @@ public class GlobalControl : MonoBehaviour {
     public GameObject light;
     public GameObject lampPost;
     public GameObject townHallSpawn;
+    public GameObject brokenBakery;
+    public GameObject fixedBakery;
     
     public GameObject music;
     public GameObject CanvasMenu;
@@ -51,6 +53,8 @@ public class GlobalControl : MonoBehaviour {
         music = GameObject.FindGameObjectWithTag("Music");
         SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
         CanvasMenu = GameObject.FindGameObjectWithTag("CanvasMenu");
+        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
+        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
 
 
         
@@ -78,6 +82,8 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(CanvasMenu);
             DontDestroyOnLoad(music);
             DontDestroyOnLoad(townHallSpawn);
+            DontDestroyOnLoad(brokenBakery);
+            DontDestroyOnLoad(fixedBakery);
            
            
          

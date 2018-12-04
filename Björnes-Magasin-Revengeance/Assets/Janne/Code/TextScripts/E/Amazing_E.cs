@@ -29,7 +29,7 @@ public class Amazing_E : MonoBehaviour
     {
         if (collision.gameObject.tag == "Amazing")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) || Input.GetKey("joystick button 0"))
             {
                 Amazing_Text.enabled = true;
                 //AmazingE.SetActive(false);

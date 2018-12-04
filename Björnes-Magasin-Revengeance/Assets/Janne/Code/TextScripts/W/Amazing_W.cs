@@ -28,7 +28,7 @@ public class Amazing_W : MonoBehaviour
     {
         if (collision.gameObject.tag == "Amazing")
         {
-           if (Input.GetKey(KeyCode.W))
+           if (Input.GetKey(KeyCode.W) || Input.GetKey("joystick button 3"))
            {
              Amazing_Text.enabled = true;
              //set inactive

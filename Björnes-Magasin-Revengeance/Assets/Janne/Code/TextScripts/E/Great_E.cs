@@ -28,7 +28,7 @@ public class Great_E : MonoBehaviour
     {
         if (collision.gameObject.tag == "Great")
         {
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) || Input.GetKey("joystick button 0"))
             {
                 Great_Text.enabled = true;
                 //set inactive

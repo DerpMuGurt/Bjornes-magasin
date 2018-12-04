@@ -28,7 +28,7 @@ public class Good_R: MonoBehaviour
     {
         if (collision.gameObject.tag == "Good")
         {
-            if (Input.GetKey(KeyCode.R))
+            if (Input.GetKey(KeyCode.R) || Input.GetKey("joystick button 2"))
             {
                 Good_Text.enabled = true;
                 //set inactive

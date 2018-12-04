@@ -18,29 +18,38 @@ public class ScoreText : MonoBehaviour
     {
         Minigame.SetActive(true);
         ScorePoints = 0;
-       // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
+      
         
+        // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
+
     }
 
     void Update()
     {
         ScorePoints.ToString();
+        FindObjectOfType<Movement>().enabled = false;
 
         if (ScorePoints > maxScorePoints)
         {
-            FinishedGame.SetActive(true);
+           // FinishedGame.SetActive(true);
             maxScorePoints = 20;
             ScorePoints = 0;
-            
+
+       
+
             Minigame.SetActive(false);
+            FinishedGame.SetActive(true);
+            FindObjectOfType<Movement>().enabled = true;
 
         }
 
-    
-        if(maxScorePoints == 20) {
+    if(maxScorePoints >= 20) {
 
             FinishedGame.SetActive(true);
+            FindObjectOfType<Movement>().enabled = true;
+
         }
+
 
         /*if (GameComplete)
         {

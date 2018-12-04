@@ -78,30 +78,30 @@ public class Movement : MonoBehaviour {
         //Animations
         if (Input.GetAxis("Horizontal")!= 0 || Input.GetAxis("Vertical") != 0){
 
-            animator.SetBool("isWalking", true);
+            animator.SetBool("isJogging", true);
             animator.SetBool("isIdle", false);
 
         }
         else {
 
-            animator.SetBool("isWalking", false);
+            animator.SetBool("isJogging", false);
             animator.SetBool("isIdle", true);
 
         }
 
-        if (Input.GetKey(KeyCode.LeftShift)) {
+        //if (Input.GetKey(KeyCode.LeftShift)) {
 
-            walkSpeed = 5f;
-            animator.SetBool("isJogging", true);
-            animator.SetBool("isWalking", false);
+        //    walkSpeed = 5f;
+        //    animator.SetBool("isJogging", true);
+        //    animator.SetBool("isWalking", false);
 
 
-        }
-        else {
+        //}
+        //else {
 
-            walkSpeed = 3f;
-            animator.SetBool("isJogging", false);
-        }
+        //    walkSpeed = 3f;
+        //    animator.SetBool("isJogging", false);
+        //}
 
 
 
