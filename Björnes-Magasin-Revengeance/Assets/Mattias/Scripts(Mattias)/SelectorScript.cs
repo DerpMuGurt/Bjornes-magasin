@@ -62,7 +62,7 @@ public class SelectorScript : MonoBehaviour
         bumperRight.GetComponent<Image>();
         bumperLeft.GetComponent<Image>();
         wrongSource = GetComponent<AudioSource>();
-        FindObjectOfType<Movement>().enabled = false;
+        
     }
     void FixedUpdate()
     {
@@ -79,7 +79,7 @@ public class SelectorScript : MonoBehaviour
     void Update()
     {
         speedAmount.x = speedDirection * speed * Time.deltaTime;
-        
+        FindObjectOfType<Movement>().enabled = false;
         transform.Translate(speedAmount);
 
         if (Input.GetKeyDown("space") || Input.GetKey("joystick button 0"))
