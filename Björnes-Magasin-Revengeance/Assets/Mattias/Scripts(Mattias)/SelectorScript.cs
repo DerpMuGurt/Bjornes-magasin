@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class SelectorScript : MonoBehaviour
 {
@@ -31,10 +32,15 @@ public class SelectorScript : MonoBehaviour
     Canvas currentCanvas;
     int canvasInt;
     public GameObject startObject;
+    public GameObject failObject;
     public Image amazing;
     public Image miss;
     public Image bumperRight;
     public Image bumperLeft;
+    public AudioClip wrong;
+    public AudioSource wrongSource;
+    public AudioClip[] wrongList;
+
 
     void Start()
     {
@@ -55,6 +61,8 @@ public class SelectorScript : MonoBehaviour
         miss.gameObject.SetActive(false);
         bumperRight.GetComponent<Image>();
         bumperLeft.GetComponent<Image>();
+        wrongSource = GetComponent<AudioSource>();
+        FindObjectOfType<Movement>().enabled = false;
     }
     void FixedUpdate()
     {
@@ -74,7 +82,7 @@ public class SelectorScript : MonoBehaviour
         
         transform.Translate(speedAmount);
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") || Input.GetKey("joystick button 0"))
         {
             speed = 0f;
             timer = 0;
@@ -83,12 +91,13 @@ public class SelectorScript : MonoBehaviour
         }
         if (pointReaching == pointsToReach)
         {
-            startObject.SetActive(true);
             pointReaching = 0;
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
-            
+            startObject.gameObject.SetActive(true);
+            FindObjectOfType<Movement>().enabled = true;
+
         }
         if (failCounter == pointsToReach)
         {
@@ -96,6 +105,8 @@ public class SelectorScript : MonoBehaviour
             points = 0;
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
+            failObject.gameObject.SetActive(true);
+            FindObjectOfType<Movement>().enabled = true;
         }
         if (isAdvanced)
         {
@@ -111,7 +122,7 @@ public class SelectorScript : MonoBehaviour
         if (other.gameObject.name == "RightImage")
         {
             print("hello");
-            if (Input.GetKeyDown("space") && speed >= 50)
+            if (Input.GetKeyDown("space") && speed >= 50 || Input.GetKeyDown("joystick button 0") && speed >= 50)
             {
                 points += 1;
                 speedIncrease = 0;
@@ -121,13 +132,24 @@ public class SelectorScript : MonoBehaviour
                 currentCanvas.gameObject.SetActive(true);
                 amazing.gameObject.SetActive(true);
             }
+            StartCoroutine(imageTimer());
         }
-        if (other.gameObject == cubeWrong1 || other.gameObject == cubeWrong2 || other.gameObject == cubeWrong3 || other.gameObject == cubeWrong4)
+        if (other.gameObject.name == "WrongImage1" || other.gameObject.name == "WrongImage2")
         {
-            if (Input.GetKeyDown("space") && speed >= 50)
+            if (Input.GetKeyDown("space") && speed >= 50 || Input.GetKeyDown("joystick button 0") && speed >= 50)
             {
-
+                failCounter += 1;
+                speedIncrease = 0;
+                miss.gameObject.SetActive(true);
+                Debug.Log("Fails: " + failCounter);
+                wrong = wrongList[0];
+                wrongSource.clip = wrong;
+                if (!wrongSource.isPlaying)
+                {
+                    wrongSource.Play();
+                }
             }
+            StartCoroutine(wrongTimer());
         }
         if (other.gameObject.name == "BumperRight")
         {
@@ -139,5 +161,15 @@ public class SelectorScript : MonoBehaviour
             speedDirection = 1.0f;
             speedIncrease = 0f;
         }
+    }
+    IEnumerator imageTimer()
+    {
+        yield return new WaitForSeconds(1);
+        amazing.gameObject.SetActive(false);
+    }
+    IEnumerator wrongTimer()
+    {
+        yield return new WaitForSeconds(1);
+        miss.gameObject.SetActive(false);
     }
 }
