@@ -1652,6 +1652,10 @@ Prefab:
       propertyPath: dialogue.stopTalkigAfterChoice1
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1996345894069660, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
+      propertyPath: m_TagString
+      value: Baker
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
@@ -1662,9 +1666,20 @@ GameObject:
   m_PrefabInternal: {fileID: 805962747}
 --- !u!1 &805962749 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1209985613954426, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+  m_CorrespondingSourceObject: {fileID: 1996345894069660, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
     type: 2}
   m_PrefabInternal: {fileID: 805962747}
+--- !u!114 &805962750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805962749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d604e333748da1945afb56e749f4ded2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835600705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,10 +2494,8 @@ MonoBehaviour:
   maxScorePoints: 20
   ScorePoints: 0
   Minigame: {fileID: 1463752658}
-  GameComplete: 0
   FinishedGame: {fileID: 805962748}
   Canvas: {fileID: 93555350}
-  dialogue: {fileID: 805962749}
 --- !u!1 &1149003467
 GameObject:
   m_ObjectHideFlags: 0
@@ -2793,6 +2806,11 @@ Prefab:
     - target: {fileID: 1893362929883628, guid: fa6002ca469edc44280950219921a871, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114612439938926494, guid: fa6002ca469edc44280950219921a871,
+        type: 2}
+      propertyPath: pointsToReach
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6002ca469edc44280950219921a871, type: 2}

@@ -30,6 +30,15 @@ public class ScoreText : MonoBehaviour
         GameComplete = true;
         ScorePoints.ToString();
         FindObjectOfType<Movement>().enabled = false;
+
+        if(GameComplete == true) {
+
+            FinishedGame.SetActive(false);
+
+        }else if(GameComplete == false) {
+
+           // FinishedGame.SetActive(true);
+        }
         
 
         if (ScorePoints >= maxScorePoints)
@@ -39,8 +48,10 @@ public class ScoreText : MonoBehaviour
             ScorePoints = 0;
 
             FindObjectOfType<Movement>().enabled = true;
-            Minigame.SetActive(false);
             GameComplete = false;
+            FinishedGame.SetActive(true);
+            Minigame.SetActive(false);
+            
 
 
 
@@ -52,7 +63,7 @@ public class ScoreText : MonoBehaviour
 
    if(maxScorePoints >= 20) {
 
-            FinishedGame.SetActive(true);
+           // FinishedGame.SetActive(true);
             GameComplete = false;
         }
 
