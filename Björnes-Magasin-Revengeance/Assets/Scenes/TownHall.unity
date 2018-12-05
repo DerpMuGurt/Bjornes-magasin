@@ -3411,11 +3411,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527820357}
   m_CullTransparentMesh: 0
---- !u!1 &548158371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1027810508494880, guid: bb331dfa6e0ccb148936b42ad92af743,
-    type: 2}
-  m_PrefabInternal: {fileID: 1341350281}
 --- !u!1 &560549875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8045,28 +8040,13 @@ Prefab:
       objectReference: {fileID: 2043309379}
     - target: {fileID: 114090933949121744, guid: bb331dfa6e0ccb148936b42ad92af743,
         type: 2}
-      propertyPath: textBefore
+      propertyPath: textBox
       value: 
       objectReference: {fileID: 560549875}
     - target: {fileID: 224145247913019516, guid: bb331dfa6e0ccb148936b42ad92af743,
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114090933949121744, guid: bb331dfa6e0ccb148936b42ad92af743,
-        type: 2}
-      propertyPath: textAfter
-      value: 
-      objectReference: {fileID: 548158371}
-    - target: {fileID: 114090933949121744, guid: bb331dfa6e0ccb148936b42ad92af743,
-        type: 2}
-      propertyPath: textBox
-      value: 
-      objectReference: {fileID: 560549875}
-    - target: {fileID: 114978687915381792, guid: bb331dfa6e0ccb148936b42ad92af743,
-        type: 2}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: A work of art if I say so myself.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb331dfa6e0ccb148936b42ad92af743, type: 2}

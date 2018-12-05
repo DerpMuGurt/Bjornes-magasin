@@ -3427,7 +3427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcadb7b31f11a84db59f0391134af80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBefore: {fileID: 0}
+  textBox: {fileID: 0}
   thisObject: {fileID: 1243364069604196}
   textAfter: {fileID: 1027810508494880}
 --- !u!114 &114113923978921056
@@ -4210,7 +4210,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4b7fb761208e96f4bb425ebbbded36ac, type: 3}
+  - {fileID: 2100000, guid: b765f3bd7b1c77f469fd01775f238ad5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4311,7 +4311,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 4b7fb761208e96f4bb425ebbbded36ac, type: 3}
+  - {fileID: 2100000, guid: cfb6e800dc64a6945b5e80fd833b06f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
