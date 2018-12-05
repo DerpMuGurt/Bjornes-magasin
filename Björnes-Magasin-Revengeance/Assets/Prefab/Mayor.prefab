@@ -4153,7 +4153,7 @@ MonoBehaviour:
     myVoice: {fileID: 1027810508494880}
     typingSpeed: 0
     sentences:
-    - a work of art if I say so myself.
+    - A work of art if I say so myself.
     - No matter, I will tell you.
     - "You see, my\r town is currently,"
     - Gloomy,
