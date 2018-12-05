@@ -23,6 +23,7 @@ public class GlobalControl : MonoBehaviour {
     public GameObject brokenBakery;
     public GameObject fixedBakery;
     public GameObject baker;
+   
     
     public GameObject music;
     public GameObject CanvasMenu;
@@ -57,6 +58,7 @@ public class GlobalControl : MonoBehaviour {
         brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
         fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
         baker = GameObject.FindGameObjectWithTag("Baker");
+      
 
 
         
@@ -87,6 +89,9 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(brokenBakery);
             DontDestroyOnLoad(fixedBakery);
             DontDestroyOnLoad(baker);
+         
+
+
            
            
          
