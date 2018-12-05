@@ -29,21 +29,21 @@ public class talkCamera : MonoBehaviour {
         }
     }
 
-    void LookAt()
+   public void LookAt()
     {
 
         cameraToShow.gameObject.tag = "NpcCamera";
         isLooking = true;
-                cameraToHide.SetActive(false);
-                cameraToShow.SetActive(true);
+        cameraToHide.SetActive(false);
+        cameraToShow.SetActive(true);
         objectToHide.SetActive(false);
     }
 
-    void StopLookAt()
+   public void StopLookAt()
     {
-                isLooking = false;
-                cameraToHide.SetActive(true);
-                cameraToShow.SetActive(false);
+        isLooking = false;
+        cameraToHide.SetActive(true);
+        cameraToShow.SetActive(false);
         objectToHide.SetActive(true);
     }
 }

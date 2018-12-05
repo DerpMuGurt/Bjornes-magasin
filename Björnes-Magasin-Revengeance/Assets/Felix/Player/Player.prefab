@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 114423115769316790}
   - component: {fileID: 114782982825008544}
   - component: {fileID: 114151778954967500}
+  - component: {fileID: 114460040851363362}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1163,6 +1164,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1955818681117032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4288840217969892}
+  - component: {fileID: 20894830018129512}
+  - component: {fileID: 81817218136272490}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1972232674388684
 GameObject:
   m_ObjectHideFlags: 1
@@ -1588,6 +1606,19 @@ Transform:
   m_Father: {fileID: 4665497673676178}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4288840217969892
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955818681117032}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 1.31, z: 1.289}
+  m_LocalScale: {x: 0.7000004, y: 0.6999999, z: 0.7000004}
+  m_Children: []
+  m_Father: {fileID: 4665497673676178}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4290879505957158
 Transform:
   m_ObjectHideFlags: 1
@@ -2039,6 +2070,7 @@ Transform:
   - {fileID: 4284963559261572}
   - {fileID: 4714859397723718}
   - {fileID: 4926637723592056}
+  - {fileID: 4288840217969892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2344,6 +2376,46 @@ Transform:
   m_Father: {fileID: 4563083745031062}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20894830018129512
+Camera:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955818681117032}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!54 &54333378660978712
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2359,6 +2431,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!81 &81817218136272490
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955818681117032}
+  m_Enabled: 1
 --- !u!95 &95559036350857620
 Animator:
   serializedVersion: 3
@@ -2416,7 +2495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   cam2: {fileID: 0}
-  walkSpeed: 0.5
+  walkSpeed: 5
   CameraStand: {fileID: 0}
   lookSpeed: 10
   bakeryLevel: 0
@@ -2424,6 +2503,20 @@ MonoBehaviour:
   isWalking: 0
   isIdle: 0
   isTurned90: 0
+--- !u!114 &114460040851363362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505166678917340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca9177f2a0766c4da8d4042c4d59df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraToHide: {fileID: 0}
+  cameraToShow: {fileID: 1955818681117032}
+  objectToShow: {fileID: 1623850840748032}
 --- !u!114 &114606367318389892
 MonoBehaviour:
   m_ObjectHideFlags: 1

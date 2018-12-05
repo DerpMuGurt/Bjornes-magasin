@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class bookScript : MonoBehaviour {
 
-    public GameObject textBefore;
+    public GameObject textBox;
     public GameObject thisObject;
     public GameObject textAfter;
 
 	// Use this for initialization
 	void Start () {
 
-           textBefore.SetActive(false);
-}
+         textBox.SetActive(false);
+        //FindObjectOfType<DialogueManager>().EndDialogue();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,6 +21,7 @@ public class bookScript : MonoBehaviour {
         {
             thisObject.SetActive(false);
             textAfter.SetActive(true);
+            textBox.SetActive(true);
         }
     }
 }
