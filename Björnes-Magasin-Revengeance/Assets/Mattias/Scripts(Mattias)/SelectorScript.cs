@@ -14,15 +14,13 @@ public class SelectorScript : MonoBehaviour
     public int failCounter;
     public int pointsToReach;
     int pointReaching;
-    public float wallLeft = 200.0f;
-    public float wallRight = 1200.0f;
     float speedDirection = 1.0f;
     private float timer;
     Vector3 startX;
-    private float waitTimer = 0.5f;
+    private float waitTimer = 1.0f;
     Vector2 speedAmount;
     public Canvas cubeCollection;
-    public Image cubeWrong1, cubeWrong2, cubeWrong3, cubeWrong4, cubeRight;
+    public Image cubeWrong1, cubeWrong2, cubeRight;
     GameObject[] hitBoxes;
     int hitIndex;
     float speedIncrease = 10;
@@ -37,10 +35,15 @@ public class SelectorScript : MonoBehaviour
     public Image miss;
     public Image bumperRight;
     public Image bumperLeft;
-    public AudioClip wrong;
-    public AudioSource wrongSource;
-    public AudioClip[] wrongList;
+    private float successTimer = 2.875f;
+    private float failTimer = 3.708f;
+    public bool gameStart;
+    BakerAnimationScript bakerAnimation;
+    public bool hit;
+    public bool noHit;
 
+
+    public Animator animator;
 
     void Start()
     {
@@ -50,7 +53,6 @@ public class SelectorScript : MonoBehaviour
         cubeCollection.gameObject.SetActive(false);
         startX = new Vector3(-70, transform.position.y, transform.position.z);
         cubeRight = GetComponent<Image>();
-        cubeRight.GetComponent<BoxCollider2D>();
         canvasInt = Random.Range(0, canvasList.Length);
         currentCanvas = canvasList[canvasInt];
         currentCanvas.gameObject.SetActive(true);
@@ -61,34 +63,28 @@ public class SelectorScript : MonoBehaviour
         miss.gameObject.SetActive(false);
         bumperRight.GetComponent<Image>();
         bumperLeft.GetComponent<Image>();
-        wrongSource = GetComponent<AudioSource>();
+        gameStart = true;
+        bakerAnimation = GetComponent<BakerAnimationScript>();
         
     }
     void FixedUpdate()
     {
-        timer += Time.deltaTime;
-        if (timer >= waitTimer)
-        {
-            speed = gameSpeed + speedIncrease;
-
-        }
-        pointReaching = points;
+        
     }
 
 
     void Update()
     {
+        
         speedAmount.x = speedDirection * speed * Time.deltaTime;
-        FindObjectOfType<Movement>().enabled = false;
+        
         transform.Translate(speedAmount);
 
-        if (Input.GetKeyDown("space") || Input.GetKey("joystick button 0"))
-        {
-            speed = 0f;
-            timer = 0;
-            Debug.Log(points);
+        timer += Time.deltaTime;
+        
+        
+        pointReaching = points;
 
-        }
         if (pointReaching == pointsToReach)
         {
             pointReaching = 0;
@@ -96,7 +92,7 @@ public class SelectorScript : MonoBehaviour
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
             startObject.gameObject.SetActive(true);
-            FindObjectOfType<Movement>().enabled = true;
+            gameStart = false;
 
         }
         if (failCounter == pointsToReach)
@@ -106,7 +102,7 @@ public class SelectorScript : MonoBehaviour
             failCounter = 0;
             cubeCollection.gameObject.SetActive(false);
             failObject.gameObject.SetActive(true);
-            FindObjectOfType<Movement>().enabled = true;
+            gameStart = false;
         }
         if (isAdvanced)
         {
@@ -125,12 +121,22 @@ public class SelectorScript : MonoBehaviour
             if (Input.GetKeyDown("space") && speed >= 50 || Input.GetKeyDown("joystick button 0") && speed >= 50)
             {
                 points += 1;
+                speed = 0;
+                successTimer = 0;
                 speedIncrease = 0;
+                //hit = true;
+                animator.SetBool("isSuccess", true);
                 currentCanvas.gameObject.SetActive(false);
                 canvasInt = Random.Range(0, canvasList.Length);
                 currentCanvas = canvasList[canvasInt];
                 currentCanvas.gameObject.SetActive(true);
                 amazing.gameObject.SetActive(true);
+                if (timer <= successTimer)
+                {
+                    speed = gameSpeed + speedIncrease;
+                    animator.SetBool("isSuccess", false);
+                }
+
             }
             StartCoroutine(imageTimer());
         }
@@ -140,13 +146,17 @@ public class SelectorScript : MonoBehaviour
             {
                 failCounter += 1;
                 speedIncrease = 0;
+                speed = 0;
+                failTimer = 0;
+                hit = false;
+                animator.SetBool("isFail", true);
+                //  noHit = true;
                 miss.gameObject.SetActive(true);
                 Debug.Log("Fails: " + failCounter);
-                wrong = wrongList[0];
-                wrongSource.clip = wrong;
-                if (!wrongSource.isPlaying)
+                if (timer <= failTimer)
                 {
-                    wrongSource.Play();
+                    speed = gameSpeed + speedIncrease;
+                    animator.SetBool("isFail", false);
                 }
             }
             StartCoroutine(wrongTimer());

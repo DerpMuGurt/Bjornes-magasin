@@ -351,6 +351,8 @@ GameObject:
   - component: {fileID: 224914446238148598}
   - component: {fileID: 222711457370823936}
   - component: {fileID: 114888057354664638}
+  - component: {fileID: 111950289925660486}
+  - component: {fileID: 95330715940702390}
   m_Layer: 5
   m_Name: Amazing!
   m_TagString: Untagged
@@ -945,8 +947,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 75, z: 1}
-  m_Center: {x: 0, y: -20, z: 0}
+  m_Size: {x: 3.7182922, y: 75, z: 1}
+  m_Center: {x: -0.20411682, y: -20, z: 0}
 --- !u!65 &65492838383594424
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1067,6 +1069,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 35, y: 20, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95330715940702390
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602011625966544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0bbdf3afbaa76bb418acf899d2c1970a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &111950289925660486
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602011625966544}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 596593ad984abad4a82d4e2bd7ae73da, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114030886177271320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1607,11 +1641,11 @@ MonoBehaviour:
   failObject: {fileID: 0}
   amazing: {fileID: 114888057354664638}
   miss: {fileID: 114666413542418778}
-  bumperRight: {fileID: 0}
-  bumperLeft: {fileID: 0}
-  wrong: {fileID: 0}
-  wrongSource: {fileID: 0}
-  wrongList: []
+  bumperRight: {fileID: 114370591794877804}
+  bumperLeft: {fileID: 114455818683085070}
+  gameStart: 0
+  success: 0
+  fail: 0
 --- !u!114 &114646275308094760
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2387,7 +2421,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224222313045736914}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2420,7 +2454,7 @@ RectTransform:
   m_GameObject: {fileID: 1838879611164954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224889777913471534}
   - {fileID: 224843779300479796}
@@ -2429,17 +2463,17 @@ RectTransform:
   - {fileID: 224308932744588774}
   - {fileID: 224718162170862514}
   - {fileID: 224572330481450722}
-  - {fileID: 224878335938951588}
   - {fileID: 224914446238148598}
   - {fileID: 224208593027211796}
+  - {fileID: 224878335938951588}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 608, y: 233}
+  m_SizeDelta: {x: 354, y: 947}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224235240178154986
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2827,7 +2861,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224222313045736914}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2863,7 +2897,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224222313045736914}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

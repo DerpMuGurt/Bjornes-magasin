@@ -69,6 +69,7 @@ TagManager:
   - PlayerGraphics
   - BrokenBakery
   - FixedBakery
+  - TempoCamera
   layers:
   - Default
   - TransparentFX
