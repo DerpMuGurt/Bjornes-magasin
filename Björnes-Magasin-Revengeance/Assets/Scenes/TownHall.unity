@@ -2533,7 +2533,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441247928}
-  m_LocalRotation: {x: 0.030824404, y: -0.96892273, z: 0.1844228, w: 0.16194712}
+  m_LocalRotation: {x: 0.030824415, y: -0.96892273, z: 0.18442284, w: 0.16194715}
   m_LocalPosition: {x: 0.179, y: -0.582, z: -0.844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12398,7 +12398,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043309379}
-  m_LocalRotation: {x: 0.030824404, y: -0.96892273, z: 0.1844228, w: 0.16194712}
+  m_LocalRotation: {x: 0.030824415, y: -0.96892273, z: 0.18442284, w: 0.16194715}
   m_LocalPosition: {x: 7.9807425, y: 1.9879999, z: 5.156}
   m_LocalScale: {x: 0.86752, y: 0.86752, z: 0.86752}
   m_Children: []
@@ -12568,16 +12568,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114460040851363362, guid: 3f029bee094926b45bbf8108e1292c46,
-        type: 2}
-      propertyPath: cameraToHide
-      value: 
-      objectReference: {fileID: 1284928320}
     - target: {fileID: 114782982825008544, guid: 3f029bee094926b45bbf8108e1292c46,
         type: 2}
       propertyPath: cameraController
       value: 
       objectReference: {fileID: 1431160734}
+    - target: {fileID: 114460040851363362, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: cameraToHide
+      value: 
+      objectReference: {fileID: 1284928320}
     - target: {fileID: 114151778954967500, guid: 3f029bee094926b45bbf8108e1292c46,
         type: 2}
       propertyPath: cam1
