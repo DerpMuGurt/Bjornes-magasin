@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 0701e0ae542571a45b81bd64a310f90d
+guid: 30a1ef6f88948574bb5e3fc394cc7368
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: defaultPolygonShader
+    2100000: lambert33
     2300000: //RootNode
     3300000: //RootNode
-    4300000: LampPost
+    4300000: Bakery
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.45
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
