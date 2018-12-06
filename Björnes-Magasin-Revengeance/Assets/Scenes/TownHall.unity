@@ -2533,7 +2533,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441247928}
-  m_LocalRotation: {x: 0.030824406, y: -0.96892273, z: 0.1844228, w: 0.16194716}
+  m_LocalRotation: {x: 0.030824404, y: -0.96892273, z: 0.18442284, w: 0.16194713}
   m_LocalPosition: {x: 0.179, y: -0.582, z: -0.844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8070,7 +8070,17 @@ Prefab:
       propertyPath: voicePitch
       value: 
       objectReference: {fileID: 1690970983}
-    m_RemovedComponents: []
+    - target: {fileID: 114145696514844262, guid: bb331dfa6e0ccb148936b42ad92af743,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967845711928294, guid: bb331dfa6e0ccb148936b42ad92af743, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 81372632736805276, guid: bb331dfa6e0ccb148936b42ad92af743, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: bb331dfa6e0ccb148936b42ad92af743, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1356015861
@@ -11237,7 +11247,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1783062210}
-  m_LocalRotation: {x: -0.027028378, y: 0.95219314, z: -0.2911798, w: -0.08838597}
+  m_LocalRotation: {x: -0.02702837, y: 0.95219314, z: -0.29117984, w: -0.08838594}
   m_LocalPosition: {x: -0.675, y: 1.51, z: -0.222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12643,7 +12653,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043309379}
-  m_LocalRotation: {x: 0.030824406, y: -0.96892273, z: 0.1844228, w: 0.16194716}
+  m_LocalRotation: {x: 0.030824404, y: -0.96892273, z: 0.18442284, w: 0.16194713}
   m_LocalPosition: {x: 7.9807425, y: 1.9879999, z: 5.156}
   m_LocalScale: {x: 0.86752, y: 0.86752, z: 0.86752}
   m_Children: []
@@ -12848,7 +12858,8 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 81817218136272490, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &2113214240
