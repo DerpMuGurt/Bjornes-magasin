@@ -16,14 +16,9 @@ public class SceneManagement : MonoBehaviour {
     public GameObject townHallSpawn;
     public Transform OutsideBakery;
 
-    public bool enteredBakery;
-    public bool enteredTestDemo;
+  
+
     
-
-
-
-
-
 
     // Use this for initialization
     void Start () {
@@ -66,18 +61,15 @@ public class SceneManagement : MonoBehaviour {
             rb.constraints = RigidbodyConstraints.None;
             rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-            enteredTestDemo = false;
+
 
         }
 
-        if (sceneName == "Bageri") {
+       
 
-            enteredBakery = false;
-        }
 
-      
 
-        }
+}
 
 
 
@@ -91,26 +83,24 @@ public class SceneManagement : MonoBehaviour {
 
         if(other.gameObject.tag == "EnterBakery") {
 
-            enteredBakery = true;
-           // SceneManager.LoadScene("Bageri", LoadSceneMode.Single);
-            
+            SceneManager.LoadScene("Bageri", LoadSceneMode.Single);
             
 
         }
 
         if(other.gameObject.tag == "ExitBakery") {
 
-            enteredTestDemo = true;
-            //SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
+            SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
             player.transform.position = OutsideBakerySpawn.transform.position;
             samePlayer.transform.LookAt(OutsideBakery);
-           
+            
+
+
         }
 
         if(other.gameObject.tag == "ExitTownHall") {
 
-            enteredTestDemo = true;
-           // SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
+            SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
             player.transform.position = townHallSpawn.transform.position;
             
 

@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour {
 
     public static AudioClip[] voiceClipListDialogue;
     public AudioClip voiceClip;
-    public static AudioSource voiceSource;
+    public AudioSource voiceSource;
 
     public static bool noice;
     public bool hasNoice;
