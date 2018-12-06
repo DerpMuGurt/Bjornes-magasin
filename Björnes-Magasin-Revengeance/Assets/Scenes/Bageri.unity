@@ -1716,16 +1716,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.choice1Triggers
-      value: 
-      objectReference: {fileID: 1463752658}
-    - target: {fileID: 114160281952405646, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.choice1Triggers
-      value: 
-      objectReference: {fileID: 1744004812}
     - target: {fileID: 114432659387928892, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
       propertyPath: cameraToHide
@@ -1736,30 +1726,16 @@ Prefab:
       propertyPath: objectToHide
       value: 
       objectReference: {fileID: 679300030}
-    - target: {fileID: 224415638309253950, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+    - target: {fileID: 114160281952405646, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: dialogue.choice1Triggers
+      value: 
+      objectReference: {fileID: 1744004812}
     - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
-      propertyPath: dialogue.stopTalkigAfterChoice2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.stopTalkigAfterChoice3
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.stopTalkigAfterChoice1
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1996345894069660, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
-      propertyPath: m_TagString
-      value: Baker
-      objectReference: {fileID: 0}
+      propertyPath: dialogue.choice1Triggers
+      value: 
+      objectReference: {fileID: 1463752658}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
@@ -1768,22 +1744,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1382153000758100, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
     type: 2}
   m_PrefabInternal: {fileID: 805962747}
---- !u!1 &805962749 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1996345894069660, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-    type: 2}
-  m_PrefabInternal: {fileID: 805962747}
---- !u!114 &805962750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 805962749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d604e333748da1945afb56e749f4ded2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &835600705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3293,7 +3253,7 @@ Prefab:
     - target: {fileID: 224718162170862514, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224843779300479796, guid: fa6002ca469edc44280950219921a871,
         type: 2}
@@ -3328,7 +3288,7 @@ Prefab:
     - target: {fileID: 224187096143360574, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224878335938951588, guid: fa6002ca469edc44280950219921a871,
         type: 2}
