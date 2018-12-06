@@ -1822,6 +1822,11 @@ Prefab:
       propertyPath: voicePitch
       value: 
       objectReference: {fileID: 805962750}
+    - target: {fileID: 114052129423006472, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: m_Text
+      value: Talk [A]
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0

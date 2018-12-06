@@ -19,14 +19,7 @@ public class PlayerTalkCamera : MonoBehaviour {
 
    void Update()
     {
-        //if (DialogueManager.talking == true)
-        //{
-        //    LookAt();
-        //}
-        //if (DialogueManager.talking == false)
-        //{
-        //    StopLookAt();
-        //}
+
     }
 
     public void LookAt()
@@ -44,6 +37,5 @@ public class PlayerTalkCamera : MonoBehaviour {
         isLooking = false;
         cameraToHide.SetActive(true);
         cameraToShow.SetActive(false);
-        objectToShow.SetActive(false);
     }
 }
