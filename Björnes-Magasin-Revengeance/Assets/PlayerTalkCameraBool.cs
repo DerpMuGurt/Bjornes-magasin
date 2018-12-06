@@ -8,17 +8,16 @@ public class PlayerTalkCameraBool : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (playerCam == true)
+		if (playerCam == true)
         {
-            FindObjectOfType<talkCamera>().StopLookAt();
             FindObjectOfType<PlayerTalkCamera>().LookAt();
         }
-        if (playerCam == false)
+            if (playerCam == false)
         {
             FindObjectOfType<PlayerTalkCamera>().StopLookAt();
         }

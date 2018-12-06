@@ -13,28 +13,37 @@ public class PlayerTalkCamera : MonoBehaviour {
     {
 
         objectToShow = GameObject.FindWithTag("PlayerGraphics");
+        isLooking = false;
     }
 
 
    void Update()
     {
-
+        //if (DialogueManager.talking == true)
+        //{
+        //    LookAt();
+        //}
+        //if (DialogueManager.talking == false)
+        //{
+        //    StopLookAt();
+        //}
     }
 
     public void LookAt()
     {
+
+        cameraToShow.gameObject.tag = "NpcCamera";
+        isLooking = true;
         cameraToHide.SetActive(false);
         cameraToShow.SetActive(true);
         objectToShow.SetActive(true);
-        if (DialogueManager.talking == false)
-        {
-            StopLookAt();
-        }
     }
 
     public void StopLookAt()
     {
+        isLooking = false;
         cameraToHide.SetActive(true);
         cameraToShow.SetActive(false);
+        objectToShow.SetActive(false);
     }
 }

@@ -16,7 +16,6 @@ public class SelectorScript : MonoBehaviour
     int pointReaching;
     float speedDirection = 1.0f;
     private float timer;
-    private float timer2;
     Vector3 startX;
     private float waitTimer = 1.0f;
     Vector2 speedAmount;
@@ -36,8 +35,8 @@ public class SelectorScript : MonoBehaviour
     public Image miss;
     public Image bumperRight;
     public Image bumperLeft;
-    private float successTimer = 1f;//2.875f;
-    private float failTimer = 1f;//3.708f;
+    private float successTimer = 2.875f;
+    private float failTimer = 3.708f;
     public bool gameStart;
     BakerAnimationScript bakerAnimation;
     public bool hit;
@@ -82,20 +81,8 @@ public class SelectorScript : MonoBehaviour
         transform.Translate(speedAmount);
 
         timer += Time.deltaTime;
-        if(timer >= successTimer)
-        {
-            speed = gameSpeed + speedIncrease;
-            animator.SetBool("isSuccess", false);
-            Debug.Log("i want to break free");
-        }
-        timer2 += Time.deltaTime;
-        if (timer2 >= failTimer)
-        {
-            speed = gameSpeed + speedIncrease;
-            animator.SetBool("isFail", false);
-            Debug.Log("i want to break free fail");
-        }
-
+        
+        
         pointReaching = points;
 
         if (pointReaching == pointsToReach)
@@ -135,7 +122,7 @@ public class SelectorScript : MonoBehaviour
             {
                 points += 1;
                 speed = 0;
-                timer = 0;
+                successTimer = 0;
                 speedIncrease = 0;
                 //hit = true;
                 animator.SetBool("isSuccess", true);
@@ -144,7 +131,11 @@ public class SelectorScript : MonoBehaviour
                 currentCanvas = canvasList[canvasInt];
                 currentCanvas.gameObject.SetActive(true);
                 amazing.gameObject.SetActive(true);
-
+                if (timer <= successTimer)
+                {
+                    speed = gameSpeed + speedIncrease;
+                    animator.SetBool("isSuccess", false);
+                }
 
             }
             StartCoroutine(imageTimer());
@@ -156,13 +147,17 @@ public class SelectorScript : MonoBehaviour
                 failCounter += 1;
                 speedIncrease = 0;
                 speed = 0;
-                timer2 = 0;
+                failTimer = 0;
                 hit = false;
                 animator.SetBool("isFail", true);
                 //  noHit = true;
                 miss.gameObject.SetActive(true);
                 Debug.Log("Fails: " + failCounter);
-                
+                if (timer <= failTimer)
+                {
+                    speed = gameSpeed + speedIncrease;
+                    animator.SetBool("isFail", false);
+                }
             }
             StartCoroutine(wrongTimer());
         }

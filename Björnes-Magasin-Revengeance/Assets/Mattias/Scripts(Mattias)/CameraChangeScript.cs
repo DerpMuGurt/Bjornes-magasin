@@ -14,6 +14,11 @@ public class CameraChangeScript : MonoBehaviour
     {
         isLooking = false;
         selector = GetComponent<SelectorScript>();
+    }
+
+
+    void Update()
+    {
         if (selector.gameStart == true)
         {
             LookAt();
@@ -22,12 +27,6 @@ public class CameraChangeScript : MonoBehaviour
         {
             StopLookAt();
         }
-    }
-
-
-    void Update()
-    {
-
     }
 
     void LookAt()
