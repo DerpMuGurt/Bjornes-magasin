@@ -70,6 +70,7 @@ TagManager:
   - BrokenBakery
   - FixedBakery
   - TempoCamera
+  - LevelFade
   layers:
   - Default
   - TransparentFX

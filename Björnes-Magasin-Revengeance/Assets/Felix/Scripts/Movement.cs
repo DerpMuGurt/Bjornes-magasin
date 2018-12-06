@@ -26,6 +26,8 @@ public class Movement : MonoBehaviour {
 
     float lockPos = 0f;
 
+    
+
     public bool bakeryLevel;
     public bool worldLevel;
 
@@ -33,6 +35,7 @@ public class Movement : MonoBehaviour {
     public bool isIdle;
     float epsilon = 1f;
 
+    AudioSource audioS;
     
 
     public bool isTurned90;
@@ -49,6 +52,7 @@ public class Movement : MonoBehaviour {
         CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
 
         animator = GetComponentInChildren<Animator>();
+        audioS = GetComponent<AudioSource>();
 
 
         bakeryLevel = false;
@@ -80,12 +84,16 @@ public class Movement : MonoBehaviour {
 
             animator.SetBool("isJogging", true);
             animator.SetBool("isIdle", false);
+            audioS.UnPause();
+            audioS.pitch = (Random.Range(0.4f, 0.6f));
+
 
         }
         else {
 
             animator.SetBool("isJogging", false);
             animator.SetBool("isIdle", true);
+            audioS.Pause();
 
         }
 
@@ -110,6 +118,7 @@ public class Movement : MonoBehaviour {
             bakeryLevel = true;
             worldLevel = false;
             cam = GameObject.FindWithTag("MainCamera2").transform;
+            walkSpeed = 4f;
             //CameraStand.SetActive(false);
         }
 
@@ -117,8 +126,9 @@ public class Movement : MonoBehaviour {
             worldLevel = true;
             bakeryLevel = false;
             cam = GameObject.FindWithTag("MainCamera").transform;
-           // CameraStand.SetActive(true);
-           
+            walkSpeed = 7f;
+            // CameraStand.SetActive(true);
+
         }
 
         if (sceneName == "MainMenu") {
@@ -130,6 +140,7 @@ public class Movement : MonoBehaviour {
         if (sceneName == "TownHall") {
 
             cam = GameObject.FindWithTag("TownHallCam").transform;
+            walkSpeed = 4f;
             //CameraStand.SetActive(false);
         }
 
