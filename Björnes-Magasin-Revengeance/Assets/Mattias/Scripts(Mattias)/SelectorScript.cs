@@ -16,6 +16,7 @@ public class SelectorScript : MonoBehaviour
     int pointReaching;
     float speedDirection = 1.0f;
     private float timer;
+    private float timer2;
     Vector3 startX;
     private float waitTimer = 1.0f;
     Vector2 speedAmount;
@@ -69,7 +70,18 @@ public class SelectorScript : MonoBehaviour
     }
     void FixedUpdate()
     {
-        
+        timer += Time.deltaTime;
+        if(timer >= successTimer)
+        {
+            speed = gameSpeed;
+            animator.SetBool("isSuccess", false);
+        }
+        timer2 += Time.deltaTime;
+        if(timer2 >= failTimer)
+        {
+            speed = gameSpeed;
+            animator.SetBool("isFail", false);
+        }
     }
 
 
@@ -80,7 +92,7 @@ public class SelectorScript : MonoBehaviour
         
         transform.Translate(speedAmount);
 
-        timer += Time.deltaTime;
+        
         
         
         pointReaching = points;
