@@ -11,6 +11,7 @@ public class ScoreText : MonoBehaviour
     public static bool GameComplete;
     public GameObject FinishedGame;
     public GameObject Canvas;
+
     
   
 
@@ -18,8 +19,8 @@ public class ScoreText : MonoBehaviour
     {
         Minigame.SetActive(true);
         ScorePoints = 0;
-      
-        
+
+       
         // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
 
     }
@@ -51,6 +52,7 @@ public class ScoreText : MonoBehaviour
             GameComplete = false;
             FinishedGame.SetActive(true);
             Minigame.SetActive(false);
+          
             
 
 

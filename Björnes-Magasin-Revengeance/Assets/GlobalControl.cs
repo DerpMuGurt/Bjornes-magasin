@@ -6,6 +6,7 @@ using UnityEngine;
 public class GlobalControl : MonoBehaviour {
 
     public static GlobalControl Instance;
+    public static bool switchHouse;
 
     public GameObject player;
     public GameObject PickUpTable;
@@ -36,7 +37,7 @@ public class GlobalControl : MonoBehaviour {
 
     void Awake() {
 
-
+        switchHouse = false;
 
         player = GameObject.FindGameObjectWithTag("Player");
         PickUpTable = GameObject.FindGameObjectWithTag("PickUpTable");
@@ -113,7 +114,18 @@ public class GlobalControl : MonoBehaviour {
 
     }
 
- 
+     void Update() {
+        
+        if(switchHouse == true) {
+
+            brokenBakery.SetActive(false);
+            fixedBakery.SetActive(true);
+
+        }
+
+    }
+
+
 
 
 }
