@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class SetInputMenu : MonoBehaviour {
@@ -9,27 +10,30 @@ public class SetInputMenu : MonoBehaviour {
     public GameObject selectedObject;
 
     private bool buttonSelected;
+
     bool isWorking;
 
 
+    void Start()
+    {
+    }
+    void OnEnable()
+    {
+        eventSystem.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(selectedObject);
+    }
+
     void Update()
     {
-        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false && isWorking == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0)|| Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse2))
         {
-            eventSystem.SetSelectedGameObject(selectedObject);
-            buttonSelected = true;
-        }
-
-        if (EventSystem.current.currentSelectedGameObject == null)
-        {
-            isWorking = false;
-            eventSystem.SetSelectedGameObject(selectedObject);
-            isWorking = true;
+            EventSystem.current.SetSelectedGameObject(selectedObject);
         }
     }
 
     private void OnDisable()
     {
+        EventSystem.current.SetSelectedGameObject(selectedObject);
         buttonSelected = false;
     }
 }

@@ -71,6 +71,7 @@ TagManager:
   - FixedBakery
   - TempoCamera
   - LevelFade
+  - ButtonImage
   layers:
   - Default
   - TransparentFX
@@ -81,7 +82,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - LevelFade
   - 
   - 
   - 
