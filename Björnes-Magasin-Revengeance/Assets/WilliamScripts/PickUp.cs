@@ -20,7 +20,7 @@ public class PickUp : MonoBehaviour {
     void OnTriggerStay(Collider other)
     {
         guiObject.SetActive(true);
-        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
+        if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown("joystick button 0"))
             {
             if (guiObject.activeInHierarchy == true)
             {
