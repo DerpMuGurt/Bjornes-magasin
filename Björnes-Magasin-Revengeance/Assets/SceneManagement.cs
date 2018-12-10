@@ -29,8 +29,8 @@ public class SceneManagement : MonoBehaviour {
 
         player = GameObject.FindGameObjectWithTag("Player");
         samePlayer = GameObject.FindWithTag("Player").transform;
-        OutsideBakery = GameObject.FindWithTag("OutSideBakerySpawn").transform;
-        townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
+  //      OutsideBakery = GameObject.FindWithTag("OutSideBakerySpawn").transform;
+  //      townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
 
         camStand = GameObject.FindGameObjectWithTag("CameraStand");
 

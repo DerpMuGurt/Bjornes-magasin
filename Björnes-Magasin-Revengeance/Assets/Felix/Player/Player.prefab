@@ -2064,7 +2064,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505166678917340}
   m_LocalRotation: {x: -0, y: 0.4048189, z: -0, w: 0.91439694}
-  m_LocalPosition: {x: -45.34, y: 0.596, z: 16.2}
+  m_LocalPosition: {x: -42.13, y: 0.596, z: 19.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4284963559261572}
@@ -2629,8 +2629,6 @@ MonoBehaviour:
   OutsideBakerySpawn: {fileID: 0}
   townHallSpawn: {fileID: 0}
   OutsideBakery: {fileID: 0}
-  enteredBakery: 0
-  enteredTestDemo: 0
 --- !u!114 &114659042524903948
 MonoBehaviour:
   m_ObjectHideFlags: 1
