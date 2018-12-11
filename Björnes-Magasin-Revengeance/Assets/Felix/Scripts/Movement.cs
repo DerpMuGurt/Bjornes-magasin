@@ -76,7 +76,7 @@ public class Movement : MonoBehaviour {
         
 
         //Animations
-        if (Input.GetAxis("Horizontal")!= 0 || Input.GetAxis("Vertical") != 0){
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
 
             animator.SetBool("isJogging", true);
             animator.SetBool("isIdle", false);

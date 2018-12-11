@@ -12616,9 +12616,10 @@ MonoBehaviour:
   musicClip: {fileID: 0}
   muiscSource: {fileID: 790521076}
   musicClipList:
-  - {fileID: 8300000, guid: b46bfd21da514e444bae3d6684d0ce5b, type: 3}
+  - {fileID: 8300000, guid: f20d1e92149f396459959fe7e33b710a, type: 3}
   - {fileID: 8300000, guid: 5b785cd035af16d43a2c18cd4eadc05e, type: 3}
-  - {fileID: 8300000, guid: 24893f9439eca3e42af89390ddf0f55b, type: 3}
+  - {fileID: 8300000, guid: 6810cb200c4a4954e8b36deaff583833, type: 3}
+  - {fileID: 8300000, guid: 167345a7ed1bf5b40abfdf850ab97f70, type: 3}
 --- !u!82 &790521076
 AudioSource:
   m_ObjectHideFlags: 0

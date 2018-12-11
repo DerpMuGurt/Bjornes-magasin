@@ -1827,6 +1827,36 @@ Prefab:
       propertyPath: m_Text
       value: Talk [A]
       objectReference: {fileID: 0}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.choice1Triggers
+      value: 
+      objectReference: {fileID: 2107749046}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.Button3Text
+      value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.Button1Text
+      value: Honey
+      objectReference: {fileID: 0}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.choice1IsRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.choice3IsRight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114191276436726530, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+        type: 2}
+      propertyPath: dialogue.choice3Triggers
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
@@ -1852,7 +1882,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1.2
+  m_Pitch: 1.4
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -1935,6 +1965,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &805962751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805962748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a206671d1c98a4d8191eb18e71e56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &835600705
 GameObject:
   m_ObjectHideFlags: 0
@@ -5336,6 +5377,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2070272334}
   m_CullTransparentMesh: 0
+--- !u!1 &2107749046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1723743543579188, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+    type: 2}
+  m_PrefabInternal: {fileID: 805962747}
 --- !u!1 &2111202457
 GameObject:
   m_ObjectHideFlags: 0

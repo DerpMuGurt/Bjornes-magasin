@@ -60,7 +60,7 @@ public class ChoseMusic : MonoBehaviour {
         }
         else if (sceneName == "Bageri")
         {
-            musicClip = musicClipList[2];
+            musicClip = musicClipList[3];
             muiscSource.clip = musicClip;
             if (!muiscSource.isPlaying)
             {
@@ -73,7 +73,12 @@ public class ChoseMusic : MonoBehaviour {
 
         if (sceneName == "TownHall")
         {
-
+            musicClip = musicClipList[2];
+            muiscSource.clip = musicClip;
+            if (!muiscSource.isPlaying)
+            {
+                muiscSource.Play();
+            }
         }
     }
 }
