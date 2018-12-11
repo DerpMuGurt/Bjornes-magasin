@@ -6,11 +6,15 @@ public class cutScene : MonoBehaviour
 {
 
     public GameObject Cam1;
+    bool hasPlayed;
 
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(TheSequence());
+        if(hasPlayed == false)
+        {
+            StartCoroutine(TheSequence());
+        }
     }
 
     void Update()
@@ -19,8 +23,11 @@ public class cutScene : MonoBehaviour
 
     IEnumerator TheSequence()
     {
+        FindObjectOfType<Movement>().enabled = false;
         Cam1.SetActive(true);
         yield return new WaitForSeconds(4);
         Cam1.SetActive(false);
+        FindObjectOfType<Movement>().enabled = true;
+        hasPlayed = true;
     }
 }
