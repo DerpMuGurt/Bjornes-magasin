@@ -80,12 +80,14 @@ public class Movement : MonoBehaviour {
 
             animator.SetBool("isJogging", true);
             animator.SetBool("isIdle", false);
+            GetComponent<AudioSource>().UnPause();   
 
         }
         else {
 
             animator.SetBool("isJogging", false);
             animator.SetBool("isIdle", true);
+            GetComponent<AudioSource>().Pause();
 
         }
 
