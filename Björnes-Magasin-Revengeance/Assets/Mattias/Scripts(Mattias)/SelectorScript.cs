@@ -36,8 +36,9 @@ public class SelectorScript : MonoBehaviour
     public Image miss;
     public Image bumperRight;
     public Image bumperLeft;
-    private float successTimer = 2.875f;
-    private float failTimer = 3.708f;
+    public Text pointsText;
+    private float successTimer = 3.3f;
+    private float failTimer = 3.3f;
     public bool gameStart;
     BakerAnimationScript bakerAnimation;
     public bool hit;
@@ -92,7 +93,9 @@ public class SelectorScript : MonoBehaviour
         
         transform.Translate(speedAmount);
 
-        
+        Time.timeScale = 1f;
+
+        pointsText.text = points.ToString() + " / ".ToString() + pointsToReach.ToString();
         
         
         pointReaching = points;
@@ -134,7 +137,7 @@ public class SelectorScript : MonoBehaviour
             {
                 points += 1;
                 speed = 0;
-                successTimer = 0;
+                timer = 0;
                 speedIncrease = 0;
                 //hit = true;
                 animator.SetBool("isSuccess", true);
@@ -143,11 +146,6 @@ public class SelectorScript : MonoBehaviour
                 currentCanvas = canvasList[canvasInt];
                 currentCanvas.gameObject.SetActive(true);
                 amazing.gameObject.SetActive(true);
-                if (timer <= successTimer)
-                {
-                    speed = gameSpeed + speedIncrease;
-                    animator.SetBool("isSuccess", false);
-                }
 
             }
             StartCoroutine(imageTimer());
@@ -159,17 +157,12 @@ public class SelectorScript : MonoBehaviour
                 failCounter += 1;
                 speedIncrease = 0;
                 speed = 0;
-                failTimer = 0;
+                timer2 = 0;
                 hit = false;
                 animator.SetBool("isFail", true);
                 //  noHit = true;
                 miss.gameObject.SetActive(true);
                 Debug.Log("Fails: " + failCounter);
-                if (timer <= failTimer)
-                {
-                    speed = gameSpeed + speedIncrease;
-                    animator.SetBool("isFail", false);
-                }
             }
             StartCoroutine(wrongTimer());
         }
