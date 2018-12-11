@@ -311,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4604663031644178}
   - component: {fileID: 114108874247017520}
+  - component: {fileID: 82683648328470384}
   m_Layer: 0
   m_Name: DialogueStuff
   m_TagString: Untagged
@@ -576,6 +577,7 @@ GameObject:
   - component: {fileID: 4113885196128608}
   - component: {fileID: 114770473709862806}
   - component: {fileID: 65398575391024260}
+  - component: {fileID: 114331730523590788}
   m_Layer: 0
   m_Name: Talk (10)
   m_TagString: Untagged
@@ -3451,6 +3453,101 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464586981741444}
   m_Enabled: 1
+--- !u!82 &82683648328470384
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209985613954426}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1.4
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95695849529279398
 Animator:
   serializedVersion: 3
@@ -3501,7 +3598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Talk [E]
+  m_Text: Talk [A]
 --- !u!114 &114108874247017520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3523,6 +3620,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8795b0f2da436b145b436b844c297a46, type: 3}
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
+  voicePitch: {fileID: 82683648328470384}
 --- !u!114 &114114331624622104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3624,24 +3722,24 @@ MonoBehaviour:
     button1IsActive: 1
     button2IsActive: 1
     button3IsActive: 1
-    Button1Text: Tomato
+    Button1Text: Honey
     Button2Text: Olive Oil
-    Button3Text: Honey
-    choice1IsRight: 0
+    Button3Text: Tomato
+    choice1IsRight: 1
     choice2IsRight: 0
-    choice3IsRight: 1
+    choice3IsRight: 0
     choice1Sentences:
-    - Hmm, no, could you take another look in the recipe book?
+    - "Yes! That\u2019s it! The secret ingredient! Thank you so much!"
     choice2Sentences:
     - Hmm, no, could you take another look in the recipe book?
     choice3Sentences:
-    - "Yes! That\u2019s it! The secret ingredient! Thank you so much!\u201D"
+    - Hmm, no, could you take another look in the recipe book?
     stopTalkigAfterChoice1: 1
     stopTalkigAfterChoice2: 1
     stopTalkigAfterChoice3: 0
-    choice1Triggers: {fileID: 0}
+    choice1Triggers: {fileID: 1723743543579188}
     choice2Triggers: {fileID: 0}
-    choice3Triggers: {fileID: 1723743543579188}
+    choice3Triggers: {fileID: 0}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
 --- !u!114 &114259654691936110
@@ -3731,6 +3829,17 @@ MonoBehaviour:
     choice3Triggers: {fileID: 0}
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
+--- !u!114 &114331730523590788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382153000758100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a206671d1c98a4d8191eb18e71e56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114338438941514148
 MonoBehaviour:
   m_ObjectHideFlags: 1
