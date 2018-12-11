@@ -74,13 +74,13 @@ public class SelectorScript : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= successTimer)
         {
-            speed = gameSpeed;
+            speed = gameSpeed + speedIncrease;
             animator.SetBool("isSuccess", false);
         }
         timer2 += Time.deltaTime;
         if(timer2 >= failTimer)
         {
-            speed = gameSpeed;
+            speed = gameSpeed + speedIncrease;
             animator.SetBool("isFail", false);
         }
     }
