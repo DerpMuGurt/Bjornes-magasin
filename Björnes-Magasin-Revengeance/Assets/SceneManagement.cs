@@ -15,10 +15,14 @@ public class SceneManagement : MonoBehaviour {
     public GameObject OutsideBakerySpawn;
     public GameObject townHallSpawn;
     public Transform OutsideBakery;
+    public GameObject brokenBakery;
+    public GameObject fixedBakery;
 
-  
+   
 
-    
+
+
+
 
     // Use this for initialization
     void Start () {
@@ -32,6 +36,8 @@ public class SceneManagement : MonoBehaviour {
         OutsideBakery = GameObject.FindWithTag("OutSideBakerySpawn").transform;
         townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
 
+     
+
         camStand = GameObject.FindGameObjectWithTag("CameraStand");
 
 
@@ -40,11 +46,16 @@ public class SceneManagement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
+        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
+       
+
         townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
 
         Scene currentScene = SceneManager.GetActiveScene();
 
         string sceneName = currentScene.name;
+
 
 
 
@@ -90,10 +101,16 @@ public class SceneManagement : MonoBehaviour {
 
         if(other.gameObject.tag == "ExitBakery") {
 
+           
             SceneManager.LoadScene("TestDemo", LoadSceneMode.Single);
+           
             player.transform.position = OutsideBakerySpawn.transform.position;
+          
             samePlayer.transform.LookAt(OutsideBakery);
-            
+
+           
+
+
 
 
         }

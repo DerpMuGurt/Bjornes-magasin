@@ -71,6 +71,7 @@ TagManager:
   - FixedBakery
   - TempoCamera
   - LevelFade
+  - GameManager
   layers:
   - Default
   - TransparentFX
