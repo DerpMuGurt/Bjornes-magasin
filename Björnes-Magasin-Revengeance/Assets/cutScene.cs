@@ -15,13 +15,12 @@ public class cutScene : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = 0f;
     }
 
     IEnumerator TheSequence()
     {
         Cam1.SetActive(true);
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
         Cam1.SetActive(false);
     }
 }
