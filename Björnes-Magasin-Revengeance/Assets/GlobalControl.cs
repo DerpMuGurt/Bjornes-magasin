@@ -7,7 +7,6 @@ public class GlobalControl : MonoBehaviour {
 
     public static GlobalControl Instance;
     public static bool switchHouse;
-    
 
     public GameObject player;
     public GameObject PickUpTable;
@@ -31,24 +30,14 @@ public class GlobalControl : MonoBehaviour {
     
     public GameObject SpawnPoint;
 
-    public GameObject gameManager;
-
-    public Transform firstHouse;
-    public Transform secondHouse;
 
 
-     void Start() {
-        
-    }
 
 
 
     void Awake() {
 
-       
-
         switchHouse = false;
-        
 
         player = GameObject.FindGameObjectWithTag("Player");
         PickUpTable = GameObject.FindGameObjectWithTag("PickUpTable");
@@ -71,17 +60,13 @@ public class GlobalControl : MonoBehaviour {
         baker = GameObject.FindGameObjectWithTag("Baker");
 
 
+        
 
 
 
 
 
         if (Instance == null) {
-
-            Instance = this;
-
-            DontDestroyOnLoad(brokenBakery);
-            DontDestroyOnLoad(fixedBakery);
 
             DontDestroyOnLoad(gameObject);
             DontDestroyOnLoad(player);
@@ -100,12 +85,13 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(CanvasMenu);
             DontDestroyOnLoad(music);
             DontDestroyOnLoad(townHallSpawn);
-            
+            DontDestroyOnLoad(brokenBakery);
+            DontDestroyOnLoad(fixedBakery);
             DontDestroyOnLoad(baker);
            
            
          
-           
+            Instance = this;
 
 
 
@@ -115,8 +101,8 @@ public class GlobalControl : MonoBehaviour {
         else if (Instance != this) {
 
 
-          //  Destroy(gameObject);
-            
+            Destroy(gameObject);
+          
 
             return;
 
@@ -129,41 +115,11 @@ public class GlobalControl : MonoBehaviour {
     }
 
      void Update() {
-
-        player = GameObject.FindGameObjectWithTag("Player");
-        PickUpTable = GameObject.FindGameObjectWithTag("PickUpTable");
-        OutsideBakerySpawn = GameObject.FindGameObjectWithTag("OutsideBakerySpawn");
-        CameraStand = GameObject.FindGameObjectWithTag("CameraStand");
-        Canvas = GameObject.FindGameObjectWithTag("Canvas");
-        CanvasDialogue = GameObject.FindGameObjectWithTag("CanvasDialogue");
-        eventSystem = GameObject.FindGameObjectWithTag("EventSystem");
-        RythmGame = GameObject.FindGameObjectWithTag("RythmGame");
-        map = GameObject.FindGameObjectWithTag("Map");
-        loadController = GameObject.FindGameObjectWithTag("LoadController");
-        light = GameObject.FindGameObjectWithTag("Light");
-        lampPost = GameObject.FindGameObjectWithTag("LampPost");
-        townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
-        music = GameObject.FindGameObjectWithTag("Music");
-        SpawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-        CanvasMenu = GameObject.FindGameObjectWithTag("CanvasMenu");
-        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
-        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
-        baker = GameObject.FindGameObjectWithTag("Baker");
-
-
-        fixedBakery = GameObject.Find("Bakery_large");
-        baker = GameObject.Find("BrokenBakery_large (2)");
-
         
-
-        if (switchHouse == true) {
+        if(switchHouse == true) {
 
             brokenBakery.SetActive(false);
             fixedBakery.SetActive(true);
-
-           
-
-
 
         }
 

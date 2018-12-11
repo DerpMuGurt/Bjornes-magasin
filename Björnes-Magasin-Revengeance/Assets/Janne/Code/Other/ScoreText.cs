@@ -11,27 +11,22 @@ public class ScoreText : MonoBehaviour
     public static bool GameComplete;
     public GameObject FinishedGame;
     public GameObject Canvas;
-    public GameObject brokenBakery;
-    public GameObject fixedBakery;
 
-
+    
+  
 
     void Start()
     {
         Minigame.SetActive(true);
         ScorePoints = 0;
 
-        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
-        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
-
+       
         // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
 
     }
 
     void Update()
     {
-        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
-        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
 
         GameComplete = true;
         ScorePoints.ToString();
@@ -57,11 +52,8 @@ public class ScoreText : MonoBehaviour
             GameComplete = false;
             FinishedGame.SetActive(true);
             Minigame.SetActive(false);
-
-            brokenBakery.SetActive(false);
-            fixedBakery.SetActive(true);
-
-
+          
+            
 
 
 
