@@ -13,11 +13,6 @@ public class cutScene : MonoBehaviour
         StartCoroutine(TheSequence());
     }
 
-    void Update()
-    {
-        Time.timeScale = 1f;
-    }
-
     IEnumerator TheSequence()
     {
         Cam1.SetActive(true);

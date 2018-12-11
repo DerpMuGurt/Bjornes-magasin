@@ -14,24 +14,18 @@ public class SetInputMenu : MonoBehaviour {
     bool isWorking;
 
 
+    void Start()
+    {
+    }
     void OnEnable()
     {
-        buttonSelected = true;
-        //eventSystem.SetSelectedGameObject(null);
-        //EventSystem.current.SetSelectedGameObject(selectedObject);
-        //Debug.Log("Hello");
+        eventSystem.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(selectedObject);
     }
 
     void Update()
     {
-        if (buttonSelected == true)
-        {
-            eventSystem.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(selectedObject);
-            buttonSelected = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse2))
+        if (Input.GetKeyDown(KeyCode.Mouse0)|| Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Mouse2))
         {
             EventSystem.current.SetSelectedGameObject(selectedObject);
         }
@@ -39,8 +33,7 @@ public class SetInputMenu : MonoBehaviour {
 
     private void OnDisable()
     {
-        //buttonImage = GameObject.FindWithTag("ButtonImage");
-        //buttonImage.SetActive(false);
         EventSystem.current.SetSelectedGameObject(selectedObject);
+        buttonSelected = false;
     }
 }
