@@ -15,7 +15,7 @@ public class cutScene : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
     IEnumerator TheSequence()
