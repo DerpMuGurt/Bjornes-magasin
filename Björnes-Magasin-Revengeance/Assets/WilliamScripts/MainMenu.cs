@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour {
         PauseMenu.canPause = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = (true);
-        Time.timeScale = 0f;
+      //  Time.timeScale = 0f;
     }
 
     public void LoadLevel(int sceneIndex)
