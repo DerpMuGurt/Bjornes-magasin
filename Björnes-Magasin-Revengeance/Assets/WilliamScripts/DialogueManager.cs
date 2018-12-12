@@ -58,6 +58,9 @@ public class DialogueManager : MonoBehaviour {
     public static bool noice;
     public bool hasNoice;
 
+
+    bool starting;
+
     void Update()
     {
         if (PauseMenu.GameIsPaused == false)
@@ -92,6 +95,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void StartDialogue(Dialogue dialogue)
     {
+        starting = dialogue.startDirect;
         doneTalking = false;
         hasNoice = dialogue.hasVoice;
         nameText.text = dialogue.name;
@@ -120,6 +124,11 @@ public class DialogueManager : MonoBehaviour {
         if (iAmTalking.tag == "Player")
         {
             nameText.text = "Player";
+        }
+
+        if(starting == true)
+        {
+            DisplayNextSentence();
         }
 
         sentences.Clear();

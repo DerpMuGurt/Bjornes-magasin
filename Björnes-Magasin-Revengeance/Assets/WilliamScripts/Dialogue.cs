@@ -46,4 +46,6 @@ public class Dialogue{
 
     public bool isHavingAConversation;
     public GameObject isHavingAConversationWith;
+
+    public bool startDirect;
 }
