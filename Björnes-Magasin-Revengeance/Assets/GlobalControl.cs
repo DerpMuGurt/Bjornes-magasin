@@ -33,6 +33,8 @@ public class GlobalControl : MonoBehaviour {
 
     public GameObject gameManager;
 
+    public GameObject cutScene;
+
     public Transform firstHouse;
     public Transform secondHouse;
 
@@ -100,6 +102,7 @@ public class GlobalControl : MonoBehaviour {
             DontDestroyOnLoad(CanvasMenu);
             DontDestroyOnLoad(music);
             DontDestroyOnLoad(townHallSpawn);
+            DontDestroyOnLoad(cutScene);
             
             DontDestroyOnLoad(baker);
            
