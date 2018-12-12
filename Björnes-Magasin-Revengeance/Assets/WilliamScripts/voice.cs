@@ -8,7 +8,7 @@ public class voice : MonoBehaviour
     public AudioSource voicePitch;
 
     // Use this for initialization
-    void Start()
+    void OnEnable()
     {
         DialogueManager.voiceClipListDialogue = voiceClipList;
         DialogueManager.voiceSource = voicePitch;
@@ -25,5 +25,9 @@ public class voice : MonoBehaviour
         {
             voicePitch.mute = true;
         }
+    }
+    void OnDisable()
+    {
+        voicePitch.mute = false;
     }
 }
