@@ -8,9 +8,19 @@ public class cutScene : MonoBehaviour
     public GameObject Cam1;
     bool hasPlayed;
 
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+    }
     // Use this for initialization
     void Start()
     {
+        
         if(hasPlayed == false)
         {
             StartCoroutine(TheSequence());
