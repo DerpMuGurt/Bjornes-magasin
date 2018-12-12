@@ -29653,6 +29653,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114387437101653708, guid: 6452c3c23e61eb1429593239f2c30696,
+        type: 2}
+      propertyPath: cutScene
+      value: 
+      objectReference: {fileID: 162718918}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6452c3c23e61eb1429593239f2c30696, type: 2}
   m_IsPrefabAsset: 0
@@ -55159,6 +55164,16 @@ Prefab:
       propertyPath: CameraStand
       value: 
       objectReference: {fileID: 1814060271}
+    - target: {fileID: 82669730974361154, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82669730974361154, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
   m_IsPrefabAsset: 0
