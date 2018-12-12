@@ -58,8 +58,8 @@ public class DialogueManager : MonoBehaviour {
     public static bool noice;
     public bool hasNoice;
 
-
     bool starting;
+    public AudioSource stuff;
 
     void Update()
     {
@@ -162,6 +162,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void DisplayNextSentence()
     {
+        stuff.enabled = false;
         talking = true;
 
         FindObjectOfType<Movement>().enabled = false;
@@ -227,6 +228,7 @@ public class DialogueManager : MonoBehaviour {
 
     public void EndDialogue()
     {
+        stuff.enabled = true;
         talking = false;
         FindObjectOfType<Movement>().enabled = true;
         doneTalking = true;
