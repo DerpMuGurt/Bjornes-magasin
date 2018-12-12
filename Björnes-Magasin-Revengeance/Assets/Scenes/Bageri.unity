@@ -1832,16 +1832,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.choice1Triggers
-      value: 
-      objectReference: {fileID: 1463752658}
-    - target: {fileID: 114160281952405646, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: dialogue.choice1Triggers
-      value: 
-      objectReference: {fileID: 1744004812}
     - target: {fileID: 114432659387928892, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
       propertyPath: cameraToHide
@@ -1852,21 +1842,16 @@ Prefab:
       propertyPath: objectToHide
       value: 
       objectReference: {fileID: 679300030}
-    - target: {fileID: 224415638309253950, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+    - target: {fileID: 114160281952405646, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137225214831184334, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: dialogue.choice1Triggers
       value: 
-      objectReference: {fileID: 2100000, guid: 2fbbe8c0a7b27dc4aa9b111f62339e32, type: 2}
-    - target: {fileID: 137200671725932620, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+      objectReference: {fileID: 1744004812}
+    - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: dialogue.choice1Triggers
       value: 
-      objectReference: {fileID: 2100000, guid: 5684460062f1c7748827aa9a582cc728, type: 2}
+      objectReference: {fileID: 1463752658}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8a34a2cdebbf94ca344df5b066f47b, type: 2}
   m_IsPrefabAsset: 0
