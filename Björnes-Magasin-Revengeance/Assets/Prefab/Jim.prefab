@@ -37,12 +37,12 @@ GameObject:
   - component: {fileID: 114134641659150088}
   - component: {fileID: 65250521080347710}
   m_Layer: 0
-  m_Name: Talk
+  m_Name: Talk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1017628893607546
 GameObject:
   m_ObjectHideFlags: 1
@@ -299,24 +299,6 @@ GameObject:
   - component: {fileID: 4088860669059746}
   m_Layer: 0
   m_Name: IK_Arm_R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1182459514781612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 224159583898954576}
-  - component: {fileID: 223157708104599188}
-  - component: {fileID: 114047275980810412}
-  - component: {fileID: 114522805918242762}
-  m_Layer: 0
-  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -717,23 +699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1496132595022264
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 224524822693257260}
-  - component: {fileID: 222516199941823238}
-  - component: {fileID: 114119695414470522}
-  m_Layer: 5
-  m_Name: Talk
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1510235961951274
 GameObject:
   m_ObjectHideFlags: 1
@@ -1037,6 +1002,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1769833690637338
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4206955579253274}
+  - component: {fileID: 114054153596028508}
+  - component: {fileID: 65456235992617326}
+  m_Layer: 0
+  m_Name: Talk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1798681262914952
 GameObject:
   m_ObjectHideFlags: 1
@@ -1112,6 +1094,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1841820221180862
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4741069819221324}
+  - component: {fileID: 114883334482810934}
+  - component: {fileID: 65271890718256956}
+  - component: {fileID: 114685599136121852}
+  m_Layer: 0
+  m_Name: Talk (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1853655309647366
 GameObject:
   m_ObjectHideFlags: 1
@@ -1407,7 +1407,7 @@ Transform:
   m_Children:
   - {fileID: 4610388895427644}
   m_Father: {fileID: 4386054640126894}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4068636677235162
 Transform:
@@ -1587,6 +1587,19 @@ Transform:
   m_Father: {fileID: 4305139863065060}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4206955579253274
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769833690637338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4945964028544128}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4209273031001166
 Transform:
   m_ObjectHideFlags: 1
@@ -1664,10 +1677,10 @@ Transform:
   m_GameObject: {fileID: 1016151381104390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 4945964028544128}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4299504247028834
 Transform:
@@ -1730,19 +1743,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085961218034946}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -33.45, y: 0.93, z: 31.53}
+  m_LocalRotation: {x: -0, y: -0.8536572, z: -0, w: 0.52083534}
+  m_LocalPosition: {x: -26.4, y: 0.93, z: 36.14}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4945964028544128}
   - {fileID: 4835814071520698}
-  - {fileID: 224159583898954576}
   - {fileID: 4044662599373834}
   - {fileID: 4884264210430606}
   - {fileID: 4840397639554214}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -117.22301, z: 0}
 --- !u!4 &4387588447456330
 Transform:
   m_ObjectHideFlags: 1
@@ -2207,6 +2219,19 @@ Transform:
   m_Father: {fileID: 4261304011728122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4741069819221324
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841820221180862}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 4945964028544128}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4748725263595278
 Transform:
   m_ObjectHideFlags: 1
@@ -2304,7 +2329,7 @@ Transform:
   - {fileID: 4738616845601218}
   - {fileID: 4339720407335196}
   m_Father: {fileID: 4386054640126894}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4857547690477918
 Transform:
@@ -2386,7 +2411,7 @@ Transform:
   m_Children:
   - {fileID: 4688687776514746}
   m_Father: {fileID: 4386054640126894}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4888088592032770
 Transform:
@@ -2469,6 +2494,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4206955579253274}
+  - {fileID: 4741069819221324}
   - {fileID: 4284600308885622}
   m_Father: {fileID: 4386054640126894}
   m_RootOrder: 0
@@ -2679,6 +2706,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7, y: 7, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65271890718256956
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841820221180862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65456235992617326
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769833690637338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65690580208096340
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2811,27 +2862,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114047275980810412
+--- !u!114 &114054153596028508
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1182459514781612}
+  m_GameObject: {fileID: 1769833690637338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  dialogue:
+    name: Jim or Tim?
+    hasVoice: 1
+    myVoice: {fileID: 1769833690637338}
+    typingSpeed: 0
+    sentences:
+    - Have you seen my brother?
+    hasDialogueChoices: 1
+    button1IsActive: 1
+    button2IsActive: 1
+    button3IsActive: 0
+    Button1Text: Who are you?
+    Button2Text: No
+    Button3Text: 
+    choice1IsRight: 0
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences:
+    - Im me.
+    choice2Sentences:
+    - '"sigh"'
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
+    startDirect: 0
 --- !u!114 &114119078306351986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2845,40 +2917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationWith: {fileID: 1657979962504178}
   conversationCamera: {fileID: 1683864630303424}
-  guiObject: {fileID: 1496132595022264}
---- !u!114 &114119695414470522
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496132595022264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Talk [A]
+  guiObject: {fileID: 0}
 --- !u!114 &114134641659150088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2891,23 +2930,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Jim?
+    name: Jim
     hasVoice: 1
     myVoice: {fileID: 1016151381104390}
     typingSpeed: 0
     sentences:
-    - Have you seen my brother?
+    - The gig is up!
     hasDialogueChoices: 0
     button1IsActive: 0
     button2IsActive: 0
     button3IsActive: 0
-    Button1Text: "What\u2019s wrong?"
-    Button2Text: Sorry for intruding.
+    Button1Text: Hi Jim.
+    Button2Text: No
     Button3Text: 
     choice1IsRight: 0
     choice2IsRight: 0
     choice3IsRight: 0
-    choice1Sentences: []
+    choice1Sentences:
+    - Who told you... TIM!
     choice2Sentences:
     - '"sigh"'
     choice3Sentences: []
@@ -2920,22 +2960,6 @@ MonoBehaviour:
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
     startDirect: 0
---- !u!114 &114522805918242762
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1182459514781612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &114550783636884244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2958,6 +2982,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
   voicePitch: {fileID: 82217470206196480}
+--- !u!114 &114685599136121852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841820221180862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac514225ab78b2342a3539f896e71ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oldDialogue: {fileID: 1769833690637338}
+  newDialogue: {fileID: 1841820221180862}
 --- !u!114 &114793097954365314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2970,6 +3007,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnThis: {fileID: 1838988172046560}
+--- !u!114 &114883334482810934
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841820221180862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Jim
+    hasVoice: 1
+    myVoice: {fileID: 1841820221180862}
+    typingSpeed: 0
+    sentences:
+    - Have you seen my brother?
+    hasDialogueChoices: 1
+    button1IsActive: 1
+    button2IsActive: 1
+    button3IsActive: 0
+    Button1Text: Hi Jim.
+    Button2Text: No
+    Button3Text: 
+    choice1IsRight: 1
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences:
+    - Who told you... TIM!
+    choice2Sentences:
+    - '"sigh"'
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 1016151381104390}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
+    startDirect: 0
 --- !u!114 &114993294324947034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3186,67 +3265,3 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00013010949, y: 0.058367334, z: -0.000578586}
     m_Extent: {x: 0.026918195, y: 0.03253428, z: 0.02786858}
   m_DirtyAABB: 0
---- !u!222 &222516199941823238
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496132595022264}
-  m_CullTransparentMesh: 0
---- !u!223 &223157708104599188
-Canvas:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1182459514781612}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &224159583898954576
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1182459514781612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 224524822693257260}
-  m_Father: {fileID: 4386054640126894}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!224 &224524822693257260
-RectTransform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496132595022264}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 224159583898954576}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.000027, y: -5.4999943}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
