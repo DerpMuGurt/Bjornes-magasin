@@ -35,8 +35,7 @@ public class GlobalControl : MonoBehaviour {
 
     public GameObject cutScene;
 
-    public Transform firstHouse;
-    public Transform secondHouse;
+   
 
 
      void Start() {
@@ -154,8 +153,6 @@ public class GlobalControl : MonoBehaviour {
         baker = GameObject.FindGameObjectWithTag("Baker");
 
 
-        fixedBakery = GameObject.Find("Bakery_large");
-        baker = GameObject.Find("BrokenBakery_large (2)");
 
         
 

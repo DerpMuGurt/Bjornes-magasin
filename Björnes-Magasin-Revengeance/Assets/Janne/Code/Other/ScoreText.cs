@@ -58,8 +58,8 @@ public class ScoreText : MonoBehaviour
             FinishedGame.SetActive(true);
             Minigame.SetActive(false);
 
-            brokenBakery.SetActive(false);
-            fixedBakery.SetActive(true);
+          //  brokenBakery.SetActive(false);
+           // fixedBakery.SetActive(true);
 
 
 
