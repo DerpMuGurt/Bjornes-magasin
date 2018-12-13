@@ -6,6 +6,8 @@ public class ReadScript : MonoBehaviour {
 
     public GameObject reading;
     public GameObject guiObject;
+    public GameObject book;
+    bool readings;
 
     void Start()
     {
@@ -18,6 +20,17 @@ public class ReadScript : MonoBehaviour {
         {
             guiObject.SetActive(true);
             reading.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown("joystick button 0") && readings == false)
+            {
+                book.SetActive(true);
+                readings = true;
+            }
+            if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyDown("joystick button 0") && readings == true)
+            {
+                book.SetActive(false);
+                readings = false;
+            }
+
         }
     }
 
