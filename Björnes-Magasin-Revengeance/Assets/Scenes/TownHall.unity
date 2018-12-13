@@ -5455,6 +5455,11 @@ Prefab:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1243624186}
+    - target: {fileID: 224145247913019516, guid: bb331dfa6e0ccb148936b42ad92af743,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb331dfa6e0ccb148936b42ad92af743, type: 2}
   m_IsPrefabAsset: 0
@@ -6272,7 +6277,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 1689763925}
   m_Follow: {fileID: 0}
   m_AnimatedTarget: {fileID: 1457751558}
   m_LayerIndex: 0
