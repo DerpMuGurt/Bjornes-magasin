@@ -6,8 +6,10 @@ public class JimBool : MonoBehaviour {
 
 
     public static bool knowJim;
-	// Use this for initialization
-	void Start () {
+   public GameObject thisCon;
+    public GameObject thatCon;
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -20,4 +22,11 @@ public class JimBool : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnDisable()
+    {
+        Destroy(thatCon);
+        knowJim = true;
+        thisCon.SetActive(true);
+    }
 }
