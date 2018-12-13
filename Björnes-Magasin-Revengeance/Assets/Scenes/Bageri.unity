@@ -2209,6 +2209,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixedBakery: {fileID: 0}
   brokenBakery: {fileID: 0}
+--- !u!114 &805962750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805962748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a206671d1c98a4d8191eb18e71e56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &807984983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1878046457932634, guid: 377364ea46b1f2a45b211379afed1577,

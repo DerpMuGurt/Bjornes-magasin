@@ -6707,6 +6707,94 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 161202684}
   m_Mesh: {fileID: 4300000, guid: 0701e0ae542571a45b81bd64a310f90d, type: 3}
+--- !u!1 &162583072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1474371329352086, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162583075}
+  - component: {fileID: 162583074}
+  - component: {fileID: 162583073}
+  m_Layer: 0
+  m_Name: Talk (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &162583073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65726132952792622, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162583072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &162583074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114327232349274340, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162583072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Bob
+    hasVoice: 1
+    myVoice: {fileID: 162583072}
+    typingSpeed: 0
+    sentences:
+    - Yes!
+    - My day is saved!
+    hasDialogueChoices: 0
+    button1IsActive: 0
+    button2IsActive: 0
+    button3IsActive: 0
+    Button1Text: "What\u2019s wrong?"
+    Button2Text: Sorry for intruding.
+    Button3Text: 
+    choice1IsRight: 0
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences: []
+    choice2Sentences:
+    - '"sigh"'
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
+    startDirect: 0
+--- !u!4 &162583075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4310763415247522, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162583072}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999992, y: 0.99999994, z: 0.9999992}
+  m_Children: []
+  m_Father: {fileID: 551484805}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162718918
 GameObject:
   m_ObjectHideFlags: 0
@@ -25103,6 +25191,34 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c12355936c003b4ba19a15c57259da9, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &551484803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1874738780948088, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 551484802}
+--- !u!114 &551484804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551484803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f4458885eaf284fb89dbcd9ca6b1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oldDialogue: {fileID: 551484806}
+  newDialogue: {fileID: 162583072}
+--- !u!4 &551484805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4945587851539932, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 551484802}
+--- !u!1 &551484806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1474371329352086, guid: 3c12355936c003b4ba19a15c57259da9,
+    type: 2}
+  m_PrefabInternal: {fileID: 551484802}
 --- !u!1 &551614302
 GameObject:
   m_ObjectHideFlags: 0
