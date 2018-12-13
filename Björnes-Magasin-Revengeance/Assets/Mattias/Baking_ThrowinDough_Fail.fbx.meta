@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: ae52fb220927d9a47901d710dbf61de6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bread_Dough_1
+    100004: Bread_Dough_2
+    100006: Bread_Dough_3
+    100008: Bread_Dough_4
+    100010: Bread_Dough_5
+    100012: Bread_Dough_6
+    100014: Breadthing
+    100016: Camera
+    100018: Char_Body1
+    100020: Char_Body1.001
+    100022: Character_Rig
+    100024: Character_Rig.001
+    100026: Dough_Pile
+    100028: Foot_L
+    100030: Foot_L 1
+    100032: Foot_R
+    100034: Foot_R 1
+    100036: Foot_Toes_L
+    100038: Foot_Toes_L 1
+    100040: Foot_Toes_L_end
+    100042: Foot_Toes_L_end 1
+    100044: Foot_Toes_R
+    100046: Foot_Toes_R 1
+    100048: Foot_Toes_R_end
+    100050: Foot_Toes_R_end 1
+    100052: Hand_Fingers1_L
+    100054: Hand_Fingers1_L 1
+    100056: Hand_Fingers1_R
+    100058: Hand_Fingers1_R 1
+    100060: Hand_Fingers2_L
+    100062: Hand_Fingers2_L 1
+    100064: Hand_Fingers2_R
+    100066: Hand_Fingers2_R 1
+    100068: Hand_Fingers3_L
+    100070: Hand_Fingers3_L 1
+    100072: Hand_Fingers3_L_end
+    100074: Hand_Fingers3_L_end 1
+    100076: Hand_Fingers3_R
+    100078: Hand_Fingers3_R 1
+    100080: Hand_Fingers3_R_end
+    100082: Hand_Fingers3_R_end 1
+    100084: Hand_Index1_L
+    100086: Hand_Index1_L 1
+    100088: Hand_Index1_R
+    100090: Hand_Index1_R 1
+    100092: Hand_Index2_L
+    100094: Hand_Index2_L 1
+    100096: Hand_Index2_R
+    100098: Hand_Index2_R 1
+    100100: Hand_Index3_L
+    100102: Hand_Index3_L 1
+    100104: Hand_Index3_L_end
+    100106: Hand_Index3_L_end 1
+    100108: Hand_Index3_R
+    100110: Hand_Index3_R 1
+    100112: Hand_Index3_R_end
+    100114: Hand_Index3_R_end 1
+    100116: Hand_L
+    100118: Hand_L 1
+    100120: Hand_R
+    100122: Hand_R 1
+    100124: Hand_Thumb1_L
+    100126: Hand_Thumb1_L 1
+    100128: Hand_Thumb1_R
+    100130: Hand_Thumb1_R 1
+    100132: Hand_Thumb2_L
+    100134: Hand_Thumb2_L 1
+    100136: Hand_Thumb2_R
+    100138: Hand_Thumb2_R 1
+    100140: Hand_Thumb3_L
+    100142: Hand_Thumb3_L 1
+    100144: Hand_Thumb3_L_end
+    100146: Hand_Thumb3_L_end 1
+    100148: Hand_Thumb3_R
+    100150: Hand_Thumb3_R 1
+    100152: Hand_Thumb3_R_end
+    100154: Hand_Thumb3_R_end 1
+    100156: Head
+    100158: Head 1
+    100160: Head_end
+    100162: Head_end 1
+    100164: Hip_L
+    100166: Hip_L 1
+    100168: Hip_R
+    100170: Hip_R 1
+    100172: IK_Arm_L
+    100174: IK_Arm_L 1
+    100176: IK_Arm_L_end
+    100178: IK_Arm_L_end 1
+    100180: IK_Arm_R
+    100182: IK_Arm_R 1
+    100184: IK_Arm_R_end
+    100186: IK_Arm_R_end 1
+    100188: IK_Breasts
+    100190: IK_Breasts 1
+    100192: IK_Breasts_end
+    100194: IK_Breasts_end 1
+    100196: IK_Elbow_L
+    100198: IK_Elbow_L 1
+    100200: IK_Elbow_L_end
+    100202: IK_Elbow_L_end 1
+    100204: IK_Elbow_R
+    100206: IK_Elbow_R 1
+    100208: IK_Elbow_R_end
+    100210: IK_Elbow_R_end 1
+    100212: IK_Foot_L
+    100214: IK_Foot_L 1
+    100216: IK_Foot_R
+    100218: IK_Foot_R 1
+    100220: IK_Head
+    100222: IK_Head 1
+    100224: IK_Head_end
+    100226: IK_Head_end 1
+    100228: IK_Hips
+    100230: IK_Hips 1
+    100232: IK_Toes_L
+    100234: IK_Toes_L 1
+    100236: IK_Toes_L_end
+    100238: IK_Toes_L_end 1
+    100240: IK_Toes_R
+    100242: IK_Toes_R 1
+    100244: IK_Toes_R_end
+    100246: IK_Toes_R_end 1
+    100248: Knee_L
+    100250: Knee_L 1
+    100252: Knee_L_end
+    100254: Knee_L_end 1
+    100256: Knee_R
+    100258: Knee_R 1
+    100260: Knee_R_end
+    100262: Knee_R_end 1
+    100264: Lower_Arm_L
+    100266: Lower_Arm_L 1
+    100268: Lower_Arm_R
+    100270: Lower_Arm_R 1
+    100272: Lower_Leg_L
+    100274: Lower_Leg_L 1
+    100276: Lower_Leg_R
+    100278: Lower_Leg_R 1
+    100280: Neck
+    100282: Neck 1
+    100284: Player1_Head
+    100286: Player1_Head.001
+    100288: Shoulder_Left
+    100290: Shoulder_Left 1
+    100292: Shoulder_R
+    100294: Shoulder_R 1
+    100296: Spine1
+    100298: Spine1 1
+    100300: Spine2
+    100302: Spine2 1
+    100304: Spine3
+    100306: Spine3 1
+    100308: Throwing_Dough
+    100310: Upper_Arm_L
+    100312: Upper_Arm_L 1
+    100314: Upper_Arm_R
+    100316: Upper_Arm_R 1
+    100318: Upper_Leg_L
+    100320: Upper_Leg_L 1
+    100322: Upper_Leg_R
+    100324: Upper_Leg_R 1
+    400000: //RootNode
+    400002: Bread_Dough_1
+    400004: Bread_Dough_2
+    400006: Bread_Dough_3
+    400008: Bread_Dough_4
+    400010: Bread_Dough_5
+    400012: Bread_Dough_6
+    400014: Breadthing
+    400016: Camera
+    400018: Char_Body1
+    400020: Char_Body1.001
+    400022: Character_Rig
+    400024: Character_Rig.001
+    400026: Dough_Pile
+    400028: Foot_L
+    400030: Foot_L 1
+    400032: Foot_R
+    400034: Foot_R 1
+    400036: Foot_Toes_L
+    400038: Foot_Toes_L 1
+    400040: Foot_Toes_L_end
+    400042: Foot_Toes_L_end 1
+    400044: Foot_Toes_R
+    400046: Foot_Toes_R 1
+    400048: Foot_Toes_R_end
+    400050: Foot_Toes_R_end 1
+    400052: Hand_Fingers1_L
+    400054: Hand_Fingers1_L 1
+    400056: Hand_Fingers1_R
+    400058: Hand_Fingers1_R 1
+    400060: Hand_Fingers2_L
+    400062: Hand_Fingers2_L 1
+    400064: Hand_Fingers2_R
+    400066: Hand_Fingers2_R 1
+    400068: Hand_Fingers3_L
+    400070: Hand_Fingers3_L 1
+    400072: Hand_Fingers3_L_end
+    400074: Hand_Fingers3_L_end 1
+    400076: Hand_Fingers3_R
+    400078: Hand_Fingers3_R 1
+    400080: Hand_Fingers3_R_end
+    400082: Hand_Fingers3_R_end 1
+    400084: Hand_Index1_L
+    400086: Hand_Index1_L 1
+    400088: Hand_Index1_R
+    400090: Hand_Index1_R 1
+    400092: Hand_Index2_L
+    400094: Hand_Index2_L 1
+    400096: Hand_Index2_R
+    400098: Hand_Index2_R 1
+    400100: Hand_Index3_L
+    400102: Hand_Index3_L 1
+    400104: Hand_Index3_L_end
+    400106: Hand_Index3_L_end 1
+    400108: Hand_Index3_R
+    400110: Hand_Index3_R 1
+    400112: Hand_Index3_R_end
+    400114: Hand_Index3_R_end 1
+    400116: Hand_L
+    400118: Hand_L 1
+    400120: Hand_R
+    400122: Hand_R 1
+    400124: Hand_Thumb1_L
+    400126: Hand_Thumb1_L 1
+    400128: Hand_Thumb1_R
+    400130: Hand_Thumb1_R 1
+    400132: Hand_Thumb2_L
+    400134: Hand_Thumb2_L 1
+    400136: Hand_Thumb2_R
+    400138: Hand_Thumb2_R 1
+    400140: Hand_Thumb3_L
+    400142: Hand_Thumb3_L 1
+    400144: Hand_Thumb3_L_end
+    400146: Hand_Thumb3_L_end 1
+    400148: Hand_Thumb3_R
+    400150: Hand_Thumb3_R 1
+    400152: Hand_Thumb3_R_end
+    400154: Hand_Thumb3_R_end 1
+    400156: Head
+    400158: Head 1
+    400160: Head_end
+    400162: Head_end 1
+    400164: Hip_L
+    400166: Hip_L 1
+    400168: Hip_R
+    400170: Hip_R 1
+    400172: IK_Arm_L
+    400174: IK_Arm_L 1
+    400176: IK_Arm_L_end
+    400178: IK_Arm_L_end 1
+    400180: IK_Arm_R
+    400182: IK_Arm_R 1
+    400184: IK_Arm_R_end
+    400186: IK_Arm_R_end 1
+    400188: IK_Breasts
+    400190: IK_Breasts 1
+    400192: IK_Breasts_end
+    400194: IK_Breasts_end 1
+    400196: IK_Elbow_L
+    400198: IK_Elbow_L 1
+    400200: IK_Elbow_L_end
+    400202: IK_Elbow_L_end 1
+    400204: IK_Elbow_R
+    400206: IK_Elbow_R 1
+    400208: IK_Elbow_R_end
+    400210: IK_Elbow_R_end 1
+    400212: IK_Foot_L
+    400214: IK_Foot_L 1
+    400216: IK_Foot_R
+    400218: IK_Foot_R 1
+    400220: IK_Head
+    400222: IK_Head 1
+    400224: IK_Head_end
+    400226: IK_Head_end 1
+    400228: IK_Hips
+    400230: IK_Hips 1
+    400232: IK_Toes_L
+    400234: IK_Toes_L 1
+    400236: IK_Toes_L_end
+    400238: IK_Toes_L_end 1
+    400240: IK_Toes_R
+    400242: IK_Toes_R 1
+    400244: IK_Toes_R_end
+    400246: IK_Toes_R_end 1
+    400248: Knee_L
+    400250: Knee_L 1
+    400252: Knee_L_end
+    400254: Knee_L_end 1
+    400256: Knee_R
+    400258: Knee_R 1
+    400260: Knee_R_end
+    400262: Knee_R_end 1
+    400264: Lower_Arm_L
+    400266: Lower_Arm_L 1
+    400268: Lower_Arm_R
+    400270: Lower_Arm_R 1
+    400272: Lower_Leg_L
+    400274: Lower_Leg_L 1
+    400276: Lower_Leg_R
+    400278: Lower_Leg_R 1
+    400280: Neck
+    400282: Neck 1
+    400284: Player1_Head
+    400286: Player1_Head.001
+    400288: Shoulder_Left
+    400290: Shoulder_Left 1
+    400292: Shoulder_R
+    400294: Shoulder_R 1
+    400296: Spine1
+    400298: Spine1 1
+    400300: Spine2
+    400302: Spine2 1
+    400304: Spine3
+    400306: Spine3 1
+    400308: Throwing_Dough
+    400310: Upper_Arm_L
+    400312: Upper_Arm_L 1
+    400314: Upper_Arm_R
+    400316: Upper_Arm_R 1
+    400318: Upper_Leg_L
+    400320: Upper_Leg_L 1
+    400322: Upper_Leg_R
+    400324: Upper_Leg_R 1
+    2000000: Camera
+    2100000: lambert33
+    2100002: defaultPolygonShader
+    2100004: Player_Body
+    2100006: Player_Head
+    2100008: Player_Body.001
+    2100010: Player_Head.001
+    2300000: Bread_Dough_1
+    2300002: Bread_Dough_2
+    2300004: Bread_Dough_3
+    2300006: Bread_Dough_4
+    2300008: Bread_Dough_5
+    2300010: Bread_Dough_6
+    2300012: Breadthing
+    2300014: Dough_Pile
+    2300016: Throwing_Dough
+    3300000: Bread_Dough_1
+    3300002: Bread_Dough_2
+    3300004: Bread_Dough_3
+    3300006: Bread_Dough_4
+    3300008: Bread_Dough_5
+    3300010: Bread_Dough_6
+    3300012: Breadthing
+    3300014: Dough_Pile
+    3300016: Throwing_Dough
+    4300000: Throwing_Dough
+    4300002: Dough_Pile
+    4300004: Bread_Dough_6
+    4300006: Bread_Dough_5
+    4300008: Bread_Dough_4
+    4300010: Bread_Dough_3
+    4300012: Bread_Dough_2
+    4300014: Breadthing
+    4300016: Bread_Dough_1
+    4300018: Char_Body1
+    4300020: Player1_Head
+    4300022: Char_Body1.001
+    4300024: Player1_Head.001
+    7400000: Throwing_Dough|Throwing_DoughAction
+    7400002: Character_Rig|Character_Rig.001Action
+    7400004: Character_Rig|Character_RigAction
+    7400006: Character_Rig|Throwing_DoughAction
+    7400008: Character_Rig.001|Character_Rig.001Action
+    7400010: Character_Rig.001|Character_RigAction
+    7400012: Character_Rig.001|Throwing_DoughAction
+    9500000: //RootNode
+    13700000: Char_Body1
+    13700002: Char_Body1.001
+    13700004: Player1_Head
+    13700006: Player1_Head.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
