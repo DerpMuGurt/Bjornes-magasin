@@ -6458,7 +6458,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 617604513}
-  m_LocalRotation: {x: 0.029645883, y: -0.9687421, z: 0.2002068, w: 0.143448}
+  m_LocalRotation: {x: 0.029645873, y: -0.9687421, z: 0.20020679, w: 0.14344797}
   m_LocalPosition: {x: -1.9400002, y: 4.9300003, z: -2.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7922,7 +7922,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1030662351}
-  m_LocalRotation: {x: -0.0028506287, y: -0.965753, z: -0.0106186755, w: 0.25923008}
+  m_LocalRotation: {x: -0.0028506278, y: -0.965753, z: -0.0106186755, w: 0.25923008}
   m_LocalPosition: {x: 2.377, y: -0.58200014, z: -0.3000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8460,7 +8460,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121577658}
-  m_LocalRotation: {x: 0.029645883, y: -0.9687421, z: 0.2002068, w: 0.143448}
+  m_LocalRotation: {x: 0.029645873, y: -0.9687421, z: 0.20020679, w: 0.14344797}
   m_LocalPosition: {x: -0.84451854, y: 2.6072226, z: -0.7024075}
   m_LocalScale: {x: 0.32130393, y: 0.32130378, z: 0.32130396}
   m_Children: []
@@ -10124,7 +10124,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1652909116}
-  m_LocalRotation: {x: -0.025232319, y: 0.9712011, z: -0.119937785, w: -0.2043201}
+  m_LocalRotation: {x: -0.025232317, y: 0.9712011, z: -0.119937785, w: -0.2043201}
   m_LocalPosition: {x: 0.55, y: 3.47, z: -0.22200012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11259,6 +11259,11 @@ Prefab:
     - target: {fileID: 4665497673676178, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 70.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 136963238878542934, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81817218136272490, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
