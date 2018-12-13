@@ -7,14 +7,11 @@ public class PickUp : MonoBehaviour {
     public GameObject guiObject;
     public GameObject thisObject;
     public GameObject objectToShow;
-    bool dontShowObject;
 
 
     void Start()
     {
-    
         guiObject.SetActive(false);
-
     }
 
     void OnTriggerStay(Collider other)

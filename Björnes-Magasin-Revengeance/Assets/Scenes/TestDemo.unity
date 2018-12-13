@@ -4564,6 +4564,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.choice1Sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4746598427148922, guid: 1f9083142d784a34fac9c5bf1ef5b0cd, type: 2}
       propertyPath: m_LocalPosition.x
       value: 8.83
@@ -4600,6 +4605,46 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: I wonder what those blue balls are for...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.hasDialogueChoices
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.Button1Text
+      value: What Blue balls?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.Button2Text
+      value: Bye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.choice1Sentences.Array.data[0]
+      value: The one's lying around town.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.choice2Sentences.Array.data[0]
+      value: Bye.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.button1IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+        type: 2}
+      propertyPath: dialogue.button2IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f9083142d784a34fac9c5bf1ef5b0cd, type: 2}
@@ -41303,6 +41348,7 @@ GameObject:
   - component: {fileID: 897657479}
   - component: {fileID: 897657478}
   - component: {fileID: 897657477}
+  - component: {fileID: 897657481}
   m_Layer: 0
   m_Name: PickUpTaken3
   m_TagString: Untagged
@@ -41377,6 +41423,19 @@ Transform:
   m_Father: {fileID: 817811726}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &897657481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 897657476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad442e79492262c49886f038d0633132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JaneNewText: {fileID: 1515668926}
+  JaneOldText: {fileID: 1589926920}
 --- !u!1 &902017063
 GameObject:
   m_ObjectHideFlags: 0
@@ -58520,7 +58579,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1244319029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.59, y: 0.47, z: -0.45}
+  m_LocalPosition: {x: 25.27, y: 0.47, z: -1.54}
   m_LocalScale: {x: 0.16576308, y: 0.16576308, z: 0.16576308}
   m_Children: []
   m_Father: {fileID: 476682458}
@@ -64184,6 +64243,19 @@ Prefab:
       propertyPath: stuff
       value: 
       objectReference: {fileID: 341128706}
+    - target: {fileID: 1132261167480676, guid: bc76ac54e02f6454d91f4cdc2c122e19, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777181866940972, guid: bc76ac54e02f6454d91f4cdc2c122e19, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224398123453532288, guid: bc76ac54e02f6454d91f4cdc2c122e19,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc76ac54e02f6454d91f4cdc2c122e19, type: 2}
   m_IsPrefabAsset: 0
@@ -65999,6 +66071,7 @@ GameObject:
   - component: {fileID: 1439376950}
   - component: {fileID: 1439376949}
   - component: {fileID: 1439376948}
+  - component: {fileID: 1439376952}
   m_Layer: 0
   m_Name: PickUpTaken2
   m_TagString: Untagged
@@ -66073,6 +66146,19 @@ Transform:
   m_Father: {fileID: 817811726}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1439376952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1439376947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad442e79492262c49886f038d0633132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JaneNewText: {fileID: 1515668926}
+  JaneOldText: {fileID: 1589926920}
 --- !u!1 &1440001325
 GameObject:
   m_ObjectHideFlags: 0
@@ -69748,6 +69834,95 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510851875}
   m_Mesh: {fileID: 4300000, guid: 42bdf1092a1c4ea42a767886db8bd728, type: 3}
+--- !u!1 &1515668926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1946616948542304, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515668927}
+  - component: {fileID: 1515668929}
+  - component: {fileID: 1515668928}
+  m_Layer: 0
+  m_Name: Talk (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1515668927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4504839522820784, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515668926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 1950369668}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1515668928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65676569614988304, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515668926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1515668929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114413587216862494, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515668926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Jane
+    hasVoice: 1
+    myVoice: {fileID: 1515668926}
+    typingSpeed: 0
+    sentences:
+    - Oh.
+    - They line up.
+    - Neat.
+    hasDialogueChoices: 0
+    button1IsActive: 0
+    button2IsActive: 0
+    button3IsActive: 0
+    Button1Text: "What\u2019s wrong?"
+    Button2Text: Sorry for intruding.
+    Button3Text: 
+    choice1IsRight: 0
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences: []
+    choice2Sentences:
+    - '"sigh"'
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice2: 0
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 0}
+    choice2Triggers: {fileID: 0}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
+    startDirect: 0
 --- !u!1 &1516996289
 GameObject:
   m_ObjectHideFlags: 0
@@ -73747,6 +73922,11 @@ Transform:
   m_Father: {fileID: 983906594}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -0.83900005, z: 0}
+--- !u!1 &1589926920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1946616948542304, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 100389711}
 --- !u!1 &1592636008
 GameObject:
   m_ObjectHideFlags: 0
@@ -87717,6 +87897,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946908132}
   m_Mesh: {fileID: 4300000, guid: 0701e0ae542571a45b81bd64a310f90d, type: 3}
+--- !u!4 &1950369668 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4444755748219144, guid: 1f9083142d784a34fac9c5bf1ef5b0cd,
+    type: 2}
+  m_PrefabInternal: {fileID: 100389711}
 --- !u!1 &1951314506
 GameObject:
   m_ObjectHideFlags: 0
@@ -88183,6 +88368,7 @@ GameObject:
   - component: {fileID: 1969113525}
   - component: {fileID: 1969113524}
   - component: {fileID: 1969113523}
+  - component: {fileID: 1969113527}
   m_Layer: 0
   m_Name: PickUpTaken1
   m_TagString: Untagged
@@ -88257,6 +88443,19 @@ Transform:
   m_Father: {fileID: 817811726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1969113527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969113522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad442e79492262c49886f038d0633132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JaneNewText: {fileID: 1515668926}
+  JaneOldText: {fileID: 1589926920}
 --- !u!1 &1970386973
 GameObject:
   m_ObjectHideFlags: 0
