@@ -2176,12 +2176,12 @@ Prefab:
         type: 2}
       propertyPath: dialogue.choice1Triggers
       value: 
-      objectReference: {fileID: 1744004812}
+      objectReference: {fileID: 1463752658}
     - target: {fileID: 114728421053479210, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
       propertyPath: dialogue.choice1Triggers
       value: 
-      objectReference: {fileID: 1463752658}
+      objectReference: {fileID: 1744004812}
     - target: {fileID: 224415638309253950, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
         type: 2}
       propertyPath: m_LocalPosition.z
@@ -2193,11 +2193,6 @@ Prefab:
 --- !u!1 &805962748 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1382153000758100, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
-    type: 2}
-  m_PrefabInternal: {fileID: 805962747}
---- !u!1 &805962749 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1723743543579188, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
     type: 2}
   m_PrefabInternal: {fileID: 805962747}
 --- !u!1 &807984983 stripped
@@ -3091,7 +3086,7 @@ MonoBehaviour:
   maxScorePoints: 20
   ScorePoints: 0
   Minigame: {fileID: 1463752658}
-  FinishedGame: {fileID: 805962748}
+  FinishedGame: {fileID: 1624744283}
   Canvas: {fileID: 93555350}
   brokenBakery: {fileID: 0}
   fixedBakery: {fileID: 0}
@@ -4286,7 +4281,7 @@ Prefab:
         type: 2}
       propertyPath: startObject
       value: 
-      objectReference: {fileID: 1624744283}
+      objectReference: {fileID: 805962748}
     - target: {fileID: 114612439938926494, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: cubeCollection
@@ -4300,7 +4295,7 @@ Prefab:
     - target: {fileID: 224843779300479796, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224308932744588774, guid: fa6002ca469edc44280950219921a871,
         type: 2}
@@ -4315,12 +4310,12 @@ Prefab:
     - target: {fileID: 224889777913471534, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224914446238148598, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224572330481450722, guid: fa6002ca469edc44280950219921a871,
         type: 2}
@@ -4330,7 +4325,7 @@ Prefab:
     - target: {fileID: 224187096143360574, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224878335938951588, guid: fa6002ca469edc44280950219921a871,
         type: 2}
@@ -4340,7 +4335,7 @@ Prefab:
     - target: {fileID: 224208593027211796, guid: fa6002ca469edc44280950219921a871,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114612439938926494, guid: fa6002ca469edc44280950219921a871,
         type: 2}
@@ -4381,7 +4376,7 @@ Prefab:
         type: 2}
       propertyPath: failObject
       value: 
-      objectReference: {fileID: 805962749}
+      objectReference: {fileID: 1624744283}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6002ca469edc44280950219921a871, type: 2}
   m_IsPrefabAsset: 0
