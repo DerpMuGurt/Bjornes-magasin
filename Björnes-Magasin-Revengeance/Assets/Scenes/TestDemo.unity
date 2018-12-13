@@ -853,6 +853,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14731642}
   m_Mesh: {fileID: 4300000, guid: 897565060feebd34ba5c9ddbcd0de693, type: 3}
+--- !u!4 &15415063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4320423077561126, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 17485837}
 --- !u!1 &15897080
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +973,21 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114121576568822056, guid: 83ec9af061695124f9cfe49465b3729e,
+        type: 2}
+      propertyPath: Talk
+      value: 
+      objectReference: {fileID: 440242001}
+    - target: {fileID: 114121576568822056, guid: 83ec9af061695124f9cfe49465b3729e,
+        type: 2}
+      propertyPath: thisCon
+      value: 
+      objectReference: {fileID: 794761989}
+    - target: {fileID: 114121576568822056, guid: 83ec9af061695124f9cfe49465b3729e,
+        type: 2}
+      propertyPath: thatCon
+      value: 
+      objectReference: {fileID: 1510228055}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83ec9af061695124f9cfe49465b3729e, type: 2}
   m_IsPrefabAsset: 0
@@ -19518,6 +19538,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04796291, y: 0.0225348, z: 0.0026278596}
   m_Center: {x: 0.00000009033829, y: -3.081488e-33, z: -1.1641538e-10}
+--- !u!1 &440242001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1793627914710802, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 17485837}
+--- !u!114 &440242006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440242001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fbc13ac02fe4e4090bf1dcb5d3b081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObject: {fileID: 1510228055}
+  newObject: {fileID: 1466916902}
 --- !u!1 &442463330
 GameObject:
   m_ObjectHideFlags: 0
@@ -36827,6 +36865,94 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!1 &794761989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1793627914710802, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794761990}
+  - component: {fileID: 794761994}
+  - component: {fileID: 794761993}
+  m_Layer: 0
+  m_Name: Talk (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &794761990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4934978187902360, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794761989}
+  m_LocalRotation: {x: -0, y: 0.40540648, z: -0, w: 0.9141365}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+  m_Children: []
+  m_Father: {fileID: 15415063}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &794761993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 65815329994319346, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794761989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &794761994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114080203519908472, guid: 83ec9af061695124f9cfe49465b3729e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794761989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6fc1ade9fda25408f61b674d9e9423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Tim
+    hasVoice: 1
+    myVoice: {fileID: 794761989}
+    typingSpeed: 0
+    sentences:
+    - Im still hiding.
+    hasDialogueChoices: 0
+    button1IsActive: 0
+    button2IsActive: 0
+    button3IsActive: 0
+    Button1Text: That's confusing.
+    Button2Text: I see.
+    Button3Text: 
+    choice1IsRight: 0
+    choice2IsRight: 0
+    choice3IsRight: 0
+    choice1Sentences:
+    - Yeah.
+    choice2Sentences:
+    - See what?
+    choice3Sentences: []
+    stopTalkigAfterChoice1: 1
+    stopTalkigAfterChoice2: 1
+    stopTalkigAfterChoice3: 0
+    choice1Triggers: {fileID: 1466916902}
+    choice2Triggers: {fileID: 794761989}
+    choice3Triggers: {fileID: 0}
+    isHavingAConversation: 0
+    isHavingAConversationWith: {fileID: 0}
+    startDirect: 0
 --- !u!1 &800246641
 GameObject:
   m_ObjectHideFlags: 0
@@ -69522,7 +69648,6 @@ GameObject:
   - component: {fileID: 1466916906}
   - component: {fileID: 1466916905}
   - component: {fileID: 1466916904}
-  - component: {fileID: 1466916903}
   m_Layer: 0
   m_Name: Talk (1)
   m_TagString: Untagged
@@ -69530,20 +69655,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1466916903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114685599136121852, guid: 266e32b53711f6345a143e81d1636e48,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1466916902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac514225ab78b2342a3539f896e71ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oldDialogue: {fileID: 1510228055}
-  newDialogue: {fileID: 1466916902}
 --- !u!65 &1466916904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69591,7 +69702,7 @@ MonoBehaviour:
     choice2Sentences:
     - '"sigh"'
     choice3Sentences: []
-    stopTalkigAfterChoice1: 0
+    stopTalkigAfterChoice1: 1
     stopTalkigAfterChoice2: 0
     stopTalkigAfterChoice3: 0
     choice1Triggers: {fileID: 423311784}
@@ -71604,7 +71715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1510228056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76058,6 +76169,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad57f1c95f3ee704aaf310ec2047ee69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1592870722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592870714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798bb1e619067544d86f9d899369b7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1596014666 stripped
