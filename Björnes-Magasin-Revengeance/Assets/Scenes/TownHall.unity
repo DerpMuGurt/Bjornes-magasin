@@ -5320,7 +5320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &163753541
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5556,7 +5556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &204316699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6431,7 +6431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &455894077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14802,7 +14802,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8795b0f2da436b145b436b844c297a46, type: 3}
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
-  voicePitch: {fileID: 1993412765}
+  voicePitch: {fileID: 1667328125}
 --- !u!1 &2043309379
 GameObject:
   m_ObjectHideFlags: 0
@@ -14999,6 +14999,30 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505166678917340, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 455894078}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: clockText
+      value: 
+      objectReference: {fileID: 204316700}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: dayText
+      value: 
+      objectReference: {fileID: 163753542}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81817218136272490, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
