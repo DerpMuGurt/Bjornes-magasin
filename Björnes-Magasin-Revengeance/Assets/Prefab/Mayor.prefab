@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 33437020720469658}
   - component: {fileID: 23443330841038750}
   - component: {fileID: 114565692353637156}
-  - component: {fileID: 65433786417688530}
+  - component: {fileID: 135702705552646290}
   m_Layer: 0
   m_Name: Mayor
   m_TagString: Untagged
@@ -3208,18 +3208,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7, y: 7, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65433786417688530
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1578124820255960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65445294841225378
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -4568,6 +4556,18 @@ MonoBehaviour:
     isHavingAConversation: 1
     isHavingAConversationWith: {fileID: 1823307211474620}
     startDirect: 0
+--- !u!135 &135702705552646290
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578124820255960}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137155839481183142
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

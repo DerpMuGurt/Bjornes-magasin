@@ -5440,21 +5440,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114396977038386332, guid: bb331dfa6e0ccb148936b42ad92af743,
-        type: 2}
-      propertyPath: cameraToHide
-      value: 
-      objectReference: {fileID: 2043309379}
-    - target: {fileID: 114565692353637156, guid: bb331dfa6e0ccb148936b42ad92af743,
-        type: 2}
-      propertyPath: guiObject
-      value: 
-      objectReference: {fileID: 822972315}
     - target: {fileID: 114090933949121744, guid: bb331dfa6e0ccb148936b42ad92af743,
         type: 2}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1243624186}
+    - target: {fileID: 114565692353637156, guid: bb331dfa6e0ccb148936b42ad92af743,
+        type: 2}
+      propertyPath: guiObject
+      value: 
+      objectReference: {fileID: 822972315}
+    - target: {fileID: 114396977038386332, guid: bb331dfa6e0ccb148936b42ad92af743,
+        type: 2}
+      propertyPath: cameraToHide
+      value: 
+      objectReference: {fileID: 2043309379}
     - target: {fileID: 224145247913019516, guid: bb331dfa6e0ccb148936b42ad92af743,
         type: 2}
       propertyPath: m_LocalPosition.z
