@@ -52044,31 +52044,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.78
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.93
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.61
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.99999964
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.00087028916
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4216351288943106, guid: 1c99fb89043afcd49a91d6b7f5fb73a6, type: 2}
       propertyPath: m_RootOrder
@@ -53906,6 +53906,28 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1150309971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1077339294192494, guid: 1c99fb89043afcd49a91d6b7f5fb73a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1118337972}
+--- !u!114 &1150309972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150309971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c5ec1ed5fe64ad42b5dbee96f7b240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 4
+  maxX: 4
+  minX: 4
+  maxZ: 3
+  minZ: 3
+  move: 1
 --- !u!1 &1157878134
 GameObject:
   m_ObjectHideFlags: 0
@@ -70362,42 +70384,6 @@ Transform:
   m_Father: {fileID: 1844357301}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1524396435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1077339294192494, guid: 1c99fb89043afcd49a91d6b7f5fb73a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1118337972}
---- !u!114 &1524396436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524396435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5ec1ed5fe64ad42b5dbee96f7b240e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  directionChangeInterval: 1
-  maxHeadingChange: 15
---- !u!143 &1524396437
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524396435}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1524531943
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,45 +1,66 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[RequireComponent(typeof(CharacterController))]
+
+
 public class WalkScript : MonoBehaviour
 {
-    public float speed = 5f;
-    public float directionChangeInterval = 1;
-    public float maxHeadingChange = 30;
+    public float duration;    //the max time of a walking session (set to ten)
+    float elapsedTime = 0f; //time since started walk
+    float wait = 0f; //wait this much time
+    float waitTime = 0f; //waited this much time
 
-    CharacterController controller;
-    float heading;
-    Vector3 targetRotation;
+    public float maxX;
+    public float minX;
+    public float maxZ;
+    public float minZ;
 
-    void Awake()
+    float randomX;  //randomly go this X direction
+    float randomZ;  //randomly go this Z direction
+
+    public bool move = true; //start moving
+
+    void Start()
     {
-        controller = GetComponent<CharacterController>();
-        heading = Random.Range(0, 360);
-        transform.eulerAngles = new Vector3(0, heading, 0);
-
-        StartCoroutine(NewHeading());
+        randomX = Random.Range(-minX, maxX);
+        randomZ = Random.Range(-minZ, maxZ);
     }
 
     void Update()
     {
-        transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directionChangeInterval);
-        var forward = transform.TransformDirection(Vector3.forward);
-        controller.SimpleMove(forward * speed);      
-    }
-    IEnumerator NewHeading()
-    {
-        while (true)
+
+
+
+        //Debug.Log (elapsedTime);
+
+        if (elapsedTime <= duration && move)
         {
-            NewHeadingRoutine();
-            yield return new WaitForSeconds(directionChangeInterval);
+            //if its moving and didn't move too much
+            transform.Translate(new Vector3(randomX, 0, randomZ) * Time.deltaTime);
+            elapsedTime += Time.deltaTime;
+
         }
-    }
-    void NewHeadingRoutine()
-    {
-        var floor = Mathf.Clamp(heading - maxHeadingChange, 0, 360);
-        var ceil = Mathf.Clamp(heading + maxHeadingChange, 0, 360);
-        heading = Random.Range(floor, ceil);
-        targetRotation = new Vector3(0, heading, 0);
+        else
+        {
+            //do not move and start waiting for random time
+            move = false;
+            wait = Random.Range(5, 10);
+            waitTime = 0f;
+        }
+
+        if (waitTime <= wait && !move)
+        {
+            //you are waiting
+            waitTime += Time.deltaTime;
+
+
+        }
+        else if (!move && waitTime == wait)
+        {
+            move = true;
+            elapsedTime = 0f;
+            randomX = Random.Range(-3, 3);
+            randomZ = Random.Range(-3, 3);
+        }
     }
 }
