@@ -14,7 +14,6 @@ public class SceneManagement : MonoBehaviour {
 
     public GameObject OutsideBakerySpawn;
     public GameObject townHallSpawn;
-    public GameObject inSideTownHallSpawn;
     public Transform OutsideBakery;
     public GameObject brokenBakery;
     public GameObject fixedBakery;
@@ -31,7 +30,6 @@ public class SceneManagement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
 
         OutsideBakerySpawn = GameObject.FindGameObjectWithTag("OutsideBakerySpawn");
-        inSideTownHallSpawn = GameObject.FindGameObjectWithTag("InsideTownHallSpawn");
 
         player = GameObject.FindGameObjectWithTag("Player");
         samePlayer = GameObject.FindWithTag("Player").transform;
@@ -50,8 +48,8 @@ public class SceneManagement : MonoBehaviour {
 
         brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
         fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
+       
 
-        inSideTownHallSpawn = GameObject.FindGameObjectWithTag("InsideTownHallSpawn");
         townHallSpawn = GameObject.FindGameObjectWithTag("TownHallSpawn");
 
         Scene currentScene = SceneManager.GetActiveScene();
@@ -110,12 +108,10 @@ public class SceneManagement : MonoBehaviour {
           
             samePlayer.transform.LookAt(OutsideBakery);
 
-        }
+           
 
-        if(other.gameObject.tag == "EnterTownHall") {
 
-            SceneManager.LoadScene("TownHall", LoadSceneMode.Single);
-            player.transform.position = inSideTownHallSpawn.transform.position;
+
 
         }
 

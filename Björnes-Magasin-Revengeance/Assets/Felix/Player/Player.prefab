@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 114151778954967500}
   - component: {fileID: 114460040851363362}
   - component: {fileID: 82669730974361154}
+  - component: {fileID: 114571517812209064}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2612,6 +2613,35 @@ MonoBehaviour:
   cameraToHide: {fileID: 0}
   cameraToShow: {fileID: 1955818681117032}
   objectToShow: {fileID: 1623850840748032}
+--- !u!114 &114571517812209064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505166678917340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708aa9c7485b65647856f8b21958bdbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  dayText: {fileID: 0}
+  timeText: {fileID: 0}
+  clockText: {fileID: 0}
+  dayLight: {fileID: 0}
+  timer: 0
+  days: 0
+  eveningColor: {r: 0.9254902, g: 0.45882353, b: 0.28235295, a: 1}
+  morningColor: {r: 1, g: 0.4, b: 0.7019608, a: 1}
+  dayColor: {r: 1, g: 1, b: 1, a: 1}
+  nightColor: {r: 0, g: 0, b: 0.5019608, a: 1}
+  dayTrans: {r: 0.9607843, g: 0.7764706, b: 0.4392157, a: 1}
+  eveningTrans: {r: 0.8666667, g: 0.25882354, b: 0.5058824, a: 1}
+  nightTrans: {r: 0.6509804, g: 0.28627452, b: 0.5568628, a: 1}
+  morningTrans: {r: 1, g: 0.7529412, b: 0.79607844, a: 1}
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  weekDays: 0
+  timeOfDay: 0
 --- !u!114 &114613265600891590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2629,6 +2659,8 @@ MonoBehaviour:
   OutsideBakerySpawn: {fileID: 0}
   townHallSpawn: {fileID: 0}
   OutsideBakery: {fileID: 0}
+  brokenBakery: {fileID: 0}
+  fixedBakery: {fileID: 0}
 --- !u!114 &114659042524903948
 MonoBehaviour:
   m_ObjectHideFlags: 1
