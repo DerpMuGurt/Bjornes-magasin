@@ -139,7 +139,6 @@ public class SelectorScript : MonoBehaviour
                 speed = 0;
                 timer = 0;
                 speedIncrease = 0;
-                //hit = true;
                 animator.SetBool("isSuccess", true);
                 currentCanvas.gameObject.SetActive(false);
                 canvasInt = Random.Range(0, canvasList.Length);
