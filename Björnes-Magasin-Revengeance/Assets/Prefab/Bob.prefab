@@ -1193,8 +1193,8 @@ GameObject:
   - component: {fileID: 33906961313615426}
   - component: {fileID: 23500051486258268}
   - component: {fileID: 114431786640343604}
-  - component: {fileID: 65146049824226124}
   - component: {fileID: 114822271952077168}
+  - component: {fileID: 135446505722922032}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Baker
@@ -2651,18 +2651,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1874738780948088}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65146049824226124
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1874738780948088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65558457387241294
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2979,6 +2967,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
   voicePitch: {fileID: 82130792163808190}
+--- !u!135 &135446505722922032
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874738780948088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137267358705554582
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2994,7 +2994,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: cf693fb4427315341bffcf5e561a8c8c, type: 3}
+  - {fileID: 2100000, guid: 4bead0447c8d73643abecbf4a779a6b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3095,7 +3095,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: cf693fb4427315341bffcf5e561a8c8c, type: 3}
+  - {fileID: 2100000, guid: 294ba072881b0e64b860999e34ea0d9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

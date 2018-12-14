@@ -1115,7 +1115,8 @@ GameObject:
   - component: {fileID: 33366066746123416}
   - component: {fileID: 23270784537280826}
   - component: {fileID: 114149921217388182}
-  - component: {fileID: 65491959066725400}
+  - component: {fileID: 114664157675049388}
+  - component: {fileID: 135253617896243120}
   m_Layer: 0
   m_Name: Jane
   m_TagString: Baker
@@ -2650,18 +2651,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640413468138828}
   m_Mesh: {fileID: 4300006, guid: 4e0a97e966b29914cba51b7fdcf7d2f2, type: 3}
---- !u!65 &65491959066725400
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1845439064749548}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65676569614988304
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2943,6 +2932,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnThis: {fileID: 1028720124306048}
+--- !u!114 &114664157675049388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845439064749548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0243aeea729e2d14f9e67ad5219820d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114958715875554246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2965,6 +2965,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
   voicePitch: {fileID: 82216381147418052}
+--- !u!135 &135253617896243120
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845439064749548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137772120257660482
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2980,7 +2992,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 4c4034c5e9f473a4ab20e02a65006078, type: 3}
+  - {fileID: 2100000, guid: e7a76d3c036675044a2c60f39d626b12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3081,7 +3093,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4c4034c5e9f473a4ab20e02a65006078, type: 3}
+  - {fileID: 2100000, guid: 2d99c883e5cae4341b21920a871d14c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

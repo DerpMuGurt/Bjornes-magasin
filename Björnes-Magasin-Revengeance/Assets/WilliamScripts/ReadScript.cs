@@ -4,20 +4,47 @@ using UnityEngine;
 
 public class ReadScript : MonoBehaviour {
 
-    public GameObject reading;
     public GameObject guiObject;
+    public GameObject book;
+    public bool readings;
 
     void Start()
     {
-        reading.SetActive(false);
+            readings = false;
+}
+
+    void Update()
+    {
+        //if ( readings == true )
+        //{
+        //    FindObjectOfType<Movement>().enabled = false;
+        
+        //}
+        //if (readings == true)
+        //{
+        //    FindObjectOfType<Movement>().enabled = true;
+        
+        //}
+
     }
 
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
+
             guiObject.SetActive(true);
-            reading.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E) && readings == false || Input.GetKeyDown("joystick button 0"))
+            {
+                readings = true;
+                book.SetActive(true);
+            }
+            else
+            if (Input.GetKeyDown(KeyCode.E) && readings == true || Input.GetKeyDown("joystick button 0"))
+                {
+                readings = false;
+                book.SetActive(false);
+            }
         }
     }
 
@@ -26,8 +53,8 @@ public class ReadScript : MonoBehaviour {
         if (other.tag == "Player")
         {
             guiObject.SetActive(false);
-            reading.SetActive(false);
-            DialogueTrigger.talking = false;
+            book.SetActive(false);
+            readings = false;
         }
     }
 }
