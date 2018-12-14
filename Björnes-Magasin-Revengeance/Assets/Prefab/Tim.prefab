@@ -885,7 +885,8 @@ GameObject:
   - component: {fileID: 33967336541261086}
   - component: {fileID: 23739401905792898}
   - component: {fileID: 114763251858893760}
-  - component: {fileID: 65649356495338920}
+  - component: {fileID: 114969975001813282}
+  - component: {fileID: 135947681022845228}
   m_Layer: 0
   m_Name: Tim
   m_TagString: Baker
@@ -1387,8 +1388,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685442046266952}
-  m_LocalRotation: {x: -0, y: -0.9915092, z: -0, w: 0.13003649}
-  m_LocalPosition: {x: -27.97, y: 0.93, z: 64.36}
+  m_LocalRotation: {x: -0, y: -0.9591075, z: -0, w: -0.28304204}
+  m_LocalPosition: {x: 23.61, y: 0.93, z: 69.72}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4320423077561126}
@@ -1398,7 +1399,7 @@ Transform:
   - {fileID: 4645535767131868}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -165.057, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -212.88399, z: 0}
 --- !u!4 &4080330888555344
 Transform:
   m_ObjectHideFlags: 1
@@ -2663,18 +2664,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1, z: 10}
   m_Center: {x: 0, y: 0.93, z: 5}
---- !u!65 &65649356495338920
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1685442046266952}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65746857170888748
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2872,6 +2861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b944a6f7e05e7c468d586b5274c2723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCon: {fileID: 0}
+  thatCon: {fileID: 0}
 --- !u!114 &114270230885404448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2976,6 +2967,29 @@ MonoBehaviour:
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
     startDirect: 0
+--- !u!114 &114969975001813282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1685442046266952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad57f1c95f3ee704aaf310ec2047ee69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &135947681022845228
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1685442046266952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137161273044838140
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2991,7 +3005,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ee73fd8183d65a94a94e29a865151125, type: 3}
+  - {fileID: 2100000, guid: 4ad5fe52623eee3479b50ffe163c4486, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3092,7 +3106,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: ee73fd8183d65a94a94e29a865151125, type: 3}
+  - {fileID: 2100000, guid: 76deeab96abcbd446804dc88a8c4f6a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

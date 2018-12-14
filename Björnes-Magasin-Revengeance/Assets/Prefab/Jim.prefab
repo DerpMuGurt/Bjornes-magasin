@@ -129,7 +129,8 @@ GameObject:
   - component: {fileID: 33970356182102902}
   - component: {fileID: 23649038551477132}
   - component: {fileID: 114119078306351986}
-  - component: {fileID: 65092552906674054}
+  - component: {fileID: 114059654519252540}
+  - component: {fileID: 135986764905419648}
   m_Layer: 0
   m_Name: Jim
   m_TagString: Baker
@@ -2682,18 +2683,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1085961218034946}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65092552906674054
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1085961218034946}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 1.11}
 --- !u!65 &65250521080347710
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2904,6 +2893,17 @@ MonoBehaviour:
     isHavingAConversation: 0
     isHavingAConversationWith: {fileID: 0}
     startDirect: 0
+--- !u!114 &114059654519252540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085961218034946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ebce0d4af4abf54daeb531186700c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114119078306351986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3063,6 +3063,18 @@ MonoBehaviour:
   cameraToHide: {fileID: 0}
   cameraToShow: {fileID: 1127058058028778}
   objectToHide: {fileID: 0}
+--- !u!135 &135986764905419648
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085961218034946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137033778791739952
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -3078,7 +3090,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ee73fd8183d65a94a94e29a865151125, type: 3}
+  - {fileID: 2100000, guid: 7a155908e7aafb441b1d7978e6db835a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3179,7 +3191,7 @@ SkinnedMeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: ee73fd8183d65a94a94e29a865151125, type: 3}
+  - {fileID: 2100000, guid: 0dc9764995b78e34ea2a7ae0f8d20810, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
