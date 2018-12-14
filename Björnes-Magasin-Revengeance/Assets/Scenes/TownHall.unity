@@ -6559,7 +6559,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 468970132}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -14999,6 +14999,30 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1505166678917340, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 455894078}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: clockText
+      value: 
+      objectReference: {fileID: 204316700}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: dayText
+      value: 
+      objectReference: {fileID: 163753542}
+    - target: {fileID: 114571517812209064, guid: 3f029bee094926b45bbf8108e1292c46,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81817218136272490, guid: 3f029bee094926b45bbf8108e1292c46, type: 2}
