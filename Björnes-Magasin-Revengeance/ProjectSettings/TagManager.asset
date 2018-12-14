@@ -72,6 +72,10 @@ TagManager:
   - TempoCamera
   - LevelFade
   - ButtonImage
+  - EnterTownHall
+  - InsideTownHallSpawn
+  - PlayerBaking
+  - FailBox
   layers:
   - Default
   - TransparentFX
