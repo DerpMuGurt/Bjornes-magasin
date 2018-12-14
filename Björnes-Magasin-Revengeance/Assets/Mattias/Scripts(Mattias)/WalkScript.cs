@@ -1,115 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(CharacterController))]
 public class WalkScript : MonoBehaviour
 {
+    public float speed = 5f;
+    public float directionChangeInterval = 1;
+    public float maxHeadingChange = 30;
 
-    public float speed;
+    CharacterController controller;
+    float heading;
+    Vector3 targetRotation;
 
-    public float xMax = 3;
-    public float zMax = 3;
-    public float xMin = -3;
-    public float zMin = -3;
-    public float goTimer = 0f;
-    public float stopTimer = 0f;
-    public float duration = 5f;
-
-    private float x;
-    private float z;
-    private float upSpeed;
-    private float angle;
-    private float wait;
-
-    bool stop = true;
-
-    void Start()
+    void Awake()
     {
-        x = Random.Range(-speed, speed);
-        z = Random.Range(-speed, speed);
-        angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-        transform.localRotation = Quaternion.Euler(0, angle, 0);
+        controller = GetComponent<CharacterController>();
+        heading = Random.Range(0, 360);
+        transform.eulerAngles = new Vector3(0, heading, 0);
+
+        StartCoroutine(NewHeading());
     }
+
     void Update()
     {
-        if(goTimer < duration && stop)
+        transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, targetRotation, Time.deltaTime * directionChangeInterval);
+        var forward = transform.TransformDirection(Vector3.forward);
+        controller.SimpleMove(forward * speed);      
+    }
+    IEnumerator NewHeading()
+    {
+        while (true)
         {
-            upSpeed += Time.deltaTime;
-            if (transform.localPosition.x > xMax)
-            {
-                x = Random.Range(-speed, 0.0f);
-                angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                transform.localRotation = Quaternion.Euler(0, angle, 0);
-                upSpeed = 0.0f;
-            }
-            if (transform.localPosition.x < xMin)
-            {
-
-                x = Random.Range(0.0f, speed);
-                angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                transform.localRotation = Quaternion.Euler(0, angle, 0);
-                upSpeed = 0.0f;
-            }
-            if (transform.localPosition.z > zMax)
-            {
-                z = Random.Range(-speed, 0.0f);
-                angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                transform.localRotation = Quaternion.Euler(0, angle, 0);
-                upSpeed = 0.0f;
-            }
-            if (transform.localPosition.z < zMin)
-            {
-                z = Random.Range(0.0f, speed);
-                angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                transform.localRotation = Quaternion.Euler(0, angle, 0);
-                upSpeed = 0.0f;
-                goTimer = Time.deltaTime;
-            }
-            else
-            {
-                stop = false;
-                wait = Random.Range(5, 10);
-                stopTimer = 0f;
-            }
-            if(stopTimer < wait && !stop)
-            {
-                stopTimer += Time.deltaTime;
-            }
-            else if(!stop)
-            {
-                goTimer = 0f;
-                upSpeed += Time.deltaTime;
-                if (transform.localPosition.x > xMax)
-                {
-                    x = Random.Range(-speed, 0.0f);
-                    angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                    transform.localRotation = Quaternion.Euler(0, angle, 0);
-                    upSpeed = 0.0f;
-                }
-                if (transform.localPosition.x < xMin)
-                {
-
-                    x = Random.Range(0.0f, speed);
-                    angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                    transform.localRotation = Quaternion.Euler(0, angle, 0);
-                    upSpeed = 0.0f;
-                }
-                if (transform.localPosition.z > zMax)
-                {
-                    z = Random.Range(-speed, 0.0f);
-                    angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                    transform.localRotation = Quaternion.Euler(0, angle, 0);
-                    upSpeed = 0.0f;
-                }
-                if (transform.localPosition.z < zMin)
-                {
-                    z = Random.Range(0.0f, speed);
-                    angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
-                    transform.localRotation = Quaternion.Euler(0, angle, 0);
-                    upSpeed = 0.0f;
-                }
-            }
+            NewHeadingRoutine();
+            yield return new WaitForSeconds(directionChangeInterval);
         }
-        transform.localPosition = new Vector3(transform.localPosition.x + x, transform.localPosition.y, transform.localPosition.z + z);
+    }
+    void NewHeadingRoutine()
+    {
+        var floor = Mathf.Clamp(heading - maxHeadingChange, 0, 360);
+        var ceil = Mathf.Clamp(heading + maxHeadingChange, 0, 360);
+        heading = Random.Range(floor, ceil);
+        targetRotation = new Vector3(0, heading, 0);
     }
 }

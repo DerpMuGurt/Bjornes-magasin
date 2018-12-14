@@ -74,12 +74,14 @@ public class SelectorScript : MonoBehaviour
         timer += Time.deltaTime;
         if(timer >= successTimer)
         {
+            Debug.Log(timer);
             speed = gameSpeed + speedIncrease;
             animator.SetBool("isSuccess", false);
         }
         timer2 += Time.deltaTime;
         if(timer2 >= failTimer)
         {
+            Debug.Log(timer2);
             speed = gameSpeed + speedIncrease;
             animator.SetBool("isFail", false);
         }
@@ -92,8 +94,6 @@ public class SelectorScript : MonoBehaviour
         speedAmount.x = speedDirection * speed * Time.deltaTime;
         
         transform.Translate(speedAmount);
-
-        Time.timeScale = 1f;
 
         pointsText.text = points.ToString() + " / ".ToString() + pointsToReach.ToString();
         
