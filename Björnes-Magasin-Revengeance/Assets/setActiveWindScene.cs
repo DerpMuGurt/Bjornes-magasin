@@ -5,16 +5,17 @@ using UnityEngine;
 public class setActiveWindScene : MonoBehaviour {
 
     public GameObject CutSceneWin;
+    // Use this for initialization
 
-	// Use this for initialization
-	void Start () {
 
-	}
-
-    OnEnabled()
+    void OnEnable()
     {
         CutSceneWin.SetActive(true);
     }
+    void Start () {
+
+	}
+
 	
 	// Update is called once per frame
 	void Update () {
