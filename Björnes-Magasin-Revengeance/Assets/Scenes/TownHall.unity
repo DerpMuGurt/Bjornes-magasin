@@ -6559,7 +6559,7 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 468970132}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -14802,7 +14802,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8795b0f2da436b145b436b844c297a46, type: 3}
   - {fileID: 8300000, guid: 803a9ed617638a649ba9ac4ad4c9ce6c, type: 3}
   - {fileID: 8300000, guid: b8e068eb5a014e94d8201e0909c22135, type: 3}
-  voicePitch: {fileID: 1993412765}
+  voicePitch: {fileID: 1667328125}
 --- !u!1 &2043309379
 GameObject:
   m_ObjectHideFlags: 0
