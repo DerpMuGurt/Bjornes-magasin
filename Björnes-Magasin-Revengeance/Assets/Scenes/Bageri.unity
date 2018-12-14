@@ -8169,6 +8169,11 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &963796163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1389336174836650, guid: 1f8a34a2cdebbf94ca344df5b066f47b,
+    type: 2}
+  m_PrefabInternal: {fileID: 963796160}
 --- !u!1 &966790405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9732,7 +9737,7 @@ MonoBehaviour:
   maxScorePoints: 20
   ScorePoints: 0
   Minigame: {fileID: 1463752658}
-  FinishedGame: {fileID: 1624744283}
+  FinishedGame: {fileID: 963796163}
   Canvas: {fileID: 93555350}
   brokenBakery: {fileID: 0}
   fixedBakery: {fileID: 0}
