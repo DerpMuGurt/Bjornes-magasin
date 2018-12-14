@@ -40169,6 +40169,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 848133038}
   m_Mesh: {fileID: 4300000, guid: 42bdf1092a1c4ea42a767886db8bd728, type: 3}
+--- !u!1 &849594452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1527161311861428, guid: bc76ac54e02f6454d91f4cdc2c122e19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1396791975}
 --- !u!1 &849848902
 GameObject:
   m_ObjectHideFlags: 0
@@ -65370,6 +65375,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 49.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114893407214492950, guid: bc76ac54e02f6454d91f4cdc2c122e19,
+        type: 2}
+      propertyPath: optionsMenuUI
+      value: 
+      objectReference: {fileID: 849594452}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc76ac54e02f6454d91f4cdc2c122e19, type: 2}
   m_IsPrefabAsset: 0
