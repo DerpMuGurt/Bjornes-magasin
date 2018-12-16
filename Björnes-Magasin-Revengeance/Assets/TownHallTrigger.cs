@@ -9,8 +9,7 @@ public class TownHallTrigger : MonoBehaviour {
 
     void Start() {
 
-        
-
+       
     }
 
 
@@ -18,9 +17,9 @@ public class TownHallTrigger : MonoBehaviour {
 
         if (other.gameObject.tag == "BottomTrigger") {
 
-            cameraController.SetBool("Cam1", true);
+            cameraController.SetBool("Cam1", false);
             cameraController.SetBool("Cam2", false);
-            cameraController.SetBool("Cam3", false);
+            cameraController.SetBool("Cam3", true);
 
         }
 
@@ -34,9 +33,9 @@ public class TownHallTrigger : MonoBehaviour {
 
         if (other.gameObject.tag == "TopTrigger") {
 
-            cameraController.SetBool("Cam1", false);
+            cameraController.SetBool("Cam1", true);
             cameraController.SetBool("Cam2", false);
-            cameraController.SetBool("Cam3", true);
+            cameraController.SetBool("Cam3", false);
 
         }
 

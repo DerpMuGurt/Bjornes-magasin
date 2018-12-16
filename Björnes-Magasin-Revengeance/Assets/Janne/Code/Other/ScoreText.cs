@@ -11,39 +11,18 @@ public class ScoreText : MonoBehaviour
     public static bool GameComplete;
     public GameObject FinishedGame;
     public GameObject Canvas;
-
-    public GameObject NiceImage;
-    public GameObject MissImage;
-
-    Animator animator;
-
-    AudioSource audioS;
-    public AudioClip GoodSound;
-    public AudioClip MissSound;
-
-    public GameObject MainCam;
-    public GameObject RythmCam;
-
-    public bool GoodScore = false;
-    public bool FailScore = false;
-
-    public GameObject Yellow;
-
-    public GameObject bakingDude;
-
-
+    public GameObject brokenBakery;
+    public GameObject fixedBakery;
 
 
 
     void Start()
     {
         Minigame.SetActive(true);
-
-        animator = bakingDude.GetComponent<Animator>();
-        audioS = GetComponent<AudioSource>();
-
         ScorePoints = 0;
 
+        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
+        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
 
         // FinishedGame = GameObject.FindGameObjectWithTag("FinishedGame");
 
@@ -51,57 +30,8 @@ public class ScoreText : MonoBehaviour
 
     void Update()
     {
-
-        MainCam.SetActive(false);
-        RythmCam.SetActive(true);
-
-
-        if (GoodScore == true) {
-
-           StartCoroutine("delayFalse");
-            animator.SetBool("KneadSuccess", true);
-            audioS.PlayOneShot(GoodSound, 0.7F);
-           Yellow.GetComponent<Image>().color = Color.green;
-           NiceImage.SetActive(true);
-           StartCoroutine("delayHit");
-        }
-
-        else if (GoodScore == false) {
-            animator.SetBool("KneadSuccess", false);
-
-        }
-
-
-        if (FailScore == true) {
-            StartCoroutine("delayFalse");
-            animator.SetBool("KneadFail", true);
-            audioS.PlayOneShot(MissSound, 0.7F);
-            Yellow.GetComponent<Image>().color = Color.red;
-           MissImage.SetActive(true);
-            StartCoroutine("delayMiss");
-
-        }
-        else if (FailScore == false) {
-
-
-            animator.SetBool("KneadFail", false);
-
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        brokenBakery = GameObject.FindGameObjectWithTag("BrokenBakery");
+        fixedBakery = GameObject.FindGameObjectWithTag("FixedBakery");
 
         GameComplete = true;
         ScorePoints.ToString();
@@ -123,14 +53,21 @@ public class ScoreText : MonoBehaviour
             maxScorePoints = 20;
             ScorePoints = 0;
 
-            MainCam.SetActive(true);
-            RythmCam.SetActive(false);
-
             FindObjectOfType<Movement>().enabled = true;
             GameComplete = false;
             FinishedGame.SetActive(true);
             Minigame.SetActive(false);
 
+          //  brokenBakery.SetActive(false);
+           // fixedBakery.SetActive(true);
+
+
+
+
+
+
+
+            //FindObjectOfType<Movement>().enabled = true;
 
         }
 
@@ -141,31 +78,20 @@ public class ScoreText : MonoBehaviour
         }
 
 
-    
+        /*if (GameComplete)
+        {
+            Minigame.SetActive(false);
+        }
+        */
     }
 
-    IEnumerator delayFalse() {
+    //void OnDisable()
+    //{
+        
+    //}
 
-        yield return new WaitForSeconds(0.4f);
-        GoodScore = false;
-
-        FailScore = false;
-    }
-
-    IEnumerator delayHit() {
-        yield return new WaitForSeconds(0.5f);
-        Yellow.GetComponent<Image>().color = Color.yellow;
-        NiceImage.SetActive(false);
-
-    }
-
-    IEnumerator delayMiss() {
-        yield return new WaitForSeconds(0.5f);
-        Yellow.GetComponent<Image>().color = Color.yellow;
-        MissImage.SetActive(false);
-
-    }
-
-
-
+    //void OnEnable()
+    //{
+    //    ScorePoints = 0;
+    //}
 }

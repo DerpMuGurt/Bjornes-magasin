@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Good_R: MonoBehaviour
 {
-   
+    public Text Good_Text;
 
     bool active = false;
 
@@ -18,9 +18,10 @@ public class Good_R: MonoBehaviour
     void Start()
     {
         Score = FindObjectOfType<ScoreText>();
-     
+        Good_Text = GameObject.FindGameObjectWithTag("Good_Text").GetComponent<Text>();
+        Good_Text.text = "GOOD!";
         GoodR = GameObject.FindGameObjectWithTag("R");
-       
+        Good_Text.enabled = false;
     }
 
     void OnTriggerStay2D(Collider2D collision)
@@ -29,34 +30,20 @@ public class Good_R: MonoBehaviour
         {
             if (Input.GetKey(KeyCode.R) || Input.GetKey("joystick button 2"))
             {
-                
-               
+                Good_Text.enabled = true;
+                //set inactive
+                //GoodR.SetActive(false);
                 Score.ScorePoints += 1;
-                Score.GoodScore = true;
+                //play audio here
                 Destroy(gameObject);
             }
-
-            else if (Input.GetKey(KeyCode.W)
-            || Input.GetKey("joystick button 3")
-            || Input.GetKey(KeyCode.Q)
-            || Input.GetKey("joystick button 1")
-            || Input.GetKey(KeyCode.E)
-            || Input.GetKey("joystick button 0")) {
-
-                Score.FailScore = true;
-            }
-
-        }
-        if (collision.gameObject.tag == "FailBox") {
-
-            if (Input.GetKey(KeyCode.R) || Input.GetKey("joystick button 2")) {
-
-                Score.FailScore = true;
-                Destroy(gameObject);
-            }
-
+            StartCoroutine(MyTime());
         }
     }
 
-  
+    IEnumerator MyTime()
+    {
+        yield return new WaitForSeconds(1);
+        Good_Text.enabled = false;
+    }
 }

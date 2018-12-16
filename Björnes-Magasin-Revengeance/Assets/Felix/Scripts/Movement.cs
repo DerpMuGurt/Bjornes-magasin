@@ -58,55 +58,9 @@ public class Movement : MonoBehaviour {
 
     }
 
-     void FixedUpdate() {
 
 
-
-
-
-
-        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        input = Vector2.ClampMagnitude(input, 5);
-
-
-        input2 = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        input2 = Vector3.ClampMagnitude(input, 5);
-        input2 = Vector3.zero;
-
-
-
-        Vector3 camF = cam.forward;
-        Vector3 camR = cam.right;
-
-        camF.y = 0;
-        camR.y = 0;
-
-        camF = camF.normalized;
-        camR = camR.normalized;
-
-
-        rb.MovePosition(transform.position += (camF * input.y + camR * input.x) * walkSpeed * Time.deltaTime);
-
-        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
-
-
-
-        InputListen();
-
-
-
-        if (input != Vector2.zero || input2 != Vector3.zero) {
-
-
-
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.position - prevLoc), Time.deltaTime * lookSpeed);
-
-        }
-
-    }
-
-
-
+   
 
     // Update is called once per frame
     void Update() {
@@ -185,6 +139,47 @@ public class Movement : MonoBehaviour {
 
 
 
+
+
+
+
+        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        input = Vector2.ClampMagnitude(input, 5);
+       
+
+        input2 = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        input2 = Vector3.ClampMagnitude(input, 5);
+        input2 = Vector3.zero;
+
+
+
+        Vector3 camF = cam.forward;
+        Vector3 camR = cam.right;
+
+        camF.y = 0;
+        camR.y = 0;
+
+        camF = camF.normalized;
+        camR = camR.normalized;
+
+        
+       transform.position += (camF * input.y + camR * input.x) * walkSpeed * Time.deltaTime;
+
+       transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
+
+
+
+        InputListen();
+
+        
+
+        if (input != Vector2.zero || input2 != Vector3.zero) {
+
+
+            
+             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(transform.position - prevLoc), Time.deltaTime * lookSpeed);
+
+        }
     
        
 
